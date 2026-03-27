@@ -1,0 +1,248 @@
+<h3 class="font-weight-bold mb-1">Introduction</h3>
+<p>
+	- Remain polite, courteous, respectful and constructive<br>throughout the evaluation process. The well-being of the
+	community<br>depends on it.<br><br>- Identify with the person (or the group) evaluated the eventual<br>dysfunctions
+	of the work. Take the time to discuss<br>and debate the problems you have identified.<br><br>- You must consider
+	that there might be some difference in how your<br>peers might have understood the project's instructions and
+	the<br>scope of its functionalities. Always keep an open mind and grade<br>him/her as honestly as possible. The
+	pedagogy is valid only and<br>only if peer-evaluation is conducted seriously.<br>
+</p>
+</div>
+<div class="p-0 scale-guidelines dancer from-down" id="guidelines-45345">
+	<h3 class="font-weight-bold mb-1">Guidelines</h3>
+	<p>
+		- Only grade the work that is in the student or group's<br>GiT repository.<br><br>- Double-check that the GiT
+		repository belongs to the student<br>or the group. Ensure that the work is for the relevant project<br>and also
+		check that "git clone" is used in an empty folder.<br><br>- Check carefully that no malicious aliases was used
+		to fool you<br>and make you evaluate something other than the content of the<br>official repository.<br><br>- To
+		avoid any surprises, carefully check that both the evaluating<br>and the evaluated students have reviewed the
+		possible scripts used<br>to facilitate the grading.<br><br>- If the evaluating student has not completed that
+		particular<br>project yet, it is mandatory for this student to read the<br>entire subject prior to starting the
+		defence.<br><br>- Use the flags available on this scale to signal an empty repository,<br>non-functioning
+		program, a norm error, cheating etc. In these cases,<br>the grading is over and the final grade is 0 (or -42 in
+		case of<br>cheating). However, with the exception of cheating, you are<br>encouraged to continue to discuss your
+		work (even if you have not<br>finished it) in order to identify any issues that may have caused<br>this failure
+		and avoid repeating the same mistake in the future.<br><br>- Remember that for the duration of the defence, no
+		segfault,<br>no other unexpected, premature, uncontrolled or unexpected<br>termination of the program, else the
+		final grade is 0. Use the<br>appropriate flag. <br>You should never have to edit any file except the
+		configuration file if it exists.<br>If you want to edit a file, take the time to explicit the reasons with the
+		<br>evaluated student and make sure both of you are okay with this.<br><br>- You must also verify the absence of
+		memory leaks. Any memory allocated on the heap must<br>be properly freed before the end of execution.<br>You are
+		allowed to use any of the different tools available on the computer, such as<br>leaks, valgrind, or e_fence. In
+		case of memory leaks, tick the appropriate flag.<br>
+	</p>
+</div>
+
+<hr>
+<div class="dancer from-down" id="attachments-45345">
+	<h3 class="font-weight-bold mb-1">Attachments</h3>
+	<div class="project-attachments-list">
+	</div>
+
+	<div class="project-attachments-list">
+		<div class="project-attachment-item">
+			<h4 class="attachment-name">
+				<span class="icon-file"></span>
+				<a target="_blank" href="https://cdn.intra.42.fr/pdf/pdf/166322/en.subject.pdf">subject.pdf</a>
+			</h4>
+		</div>
+	</div>
+
+</div>
+
+</div>
+<form class="simple_form form-horizontal" novalidate="novalidate" id="edit_scale_team_8763547" action=""
+	accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method"
+		value="patch"><input type="hidden" name="authenticity_token" value="">
+	<div class="scale-section-answers col-sm-12 scale-div">
+		<section class="scale-section-item dancer from-down" id="section-126223">
+			<div class="section-header">
+				<h3 class="font-weight-bold mb-1">Mandatory Part</h3>
+				<p class="font-italic"></p>
+			</div>
+			<h4 class="scale-question-name">User permissions check</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Run the program as a non-root user, then as root with no arguments.</p>
+
+			<ul>
+				<li>When running as non-root user, the program should exit by telling the user
+					that root privileges are required to run. A help menu/usage is appreciated but not
+					mandatory in this case.</li>
+				<li>When running as root with no arguments, the program should exit and provide a help menu/usage.</li>
+			</ul>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][0][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="426287"
+							name="[scale_team][answers_attributes][0][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][0][value]" id="yes_0" value="1"
+						class="btn-input">
+
+					<label for="yes_0" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][0][value]" id="no_0" value="0"
+						class="btn-input" checked>
+
+					<label for="no_0" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+			<h4 class="scale-question-name">Spoof between host and guest</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Run the program with the following arguments:<br>
+				./ft_malcolm [VM ip] aa:bb:cc:dd:ee:ff [host IP] [host mac]<br>
+				You can get these informations by running the ifconfig command (sudo/root privileges might be
+				needed)<br>
+				The program should be waiting for an ARP request before sending a reply and exiting.<br>
+				After the program finishes, if you show the arp table on the host by running 'arp -a', the mac address
+				of the source IP should<br>
+				be equal to aa:bb:cc:dd:ee:ff.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][1][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="426288"
+							name="[scale_team][answers_attributes][1][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][1][value]" id="yes_1" value="1"
+						class="btn-input">
+
+					<label for="yes_1" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][1][value]" id="no_1" value="0"
+						class="btn-input" checked>
+
+					<label for="no_1" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+			<h4 class="scale-question-name">Program behaviour</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Run the program with the same arguments as the previous question, but this time, open another<br>
+				terminal and listen to the ARP traffic on the network:<br>
+				'tcpdump -vv -i [interface] arp'<br>
+				Verify that the program sends an ARP reply only after a request has been made on the network (not
+				necessarily by the target).</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][2][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="426289"
+							name="[scale_team][answers_attributes][2][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][2][value]" id="yes_2" value="1"
+						class="btn-input">
+
+					<label for="yes_2" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][2][value]" id="no_2" value="0"
+						class="btn-input" checked>
+
+					<label for="no_2" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+			<h4 class="scale-question-name">Error management</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Run the program with invalid IP addresses, invalid MAC addresses to test the robustness of the
+				program.<br>
+				The program should exit and output a minimum of information. Nothing too fancy, of course.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][3][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="426290"
+							name="[scale_team][answers_attributes][3][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][3][value]" id="yes_3" value="1"
+						class="btn-input">
+
+					<label for="yes_3" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][3][value]" id="no_3" value="0"
+						class="btn-input" checked>
+
+					<label for="no_3" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+		</section>
+		<section class="scale-section-item dancer from-down" id="section-126224">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Bonus part</h3>
+				<p class="font-italic"></p>
+			</div>
+			<h4 class="scale-question-name">Bonuses</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>For the bonus part, any relevant bonus will grant one point on this scale.<br>
+				IPv6 management, if present, will give two bonus points.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][4][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="426291"
+							name="[scale_team][answers_attributes][4][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="marked-title text-center">Rate it from 0 (failed) through 5 (excellent)</div>
+				<select name="[scale_team][answers_attributes][1][value]" class="form-control">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				<hr>
+			</div>
+		</section>
+	</div>
+</form>
+
+</div>
+</div>

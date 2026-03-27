@@ -1,0 +1,142 @@
+<h3 class="font-weight-bold mb-1">Introduction</h3>
+<p>
+	To ensure this evaluation goes smoothly, please respect the following set of rules:<br><br>
+	- Please remain courteous, polite, respectful and constructive at all times during this exchange. The trust bond between the school's community and yourself depends on it.<br><br>
+	- Should you notice any malfunctions within the submitted project, make sure you take the time to discuss those with the student (or group of students) being graded.<br><br>
+	- Keep in mind that some subjects can be interpreted differently. If you come across a situation where the student you're grading has interpreted the subject differently than you, try and judge fairly whether their interpretation is acceptable or not, and grade them accordingly. Our peer-evaluation system can only work if you both take it seriously.
+</p>
+
+<div class="p-0 scale-guidelines dancer from-down">
+	<h3 class="font-weight-bold mb-1">Guidelines</h3>
+	<p>
+		- You may only evaluate whatever is in the GiT submission directory of the student you are grading.<br><br>
+		- Make sure to check whether the GiT submission directory belongs to the student (or group) you're grading, and that it's the right project.<br><br>
+		- Make sure no mischievous aliases have been used to trick you into correcting something that is not actually in the official submitted directory.<br><br>
+		- Any script created to make this evaluation session easier - whether it was produced by you or the student being graded - must be checked rigorously in order to avoid bad surprises.<br><br>
+		- If the student who is grading this project hasn't done the project him/herself yet, he/she must read the whole topic before starting the evaluation session.<br><br>
+		- Use the flags available to you on this scale in order to report a submission directory that is empty, non-functional, that contains norm errors or a case of cheating, etc. In this case, the evaluation session ends and the final grade is 0 (or -42, in case of cheating). However, unless the student has cheated, we advise you to go through the project together in order for the two (or more) of you to identify the problems that may have led for this project to fail, and avoid repeating those mistakes for future projects.
+	</p>
+</div>
+
+<hr>
+
+<div class="dancer from-down">
+	<h3 class="font-weight-bold mb-1">Attachments</h3>
+	<div class="project-attachments-list">
+		<div class="project-attachment-item">
+			<h4 class="attachment-name">
+				<span class="icon-file"></span>
+				<a target="_blank" href="https://cdn.intra.42.fr/pdf/pdf/16891/en.subject.pdf">Subject</a>
+			</h4>
+		</div>
+		<div class="project-attachment-item">
+			<h4 class="attachment-name">
+				<span class="icon-file"></span>
+				<a>avaj_uml.png (link not available)</a>
+			</h4>
+		</div>
+		<div class="project-attachment-item">
+			<h4 class="attachment-name">
+				<span class="icon-file"></span>
+				<a>scenario.txt (link not available)</a>
+			</h4>
+		</div>
+	</div>
+</div>
+
+<hr>
+
+<section class="scale-section-item dancer from-down">
+	<div class="section-header">
+		<h3 class="font-weight-bold mb-1">Preliminaries</h3>
+		<p class="font-italic">If cheating is suspected, the evaluation stops here. Use the "Cheat" flag to report it.</p>
+	</div>
+
+	<h4 class="scale-question-name">Compilation</h4>
+	<p class="scale-section-guidelines">Compile the program with the commands described in the subject. Does the project compile?</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="compilation" id="compilation_yes" value="1" class="btn-input">
+		<label for="compilation_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="compilation" id="compilation_no" value="0" class="btn-input" checked>
+		<label for="compilation_no" class="btn btn-no">No</label>
+	</div>
+</section>
+
+<hr>
+
+<section class="scale-section-item dancer from-down">
+	<div class="section-header">
+		<h3 class="font-weight-bold mb-1">Program Design</h3>
+	</div>
+
+	<h4 class="scale-question-name">UML Compliance</h4>
+	<p class="scale-section-guidelines">Does project respect the UML class diagram to the letter? It is not a problem if there are additional classes or private attributes and methods added by the student.</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="uml_compliance" id="uml_yes" value="1" class="btn-input">
+		<label for="uml_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="uml_compliance" id="uml_no" value="0" class="btn-input" checked>
+		<label for="uml_no" class="btn btn-no">No</label>
+	</div>
+</section>
+
+<hr>
+
+<section class="scale-section-item dancer from-down">
+	<div class="section-header">
+		<h3 class="font-weight-bold mb-1">Functionality</h3>
+	</div>
+
+	<h4 class="scale-question-name">Input Validation</h4>
+	<p class="scale-section-guidelines">Check if the program validates the input file. Try running the program without an input file present, with inconsistent data, missing values or out of range values. Does the validation work?</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="input_validation" id="validation_yes" value="1" class="btn-input">
+		<label for="validation_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="input_validation" id="validation_no" value="0" class="btn-input" checked>
+		<label for="validation_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">Simulation</h4>
+	<p class="scale-section-guidelines">Is the simulation.txt file generated according to the specifications? Check to see if the ID is unique and if all messages are logged correctly.</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="simulation" id="simulation_yes" value="1" class="btn-input">
+		<label for="simulation_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="simulation" id="simulation_no" value="0" class="btn-input" checked>
+		<label for="simulation_no" class="btn btn-no">No</label>
+	</div>
+</section>
+
+<hr>
+
+<section class="scale-section-item dancer from-down">
+	<div class="section-header">
+		<h3 class="font-weight-bold mb-1">Bonus</h3>
+	</div>
+
+	<h4 class="scale-question-name">Exception Handling</h4>
+	<p class="scale-section-guidelines">Does the project contain custom exceptions for treating abnormal behaviour specific to the program? Are they relevant? Do they have good messages?</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="exception_handling" id="exception_yes" value="1" class="btn-input">
+		<label for="exception_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="exception_handling" id="exception_no" value="0" class="btn-input" checked>
+		<label for="exception_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">Security</h4>
+	<p class="scale-section-guidelines">Feed the program with a valid input file, where the contents were previously encrypted with MD5. Does the program have the same behaviour as with the non-encrypted file?</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="security" id="security_yes" value="1" class="btn-input">
+		<label for="security_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="security" id="security_no" value="0" class="btn-input" checked>
+		<label for="security_no" class="btn btn-no">No</label>
+	</div>
+</section>

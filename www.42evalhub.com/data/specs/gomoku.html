@@ -1,0 +1,511 @@
+<h3 class="font-weight-bold mb-1">Introduction</h3>
+<p>
+	<br>In order to have a productive and tolerable grading session, we ask<br>
+	that you :<br><br>
+	- Stay courteous, polite, respectful and constructive during this<br>
+	session. The bond of trust between members of the 42 community<br>
+	depends on it;<br><br>
+	- Take care to show the graded person(s) the problems you notice,<br>
+	and explain them as best you can;<br><br>
+	- Accept that there may be differences in interpretation on the<br>
+	featureset and/or what the subject requires. Stay open-minded, try<br>
+	to honestly determine who is right and who is not, and grade<br>
+	accordingly.<br>
+</p>
+</div>
+<div class="p-0 scale-guidelines dancer from-down" id="guidelines-gomoku">
+	<h3 class="font-weight-bold mb-1">Guidelines</h3>
+	<p>
+		<br>Remember that you must ONLY grade what's on the turn-in repository !<br>
+		You have to "git clone" the repository, and grade what's on it, AND<br>
+		ONLY WHAT IS ON IT.<br>
+	</p>
+</div>
+
+<hr>
+<div class="dancer from-down" id="attachments-gomoku">
+	<h3 class="font-weight-bold mb-1">Attachments</h3>
+	<div class="project-attachments-list">
+	</div>
+
+	<div class="project-attachments-list">
+		<div class="project-attachment-item">
+			<h4 class="attachment-name">
+				<span class="icon-note-paper-2"></span>
+				<a target="_blank" href="https://cdn.intra.42.fr/pdf/pdf/166358/en.subject.pdf">subject.pdf</a>
+			</h4>
+		</div>
+	</div>
+
+</div>
+
+</div>
+<form class="simple_form form-horizontal" novalidate="novalidate" id="edit_scale_team_gomoku"
+	accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method"
+		value="patch"><input type="hidden" name="authenticity_token"
+		value="">
+	<div class="scale-section-answers col-sm-12 scale-div">
+		<section class="scale-section-item dancer from-down" id="section-gomoku-1">
+			<div class="section-header">
+				<h3 class="font-weight-bold mb-1">First and foremost</h3>
+				<p class="font-italic">Preliminary checks before evaluating the project.</p>
+			</div>
+			<h4 class="scale-question-name">Preliminary checks</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<ul>
+				<li>There is something in the git repository</li>
+				<li>The "auteur" file, if required by the subject, is present and valid</li>
+				<li>The Makefile, if required, is present and has the required rules</li>
+			</ul>
+			<p>If one of these elements is not in conformity with what the<br>
+				subject requires, the session stops. You may still debate on the<br>
+				project, but you are not to grade the student(s).<br><br>
+				During the rest of this session, if the program has an<br>
+				inappropriate behaviour (Segfault, bus error, double-free,<br>
+				uncaught exception, etc ...), the session stops.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][0][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="1"
+							name="[scale_team][answers_attributes][0][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<input type="radio" name="[scale_team][answers_attributes][0][value]" id="yes_0" value="1" class="btn-input">
+					<label for="yes_0" class="btn btn-yes">Yes</label>
+					<input type="radio" name="[scale_team][answers_attributes][0][value]" id="no_0" value="0" class="btn-input" checked>
+					<label for="no_0" class="btn btn-no">No</label>
+				</div>
+			</div>
+		</section>
+		<section class="scale-section-item dancer from-down" id="section-gomoku-2">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Actually running the program</h3>
+				<p class="font-italic">Verify that the game rules are correctly implemented.</p>
+			</div>
+			<h4 class="scale-question-name">Rules</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>The students have to show that all the required game rules are<br>
+				implemented correctly.<br><br>
+				If they are not, or the students can not prove it, do not grade<br>
+				this section.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][1][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="2"
+							name="[scale_team][answers_attributes][1][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<input type="radio" name="[scale_team][answers_attributes][1][value]" id="yes_1" value="1" class="btn-input">
+					<label for="yes_1" class="btn btn-yes">Yes</label>
+					<input type="radio" name="[scale_team][answers_attributes][1][value]" id="no_1" value="0" class="btn-input" checked>
+					<label for="no_1" class="btn btn-no">No</label>
+				</div>
+			</div>
+			<h4 class="scale-question-name">UI and AI performance</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>It must be possible to play as two human players, either on the<br>
+				same computer or over the network, AND to play against the AI.<br><br>
+				Grade this question according to the average performance of the<br>
+				AI against a player who is actually trying to win :<br><br>
+				- Any performance but AI takes more than half a second to find a<br>
+				move, or the students did not include a timer to indicate how<br>
+				much time the AI takes -> 0<br>
+				- Player victory in under 10 turns -> 0<br>
+				- Player victory in 10 to 20 turns -> 1<br>
+				- Player victory after 20+ turns -> 2<br>
+				- Draw -> 3<br>
+				- AI victory after 20+ turns -> 4<br>
+				- AI victory in under 20 turns -> 5<br>
+			</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][2][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="3"
+							name="[scale_team][answers_attributes][2][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<select name="[scale_team][answers_attributes][2][value]" id="score_2" class="form-control score-select">
+						<option value=""></option>
+						<option value="0">0 - Failed</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 - Excellent</option>
+					</select>
+				</div>
+			</div>
+		</section>
+		<section class="scale-section-item dancer from-down" id="section-gomoku-3">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Algorithm and implementation</h3>
+				<p class="font-italic">In this section, the students must be able to THOROUGHLY explain their Minimax-family algorithm. If they can not explain it well, then they do not understand it well enough, so do not grade this section. REPEAT: IF THE STUDENTS CAN NOT EXPLAIN THEIR ALGORITHM IN DETAIL, THEIR IMPLEMENTATION IS WORTH EXACTLY NOTHING, SO DO NOT GRADE THIS SECTION.</p>
+			</div>
+			<h4 class="scale-question-name">Minimax algorithm</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Look at the implementation of the Minimax algorithm :<br><br>
+				- No actual Minimax-type algorithm -> 0<br>
+				- "Naive" Minimax implementation (minimax, negamax, ...) -> 3<br>
+				- "Improved" Minimax implementation (Alpha-beta pruning,<br>
+				negascout, mtdf, ...) -> 5<br>
+			</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][3][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="4"
+							name="[scale_team][answers_attributes][3][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<select name="[scale_team][answers_attributes][3][value]" id="score_3" class="form-control score-select">
+						<option value=""></option>
+						<option value="0">0 - Failed</option>
+						<option value="3">3</option>
+						<option value="5">5 - Excellent</option>
+					</select>
+				</div>
+			</div>
+			<h4 class="scale-question-name">Move search depth</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Evaluate the search depth of the Minimax tree here. If the<br>
+				implementation is a pruning one, like Alphabeta, take into<br>
+				account the actual effective search depth, not the initial one.<br><br>
+				- Only 1 level -> 0<br>
+				- 2 levels -> 1<br>
+				- 3 to 5 levels -> 2<br>
+				- 5 to 10 levels -> 4<br>
+				- 10 or more levels -> 5<br>
+			</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][4][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="5"
+							name="[scale_team][answers_attributes][4][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<select name="[scale_team][answers_attributes][4][value]" id="score_4" class="form-control score-select">
+						<option value=""></option>
+						<option value="0">0 - Failed</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="4">4</option>
+						<option value="5">5 - Excellent</option>
+					</select>
+				</div>
+			</div>
+			<h4 class="scale-question-name">Search space</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Evaluate the search space of the algorithm<br><br>
+				- Entire board -> 0<br>
+				- Rectangular window around all placed stones -> 3<br>
+				- Multiple rectangular windows encompassing placed stones but<br>
+				minimizing wasted space -> 5<br>
+			</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][5][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="6"
+							name="[scale_team][answers_attributes][5][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<select name="[scale_team][answers_attributes][5][value]" id="score_5" class="form-control score-select">
+						<option value=""></option>
+						<option value="0">0 - Failed</option>
+						<option value="3">3</option>
+						<option value="5">5 - Excellent</option>
+					</select>
+				</div>
+			</div>
+		</section>
+		<section class="scale-section-item dancer from-down" id="section-gomoku-4">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Heuristic</h3>
+				<p class="font-italic">In this section, the students must be able to THOROUGHLY explain their heuristic function. If they can not explain it well, then they do not understand it well enough, so do not grade this section. REPEAT: IF THE STUDENTS CAN NOT EXPLAIN THEIR HEURISTIC IN DETAIL, THEIR IMPLEMENTATION IS WORTH EXACTLY NOTHING, SO DO NOT GRADE THIS SECTION.</p>
+			</div>
+			<h4 class="scale-question-name">Static part - Alignments</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Does the heuristic take current alignments into account ?</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][6][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="7"
+							name="[scale_team][answers_attributes][6][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<input type="radio" name="[scale_team][answers_attributes][6][value]" id="yes_6" value="1" class="btn-input">
+					<label for="yes_6" class="btn btn-yes">Yes</label>
+					<input type="radio" name="[scale_team][answers_attributes][6][value]" id="no_6" value="0" class="btn-input" checked>
+					<label for="no_6" class="btn btn-no">No</label>
+				</div>
+			</div>
+			<h4 class="scale-question-name">Static part - Potential win by alignment</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Does the heuristic check whether an alignment has enough space<br>
+				to develop into a 5-in-a-row ?</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][7][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="8"
+							name="[scale_team][answers_attributes][7][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<input type="radio" name="[scale_team][answers_attributes][7][value]" id="yes_7" value="1" class="btn-input">
+					<label for="yes_7" class="btn btn-yes">Yes</label>
+					<input type="radio" name="[scale_team][answers_attributes][7][value]" id="no_7" value="0" class="btn-input" checked>
+					<label for="no_7" class="btn btn-no">No</label>
+				</div>
+			</div>
+			<h4 class="scale-question-name">Static part - Freedom</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Does the heuristic weigh an alignment according to its freedom<br>
+				(Free, half-free, flanked) ?</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][8][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="9"
+							name="[scale_team][answers_attributes][8][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<input type="radio" name="[scale_team][answers_attributes][8][value]" id="yes_8" value="1" class="btn-input">
+					<label for="yes_8" class="btn btn-yes">Yes</label>
+					<input type="radio" name="[scale_team][answers_attributes][8][value]" id="no_8" value="0" class="btn-input" checked>
+					<label for="no_8" class="btn btn-no">No</label>
+				</div>
+			</div>
+			<h4 class="scale-question-name">Static part - Potential captures</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Does the heuristic take potential captures into account ?</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][9][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="10"
+							name="[scale_team][answers_attributes][9][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<input type="radio" name="[scale_team][answers_attributes][9][value]" id="yes_9" value="1" class="btn-input">
+					<label for="yes_9" class="btn btn-yes">Yes</label>
+					<input type="radio" name="[scale_team][answers_attributes][9][value]" id="no_9" value="0" class="btn-input" checked>
+					<label for="no_9" class="btn btn-no">No</label>
+				</div>
+			</div>
+			<h4 class="scale-question-name">Static part - Captures</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Does the heuristic take current captured stones into account ?</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][10][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="11"
+							name="[scale_team][answers_attributes][10][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<input type="radio" name="[scale_team][answers_attributes][10][value]" id="yes_10" value="1" class="btn-input">
+					<label for="yes_10" class="btn btn-yes">Yes</label>
+					<input type="radio" name="[scale_team][answers_attributes][10][value]" id="no_10" value="0" class="btn-input" checked>
+					<label for="no_10" class="btn btn-no">No</label>
+				</div>
+			</div>
+			<h4 class="scale-question-name">Static part - Figures</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Does the heuristic check for advantageous combinations ?</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][11][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="12"
+							name="[scale_team][answers_attributes][11][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<input type="radio" name="[scale_team][answers_attributes][11][value]" id="yes_11" value="1" class="btn-input">
+					<label for="yes_11" class="btn btn-yes">Yes</label>
+					<input type="radio" name="[scale_team][answers_attributes][11][value]" id="no_11" value="0" class="btn-input" checked>
+					<label for="no_11" class="btn btn-no">No</label>
+				</div>
+			</div>
+			<h4 class="scale-question-name">Static part - Players</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Does the heuristic take both players into account ?</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][12][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="13"
+							name="[scale_team][answers_attributes][12][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<input type="radio" name="[scale_team][answers_attributes][12][value]" id="yes_12" value="1" class="btn-input">
+					<label for="yes_12" class="btn btn-yes">Yes</label>
+					<input type="radio" name="[scale_team][answers_attributes][12][value]" id="no_12" value="0" class="btn-input" checked>
+					<label for="no_12" class="btn btn-no">No</label>
+				</div>
+			</div>
+			<h4 class="scale-question-name">Dynamic part</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Does the heuristic take past player actions into account to<br>
+				identify patterns and weigh board states accordingly ?</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][13][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="14"
+							name="[scale_team][answers_attributes][13][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<input type="radio" name="[scale_team][answers_attributes][13][value]" id="yes_13" value="1" class="btn-input">
+					<label for="yes_13" class="btn btn-yes">Yes</label>
+					<input type="radio" name="[scale_team][answers_attributes][13][value]" id="no_13" value="0" class="btn-input" checked>
+					<label for="no_13" class="btn btn-no">No</label>
+				</div>
+			</div>
+		</section>
+		<section class="scale-section-item dancer from-down" id="section-gomoku-5">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Bonuses</h3>
+				<p class="font-italic">Rate interesting and/or useful and/or just plain cool bonuses.</p>
+			</div>
+			<h4 class="scale-question-name">Bonuses</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>1 point per identifiable, separate bonus</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][14][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="15"
+							name="[scale_team][answers_attributes][14][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<select name="[scale_team][answers_attributes][14][value]" id="score_14" class="form-control score-select">
+						<option value=""></option>
+						<option value="0">0 - Failed</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 - Excellent</option>
+					</select>
+				</div>
+			</div>
+		</section>
+	</div>
+	</div>
+</form>
+</div>
+</div>

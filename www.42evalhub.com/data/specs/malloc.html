@@ -1,0 +1,622 @@
+<div>
+	<h3 class="font-weight-bold mb-1">Introduction</h3>
+	<p>
+		Please respect the following rules:<br><br>
+		- Remain polite, courteous, respectful and constructive throughout the correction process. The well-being of the
+		community depends on it.<br><br>
+		- Identify with the person (or the group) graded the eventual dysfunctions of the work. Take the time to discuss
+		and debate the problems you have identified.<br><br>
+		- You must consider that there might be some difference in how your peers might have understood the project's
+		instructions and the scope of its functionalities.<br><br>
+		- Always keep an open mind and grade him/her as honestly as possible. The pedagogy is valid only if the
+		peer-evaluation is conducted seriously.
+	</p>
+
+	<div class="p-0 scale-guidelines dancer from-down" id="guidelines-malloc">
+		<h3 class="font-weight-bold mb-1">Guidelines</h3>
+		<p>
+			You MUST run the requested tests.<br><br>
+			Warning: This project is quite complex, the result and implementation are subjective. You have to keep in
+			mind the aim of "This project is about implementing dynamic memory allocation mechanism."
+		</p>
+	</div>
+
+	<hr>
+	<div class="dancer from-down" id="attachments-malloc">
+		<h3 class="font-weight-bold mb-1">Attachments</h3>
+		<div class="project-attachments-list">
+			<div class="project-attachment-item">
+				<h4 class="attachment-name">
+					<span class="icon-file"></span>
+					<a target="_blank" href="https://cdn.intra.42.fr/pdf/pdf/166351/en.subject.pdf">subject.pdf</a>
+				</h4>
+			</div>
+			<div class="project-attachment-item">
+				<h4 class="attachment-name"><span class="icon-file"></span><a>test0.c (link not available)</a>
+				</h4>
+			</div>
+			<div class="project-attachment-item">
+				<h4 class="attachment-name"><span class="icon-file"></span><a>test1.c (link not available)</a>
+				</h4>
+			</div>
+			<div class="project-attachment-item">
+				<h4 class="attachment-name"><span class="icon-file"></span><a>test2.c (link not available)</a>
+				</h4>
+			</div>
+			<div class="project-attachment-item">
+				<h4 class="attachment-name"><span class="icon-file"></span><a>test3.c (link not available)</a>
+				</h4>
+			</div>
+			<div class="project-attachment-item">
+				<h4 class="attachment-name"><span class="icon-file"></span><a>test4.c (link not available)</a>
+				</h4>
+			</div>
+			<div class="project-attachment-item">
+				<h4 class="attachment-name"><span class="icon-file"></span><a>test5.c (link not available)</a>
+				</h4>
+			</div>
+			<div class="project-attachment-item">
+				<h4 class="attachment-name"><span class="icon-file"></span><a>test6.c (link not available)</a>
+				</h4>
+			</div>
+			<div class="project-attachment-item">
+				<h4 class="attachment-name"><span class="icon-file"></span><a>run_linux.sh (link not available)</a></h4>
+			</div>
+			<div class="project-attachment-item">
+				<h4 class="attachment-name"><span class="icon-file"></span><a>run_mac.sh (link not available)</a></h4>
+			</div>
+		</div>
+	</div>
+
+	<form class="simple_form form-horizontal" novalidate="novalidate" id="edit_scale_team_malloc" accept-charset="UTF-8"
+		method="post">
+		<input name="utf8" type="hidden" value="✓">
+		<input type="hidden" name="_method" value="patch">
+		<div class="scale-section-answers col-sm-12 scale-div">
+
+			<section class="scale-section-item dancer from-down" id="section-malloc-preliminaries">
+				<div class="section-header">
+					<h3 class="font-weight-bold mb-1">Preliminary tests</h3>
+					<p class="font-italic">First check the following elements</p>
+				</div>
+				<h4 class="scale-question-name">Preliminary instructions</h4>
+				<p>First check the following elements :</p>
+				<ul>
+					<li>There is something in the git repository</li>
+					<li>The author file is valid</li>
+					<li>A Makefile is present and has all the requested rules</li>
+					<li>No norm errors, Norminette is authoritative</li>
+					<li>No cheating (unauthorized functions...)</li>
+					<li>2 globals are authorized: one to manage the allocations, and one to manage the thread-safe
+						allocations</li>
+				</ul>
+				<p>If an element of this list isn't respected, the grading ends. Use the appropriate flag. You're
+					allowed to debate some more about the project, but the grading will not be applied.</p>
+				<div class="scale-question-answers">
+					<div class="form-group hidden scale_team_answer_id">
+						<div class="col-sm-10"><input class="form-control hidden"
+								name="[scale_team][answers_attributes][0][id]" type="hidden" id="scale_team_answer_id">
+						</div>
+					</div>
+					<div class="form-group hidden scale_team_answer_question_id">
+						<div class="col-sm-10"><input class="form-control hidden" value="1"
+								name="[scale_team][answers_attributes][0][question_id]" type="hidden"
+								id="scale_team_answer_question_id"></div>
+					</div>
+					<div class="btn-group block">
+						<input type="radio" name="[scale_team][answers_attributes][0][value]" id="yes_0" value="1"
+							class="btn-input">
+						<label for="yes_0" class="btn btn-yes">Yes</label>
+						<input type="radio" name="[scale_team][answers_attributes][0][value]" id="no_0" value="0"
+							class="btn-input" checked>
+						<label for="no_0" class="btn btn-no">No</label>
+					</div>
+				</div>
+				<br>
+				<br>
+
+				<h4 class="scale-question-name">Library compilation</h4>
+				<p>First we will check that the compilation of the library does generate the requested files by
+					modifying HOSTTYPE:</p>
+				<pre><code>$&gt; export HOSTTYPE=Testing
+$&gt; make re ...
+$&gt; ln -s libft_malloc_Testing.so libft_malloc.so
+$&gt; ls -l libft_malloc.so
+libft_malloc.so -&gt; libft_malloc_Testing.so
+$&gt;</code></pre>
+				<p>The Makefile does use HOSTTYPE to define the name of the library (libft_malloc_$HOSTTYPE.so) and does
+					create a symbolic link libft_malloc.so pointing towards libft_malloc_$HOSTTYPE.so ?</p>
+				<p>If that's not the case, the defense stops.</p>
+				<div class="scale-question-answers">
+					<div class="form-group hidden scale_team_answer_id">
+						<div class="col-sm-10"><input class="form-control hidden"
+								name="[scale_team][answers_attributes][1][id]" type="hidden" id="scale_team_answer_id">
+						</div>
+					</div>
+					<div class="form-group hidden scale_team_answer_question_id"></div>
+					<div class="col-sm-10"><input class="form-control hidden" value="2"
+							name="[scale_team][answers_attributes][1][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block"></div>
+				<input type="radio" name="[scale_team][answers_attributes][1][value]" id="yes_1" value="1"
+					class="btn-input">
+				<label for="yes_1" class="btn btn-yes">Yes</label>
+				<input type="radio" name="[scale_team][answers_attributes][1][value]" id="no_1" value="0"
+					class="btn-input" checked>
+				<label for="no_1" class="btn btn-no">No</label>
+		</div>
+</div>
+<br>
+<br>
+
+<h4 class="scale-question-name">Functions export</h4>
+<p>Check with nm that the library does export the functions malloc, free, realloc and show_alloc_mem.</p>
+<pre><code>$&gt; nm libft_malloc.so
+0000000000000000 T _free
+0000000000000000 T _malloc
+0000000000000000 T _realloc
+0000000000000000 T_show_alloc_mem
+U _mmap
+U _munmap
+U _getpagesize
+U _write
+U dyld_stub_binder
+$&gt;</code></pre>
+<p>The functions exported by the library are marked with T, the undefined ones used from another library to the next,
+	same as the order of the lines).</p>
+<p>If the functions are not exported, defense stops.</p>
+<div class="scale-question-answers">
+	<div class="form-group hidden scale_team_answer_id">
+		<div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][2][id]"
+				type="hidden" id="scale_team_answer_id"></div>
+	</div>
+	<div class="form-group hidden scale_team_answer_question_id"></div>
+	<div class="col-sm-10"><input class="form-control hidden" value="3"
+			name="[scale_team][answers_attributes][2][question_id]" type="hidden" id="scale_team_answer_question_id">
+	</div>
+</div>
+<div class="btn-group block">
+	<input type="radio" name="[scale_team][answers_attributes][2][value]" id="yes_2" value="1" class="btn-input">
+	<label for="yes_2" class="btn btn-yes">Yes</label>
+	<input type="radio" name="[scale_team][answers_attributes][2][value]" id="no_2" value="0" class="btn-input" checked>
+	<label for="no_2" class="btn btn-no">No</label>
+</div>
+</div>
+</section>
+<br>
+<br>
+
+<section class="scale-section-item dancer from-down" id="section-malloc-features">
+	<div class="section-header">
+		<hr>
+		<h3 class="font-weight-bold mb-1">Feature's testing</h3>
+		<p class="font-italic">
+			Start by creating a script that will only modify the environment variables while you run a test program. It
+			will be named run.sh, and be executable:<br>
+			FOR MAC:<br>
+			$&gt; cat run.sh<br>
+			#!/bin/sh<br>
+			export DYLD_LIBRARY_PATH=.<br>
+			export DYLD_INSERT_LIBRARIES="libft_malloc.so"<br>
+			export DYLD_FORCE_FLAT_NAMESPACE=1<br>
+			$@<br>
+			$&gt;<br>
+			FOR LINUX:<br>
+			$&gt; cat run.sh<br>
+			#!/bin/sh<br>
+			export LD_LIBRARY_PATH=.<br>
+			export LD_PRELOAD=libft_malloc.so<br>
+			$@<br>
+			$&gt;
+		</p>
+	</div>
+
+	<h4 class="scale-question-name">Script setup</h4>
+	<p>Create a script named <code>run.sh</code> and make it executable:</p>
+	<p><strong>FOR MAC:</strong></p>
+	<pre><code>$&gt; cat run.sh
+#!/bin/sh
+export DYLD_LIBRARY_PATH=.
+export DYLD_INSERT_LIBRARIES="libft_malloc.so"
+export DYLD_FORCE_FLAT_NAMESPACE=1
+$@ 
+$&gt;</code></pre>
+	<p><strong>FOR LINUX:</strong></p>
+	<pre><code>$&gt; cat run.sh
+#!/bin/sh
+export LD_LIBRARY_PATH=.
+export LD_PRELOAD=libft_malloc.so
+$@ 
+$&gt;</code></pre>
+	<div class="scale-question-answers"></div>
+	<div class="form-group hidden scale_team_answer_id">
+		<div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][3][id]"
+				type="hidden" id="scale_team_answer_id"></div>
+	</div>
+	<div class="form-group hidden scale_team_answer_question_id"></div>
+	<div class="col-sm-10"><input class="form-control hidden" value="4"
+			name="[scale_team][answers_attributes][3][question_id]" type="hidden" id="scale_team_answer_question_id">
+	</div>
+	</div>
+	<div class="btn-group block"></div>
+	<input type="radio" name="[scale_team][answers_attributes][3][value]" id="yes_3" value="1" class="btn-input">
+	<label for="yes_3" class="btn btn-yes">Yes</label>
+	<input type="radio" name="[scale_team][answers_attributes][3][value]" id="no_3" value="0" class="btn-input" checked>
+	<label for="no_3" class="btn btn-no">No</label>
+	</div>
+	</div>
+	<br>
+	<br>
+
+	<h4 class="scale-question-name">Malloc test - Baseline</h4>
+	<p>We are first going to make a first test program that does not use malloc, so that we have a base to compare to.
+	</p>
+	<p>Use test0.c file attached in the scale</p>
+	<p><strong>WARNING:</strong> If you are using a linux vm, make sure that you are using the time binary that you can
+		get with apt (sudo apt install time), else you won't have access to the -v option</p>
+	<pre><code>MAC: $&gt; gcc -o test0 test0.c
+$&gt; /usr/bin/time -l ./test0
+0.00
+
+LINUX: $&gt; gcc -o test0 test0.c
+$&gt; /usr/bin/time -v ./test0
+0.00
+Command being timed: "./test0"
+User time (seconds): 0.00
+System time (seconds): 0.00
+Percent of CPU this job got: 0%
+Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+Average shared text size (kilobytes): 0
+Average unshared data size (kilobytes): 0
+Average stack size (kilobytes): 0
+Average total size (kilobytes): 0
+Maximum resident set size (kilobytes): 412
+Average resident set size (kilobytes): 0
+Major (requiring I/O) page faults: 0
+Minor (reclaiming frame) page faults: 130
+Voluntary context switches: 0
+Involuntary context switches: 0
+Swaps: 0
+File system inputs: 0
+File system outputs: 0
+Socket messages sent: 0
+Socket messages received: 0
+Signals delivered: 0
+Page size (bytes): 4096
+Exit status: 0
+$&gt;</code></pre>
+	<p>We will then add malloc and write in each allocation to make sure that the memory page is allocated in physical
+		memory by MMU. The system will only really allocate the memory of page if you write in it, so even if we do a
+		bigger mmap than the malloc request it won't modify the "page reclaims".</p>
+	<div class="scale-question-answers">
+		<div class="form-group hidden scale_team_answer_id"></div>
+		<div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][4][id]"
+				type="hidden" id="scale_team_answer_id"></div>
+	</div>
+	<div class="form-group hidden scale_team_answer_question_id"></div>
+	<div class="col-sm-10"><input class="form-control hidden" value="5"
+			name="[scale_team][answers_attributes][4][question_id]" type="hidden" id="scale_team_answer_question_id">
+	</div>
+	</div>
+	<div class="btn-group block"></div>
+	<input type="radio" name="[scale_team][answers_attributes][4][value]" id="yes_4" value="1" class="btn-input">
+	<label for="yes_4" class="btn btn-yes">Yes</label>
+	<input type="radio" name="[scale_team][answers_attributes][4][value]" id="no_4" value="0" class="btn-input" checked>
+	<label for="no_4" class="btn btn-no">No</label>
+	</div>
+	</div>
+	<br>
+	<br>
+
+	<h4 class="scale-question-name">Malloc test - Memory allocation</h4>
+	<p>Using the test1.c file given as attachment, run the following tests:</p>
+	<pre><code>$&gt; gcc -o test1 test1.c
+$&gt; /usr/bin/time -l ./test1
+(Use -v for linux)
+Command being timed: "./test1"
+User time (seconds): 0.00
+System time (seconds): 0.00
+Percent of CPU this job got: 0%
+Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+Average shared text size (kilobytes): 0
+Average unshared data size (kilobytes): 0
+Average stack size (kilobytes): 0
+Average total size (kilobytes): 0
+Maximum resident set size (kilobytes): 1500
+Average resident set size (kilobytes): 0
+Major (requiring I/O) page faults: 0
+Minor (reclaiming frame) page faults: 402
+Voluntary context switches: 0
+Involuntary context switches: 0
+Swaps: 0
+File system inputs: 0
+File system outputs: 0
+Socket messages sent: 0
+Socket messages received: 0
+Signals delivered: 0
+Page size (bytes): 4096
+Exit status: 0</code></pre>
+	<p>Our test1 program requested 1024 times 1024 bytes, so 1Mb. We can therefore check by doing the difference with
+		the test0 program:<br>
+		- either between the "maximum resident set size" lines, we obtain a little more than 1Mb<br>
+		- or between the page reclaims lines that we will multiply by the value of getpagesize(3)
+	</p>
+	<p>Let's test now both programs with our library:</p>
+	<pre><code>$&gt;./run.sh /usr/bin/time -l ./test0
+(Use -v for linux)
+...
+Maximum resident set size (kilobytes): 412
+Minor (reclaiming frame) page faults: 130
+...
+
+$&gt;./run.sh /usr/bin/time -l ./test1
+(Use -v for linux)
+...
+Maximum resident set size (kilobytes): 1984
+Minor (reclaiming frame) page faults: 525
+$&gt;</code></pre>
+	<p>Count the number of pages used and adjust the grade as such:</p>
+	<ul>
+		<li>less than 255 pages, allocated memory is insufficient: 0</li>
+		<li>1023 pages and over, the malloc works but consumes 1 page minimum for each allocation: 1</li>
+		<li>between 513 pages and 1022 pages, malloc works but the overhead is too big: 2</li>
+		<li>between 313 pages and 512 pages, malloc works but the overhead is very big: 3</li>
+		<li>between 273 pages and 312 pages, malloc works but the overhead is big: 4</li>
+		<li>between 255 and 272 pages, malloc works and the overhead is fine: 5</li>
+	</ul>
+	<p>The defender is allowed to justify another method of counting allocated pages (using existing debug for example).
+	</p>
+	<div class="marked-title text-center">Rate it from 0 (failed) through 5 (excellent)</div>
+	<div class="form-group">
+		<select class="form-control score-select" name="[scale_team][answers_attributes][5][value]">
+			<option value="">-- Select --</option>
+			<option value="0">0 (less than 255 pages, allocated memory is insufficient)</option>
+			<option value="1">1 (1023 pages and over, malloc works but consumes 1 page minimum for each allocation)
+			</option>
+			<option value="2">2 (between 513 pages and 1022 pages, malloc works but the overhead is too big)</option>
+			<option value="3">3 (between 313 pages and 512 pages, malloc works but the overhead is very big)</option>
+			<option value="4">4 (between 273 pages and 312 pages, malloc works but the overhead is big)</option>
+			<option value="5">5 (between 255 and 272 pages, malloc works and the overhead is fine)</option>
+		</select>
+	</div>
+
+	<h4 class="scale-question-name">Pre-allocated zones</h4>
+	<p>Check inside the source code that the pre-allocated zones for the different malloc sizes allow to store at least
+		100 times the maximum size for this type of zone. Check also that the size of the zones is a multiple of
+		getpagesize().</p>
+	<p>If one of these points is missing, click NO.</p>
+	<div class="scale-question-answers">
+		<div class="form-group hidden scale_team_answer_id"></div>
+		<div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][6][id]"
+				type="hidden" id="scale_team_answer_id"></div>
+	</div>
+	<div class="form-group hidden scale_team_answer_question_id"></div>
+	<div class="col-sm-10"><input class="form-control hidden" value="7"
+			name="[scale_team][answers_attributes][6][question_id]" type="hidden" id="scale_team_answer_question_id">
+	</div>
+	</div>
+	<div class="btn-group block"></div>
+	<input type="radio" name="[scale_team][answers_attributes][6][value]" id="yes_6" value="1" class="btn-input">
+	<label for="yes_6" class="btn btn-yes">Yes</label>
+	<input type="radio" name="[scale_team][answers_attributes][6][value]" id="no_6" value="0" class="btn-input" checked>
+	<label for="no_6" class="btn btn-no">No</label>
+	</div>
+	</div>
+	<br>
+	<br>
+
+	<h4 class="scale-question-name">Tests of free</h4>
+	<p>We will simply add a free to our test program:</p>
+	<pre><code>$&gt; cat test2.c
+$&gt; gcc -o test2 test2.c
+
+$&gt;./run.sh /usr/bin/time -l ./test2
+(Use -v for linux)</code></pre>
+	<p>We will compare the number of "page reclaims" to those in test0 and test1. If there are as many or more "page
+		reclaims" than test1, the free doesn't work.</p>
+	<p>Does the free function? (less "page reclaims" than test1)</p>
+	<div class="scale-question-answers">
+		<div class="form-group hidden scale_team_answer_id"></div>
+		<div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][7][id]"
+				type="hidden" id="scale_team_answer_id"></div>
+	</div>
+	<div class="form-group hidden scale_team_answer_question_id"></div>
+	<div class="col-sm-10"><input class="form-control hidden" value="8"
+			name="[scale_team][answers_attributes][7][question_id]" type="hidden" id="scale_team_answer_question_id">
+	</div>
+	</div>
+	<div class="btn-group block">
+		<input type="radio" name="[scale_team][answers_attributes][7][value]" id="yes_7" value="1" class="btn-input">
+		<label for="yes_7" class="btn btn-yes">Yes</label>
+		<input type="radio" name="[scale_team][answers_attributes][7][value]" id="no_7" value="0" class="btn-input"
+			checked>
+		<label for="no_7" class="btn btn-no">No</label>
+	</div>
+	</div>
+	<br>
+	<br>
+
+	<h4 class="scale-question-name">Quality of the free function</h4>
+	<p>test2 has at most 3 more "page reclaims" than test0?</p>
+	<div class="scale-question-answers">
+		<div class="form-group hidden scale_team_answer_id"></div>
+		<div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][8][id]"
+				type="hidden" id="scale_team_answer_id"></div>
+	</div>
+	<div class="form-group hidden scale_team_answer_question_id"></div>
+	<div class="col-sm-10"><input class="form-control hidden" value="9"
+			name="[scale_team][answers_attributes][8][question_id]" type="hidden" id="scale_team_answer_question_id">
+	</div>
+	</div>
+	<div class="btn-group block"></div>
+	<input type="radio" name="[scale_team][answers_attributes][8][value]" id="yes_8" value="1" class="btn-input">
+	<label for="yes_8" class="btn btn-yes">Yes</label>
+	<input type="radio" name="[scale_team][answers_attributes][8][value]" id="no_8" value="0" class="btn-input" checked>
+	<label for="no_8" class="btn btn-no">No</label>
+	</div>
+	</div>
+	<br>
+	<br>
+
+	<h4 class="scale-question-name">Realloc test</h4>
+	<p>Using test3.c file given as attachment, test the following:</p>
+	<pre><code>$&gt; gcc -o test3 test3.c
+$&gt; ./run.sh ./test3 Bonjour Bonjour
+$&gt;</code></pre>
+	<p>Does it work as expected?</p>
+	<div class="scale-question-answers">
+		<div class="form-group hidden scale_team_answer_id"></div>
+		<div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][9][id]"
+				type="hidden" id="scale_team_answer_id"></div>
+	</div>
+	<div class="form-group hidden scale_team_answer_question_id"></div>
+	<div class="col-sm-10"><input class="form-control hidden" value="10"
+			name="[scale_team][answers_attributes][9][question_id]" type="hidden" id="scale_team_answer_question_id">
+	</div>
+	</div>
+	<div class="btn-group block">
+		<input type="radio" name="[scale_team][answers_attributes][9][value]" id="yes_9" value="1" class="btn-input">
+		<label for="yes_9" class="btn btn-yes">Yes</label>
+		<input type="radio" name="[scale_team][answers_attributes][9][value]" id="no_9" value="0" class="btn-input"
+			checked>
+		<label for="no_9" class="btn btn-no">No</label>
+	</div>
+	</div>
+	<br>
+	<br>
+
+	<h4 class="scale-question-name">Realloc test++</h4>
+	<p>test4.c is a small modification of test3.c. Run it, does it still work?</p>
+	<div class="scale-question-answers">
+		<div class="form-group hidden scale_team_answer_id"></div>
+		<div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][10][id]"
+				type="hidden" id="scale_team_answer_id"></div>
+	</div>
+	<div class="form-group hidden scale_team_answer_question_id"></div>
+	<div class="col-sm-10"><input class="form-control hidden" value="11"
+			name="[scale_team][answers_attributes][10][question_id]" type="hidden" id="scale_team_answer_question_id">
+	</div>
+	</div>
+	<div class="btn-group block"></div>
+	<input type="radio" name="[scale_team][answers_attributes][10][value]" id="yes_10" value="1" class="btn-input">
+	<label for="yes_10" class="btn btn-yes">Yes</label>
+	<input type="radio" name="[scale_team][answers_attributes][10][value]" id="no_10" value="0" class="btn-input"
+		checked>
+	<label for="no_10" class="btn btn-no">No</label>
+	</div>
+	</div>
+	<br>
+	<br>
+
+	<h4 class="scale-question-name">Error management</h4>
+	<p>Using test5.c, test all the particular cases and errors:</p>
+	<pre><code>$&gt; gcc -o test5 test5.c
+$&gt; ./run.sh ./test5 Bonjour</code></pre>
+	<p>In case of error, realloc must return NULL. Is "Bonjour" displayed as expected? If the program reacts badly
+		(segfault or something else), defense stops and you need to select the "crash" flag.</p>
+	<div class="scale-question-answers">
+		<div class="form-group hidden scale_team_answer_id"></div>
+		<div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][11][id]"
+				type="hidden" id="scale_team_answer_id"></div>
+	</div>
+	<div class="form-group hidden scale_team_answer_question_id"></div>
+	<div class="col-sm-10"><input class="form-control hidden" value="12"
+			name="[scale_team][answers_attributes][11][question_id]" type="hidden" id="scale_team_answer_question_id">
+	</div>
+	</div>
+	<div class="btn-group block"></div>
+	<input type="radio" name="[scale_team][answers_attributes][11][value]" id="yes_11" value="1" class="btn-input">
+	<label for="yes_11" class="btn btn-yes">Yes</label>
+	<input type="radio" name="[scale_team][answers_attributes][11][value]" id="no_11" value="0" class="btn-input"
+		checked>
+	<label for="no_11" class="btn btn-no">No</label>
+	</div>
+	</div>
+	<br>
+	<br>
+
+	<h4 class="scale-question-name">Show_alloc_mem test</h4>
+	<pre><code>$&gt; gcc -o test6 test6.c -L. -lft_malloc
+$&gt; ./run.sh ./test6</code></pre>
+	<p>Does the display correspond to the topic and the TINY/SMALL/LARGE allocation of the project?</p>
+	<div class="scale-question-answers">
+		<div class="form-group hidden scale_team_answer_id"></div>
+		<div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][12][id]"
+				type="hidden" id="scale_team_answer_id"></div>
+	</div>
+	<div class="form-group hidden scale_team_answer_question_id"></div>
+	<div class="col-sm-10"><input class="form-control hidden" value="13"
+			name="[scale_team][answers_attributes][12][question_id]" type="hidden" id="scale_team_answer_question_id">
+	</div>
+	</div>
+	<div class="btn-group block">
+		<input type="radio" name="[scale_team][answers_attributes][12][value]" id="yes_12" value="1" class="btn-input">
+		<label for="yes_12" class="btn btn-yes">Yes</label>
+		<input type="radio" name="[scale_team][answers_attributes][12][value]" id="no_12" value="0" class="btn-input"
+			checked>
+		<label for="no_12" class="btn btn-no">No</label>
+	</div>
+	</div>
+	<br>
+	<br>
+</section>
+
+<section class="scale-section-item dancer from-down" id="section-malloc-bonus">
+	<div class="section-header">
+		<hr>
+		<h3 class="font-weight-bold mb-1">Bonus</h3>
+		<p class="font-italic">Bonus will be taken into account only if ALL the previous points are valid.</p>
+	</div>
+	<h4 class="scale-question-name">Competitive access</h4>
+	<p>The project manages the competitive access of the threads with mutexes and with the support of the pthread
+		library.</p>
+	<p>Count the applicable cases:</p>
+	<ul>
+		<li>A mutex prevents multiple threads to simultaneously enter inside the malloc function</li>
+		<li>A mutex prevents multiple threads to simultaneously enter inside the free function</li>
+		<li>A mutex prevents multiple threads to simultaneously enter inside the realloc function</li>
+		<li>A mutex prevents multiple threads to simultaneously enter inside the show_alloc_mem function</li>
+	</ul>
+	<div class="marked-title text-center">Rate it from 0 (failed) through 5 (excellent)</div>
+	<div class="form-group">
+		<select class="form-control score-select" name="[scale_team][answers_attributes][13][value]">
+			<option value="">-- Select --</option>
+			<option value="0">0 (failed)</option>
+			<option value="1">1 (1 mutex working)</option>
+			<option value="2">2 (2 mutexes working)</option>
+			<option value="3">3 (3 mutexes working)</option>
+			<option value="4">4 (all mutexes working but improvements possible)</option>
+			<option value="5">5 (excellent - all mutexes working perfectly)</option>
+		</select>
+	</div>
+
+	<h4 class="scale-question-name">Additional bonuses</h4>
+	<p>If there are more bonuses, grade them here. Bonuses must be 100% functional and at a minimum useful. (up to the
+		grader)</p>
+	<p>Bonus examples:</p>
+	<ul>
+		<li>During a free, the project "defragments" the free memory while regrouping the available simultaneous blocks.
+		</li>
+		<li>Malloc has debugging environment variables.</li>
+		<li>A function allows to make a hexadecimal decimal dump of the allocated zones.</li>
+		<li>A function allows to display a history of the memory allocations done.</li>
+		<li>If there are other bonuses, add them up here. Bonuses must be 100% functional and at a minimum useful (at
+			the corrector's discretion).</li>
+	</ul>
+	<div class="marked-title text-center">Rate it from 0 (failed) through 5 (excellent)</div>
+	<div class="form-group">
+		<select class="form-control score-select" name="[scale_team][answers_attributes][14][value]">
+			<option value="">-- Select --</option>
+			<option value="0">0 (no additional bonuses or they don't work)</option>
+			<option value="1">1 (one bonus working)</option>
+			<option value="2">2 (two bonuses working)</option>
+			<option value="3">3 (three bonuses working)</option>
+			<option value="4">4 (four bonuses working)</option>
+			<option value="5">5 (five or more bonuses working)</option>
+		</select>
+	</div>
+</section>
+</div>
+</form>
+</div>

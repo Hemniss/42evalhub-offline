@@ -1,0 +1,355 @@
+<h3 class="font-weight-bold mb-1">Introduction</h3>
+<p>
+	<br>In order to maintain high evaluation standards, you are expected to:<br><br>
+	- Remain polite, courteous, respectful and constructive at every moment of the discussion. Trust between you and our community depends on your behaviour.<br><br>
+	- Highlight the flaws and issues you uncover in the turned-in work to the evaluated student or team, and take the time to discuss every aspect extensively.<br><br>
+	- Please take into account that discrepancies regarding the expected work or functionalities definitions might occur. Keep an open mind towards the opposite party (is he or she right or wrong?), and grade as honestly as possible. 42's pedagogy only makes sense if peer-evaluations are carried out seriously.<br>
+</p>
+</div>
+<div class="p-0 scale-guidelines dancer from-down" id="guidelines-ft_ls">
+	<h3 class="font-weight-bold mb-1">Guidelines</h3>
+	<p>
+		<br>- You must grade only what exists in the GiT repository of the student or team.<br><br>
+		- Remember to check the GiT repository's ownership: is it the student's or team's repository, and for the right project?<br><br>
+		- Check thoroughly that no wicked aliases have been used to trick you into grading something other than the genuine repository.<br><br>
+		- Any script supposed to ease the evaluation provided by one party must be thoroughly checked by the other party in order to avoid unpleasant situations.<br><br>
+		- If the evaluating student hasn't done the project yet, it is mandatory that he or she reads it before starting the evaluation.<br><br>
+		- Use the available flags on this scale to tag an empty work, a non-functional work, a coding style ("norm") error if applicable, cheating, and so on. If a flag is set, the grade is 0 (or -42 in case of cheating). However, cheating case excluded, you are encouraged to carry on discussing what went wrong, why, and how to address it, even if the grading itself is over.<br>
+	</p>
+</div>
+
+<hr>
+<div class="dancer from-down" id="attachments-ft_ls">
+	<h3 class="font-weight-bold mb-1">Attachments</h3>
+	<div class="project-attachments-list">
+		<div class="project-attachment-item">
+			<h4 class="attachment-name">
+				<span class="icon-note-paper-2"></span>
+				<a target="_blank" href="https://cdn.intra.42.fr/pdf/pdf/437/ft_ls.ro.pdf">Subject (RO)</a>
+			</h4>
+		</div>
+		<div class="project-attachment-item">
+			<h4 class="attachment-name">
+				<span class="icon-note-paper-2"></span>
+				<a target="_blank" href="https://cdn.intra.42.fr/pdf/pdf/885/ft_ls.en.pdf">Subject (EN)</a>
+			</h4>
+		</div>
+		<div class="project-attachment-item">
+			<h4 class="attachment-name">
+				<span class="icon-note-paper-2"></span>
+				<a target="_blank" href="https://cdn.intra.42.fr/pdf/pdf/17/ft_ls.fr.pdf">Subject (FR)</a>
+			</h4>
+		</div>
+		<div class="project-attachment-item">
+			<h4 class="attachment-name">
+				<span class="icon-note-paper-2"></span>
+				<a target="_blank" href="https://cdn.intra.42.fr/pdf/pdf/1515/get_started.fr.pdf">Get Started</a>
+			</h4>
+		</div>
+	</div>
+</div>
+
+</div>
+<form class="simple_form form-horizontal" novalidate="novalidate" id="edit_scale_team_ft_ls"
+	action=""
+	accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method"
+		value="patch"><input type="hidden" name="authenticity_token" value="">
+	<div class="scale-section-answers col-sm-12 scale-div">
+		<section class="scale-section-item dancer from-down" id="section-preliminaries">
+			<div class="section-header">
+				<h3 class="font-weight-bold mb-1">Preliminaries</h3>
+				<p class="font-italic">Basic requirements</p>
+			</div>
+			<h4 class="scale-question-name">Basic requirements</h4>
+			<p class="scale-section-guidelines"></p>
+			<p>Verify the following points:</p>
+			<ul>
+				<li>The author file exists</li>
+				<li>Your project must respect the Norm</li>
+				<li>There are no forbidden functions in the reviewed source code</li>
+				<li>The Makefile must be present and must contain the following rules: all, clean, fclean and re. They must be fully functional and correctly implemented</li>
+				<li>No memory leaks</li>
+			</ul>
+			<p>If one of those points is not respected, this evaluation is over. Set the correct flag, and finish the evaluation. Nonetheless, you can continue it for pedagogical purpose, but no points should be counted.</p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][0][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="1"
+							name="[scale_team][answers_attributes][0][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<input type="radio" name="[scale_team][answers_attributes][0][value]" id="yes_0" value="1" class="btn-input">
+					<label for="yes_0" class="btn btn-yes">Yes</label>
+					<input type="radio" name="[scale_team][answers_attributes][0][value]" id="no_0" value="0" class="btn-input" checked>
+					<label for="no_0" class="btn btn-no">No</label>
+				</div>
+			</div>
+		</section>
+
+		<section class="scale-section-item dancer from-down" id="section-basic-tests">
+			<div class="section-header">
+				<h3 class="font-weight-bold mb-1">Tests</h3>
+				<p class="font-italic">Basic Tests</p>
+			</div>
+			<h4 class="scale-question-name">Basic Tests</h4>
+			<p class="scale-section-guidelines"></p>
+			<p>As explained in the subject, an identical display is expected, except for ACL, extended attributes, and row formatting display (considered as bonuses). Perform the following tests:</p>
+			<ul>
+				<li><strong>ls</strong> [+1pts]</li>
+				<li><strong>ls -a</strong> [+1pts]</li>
+				<li><strong>ls -l</strong> [+2pts]</li>
+				<li>Check that symbolic link display is accurate [+1pts]</li>
+			</ul>
+			<p>We will accept different padding for "-l" option but all the relevant information must be displayed. You must first perform the test with no arguments, then with a file and finally with a folder.</p>
+			<p><strong>Rate it from 0 (failed) through 5 (excellent)</strong></p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][1][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="2"
+							name="[scale_team][answers_attributes][1][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<select name="[scale_team][answers_attributes][1][value]" class="form-control">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+		</section>
+
+		<section class="scale-section-item dancer from-down" id="section-basic-tests-plus">
+			<div class="section-header">
+				<h3 class="font-weight-bold mb-1">Tests</h3>
+				<p class="font-italic">Basic Tests ++</p>
+			</div>
+			<h4 class="scale-question-name">Basic Tests ++</h4>
+			<p class="scale-section-guidelines"></p>
+			<p>Perform the following tests:</p>
+			<ul>
+				<li><strong>ls -r</strong> [+1pts]</li>
+				<li><strong>ls -t</strong> [+1pts]</li>
+				<li>Test <strong>ls -r</strong> with several files/folders as parameter [+1pts]</li>
+				<li>Test <strong>ls -t</strong> with several files/folders as parameter [+1pts]</li>
+				<li>Test setuid/setgid/sticky bit [+1pts]</li>
+			</ul>
+			<p><strong>Rate it from 0 (failed) through 5 (excellent)</strong></p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][2][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="3"
+							name="[scale_team][answers_attributes][2][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<select name="[scale_team][answers_attributes][2][value]" class="form-control">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+		</section>
+
+		<section class="scale-section-item dancer from-down" id="section-middle-tests">
+			<div class="section-header">
+				<h3 class="font-weight-bold mb-1">Tests</h3>
+				<p class="font-italic">Middle Tests</p>
+			</div>
+			<h4 class="scale-question-name">Middle Tests</h4>
+			<p class="scale-section-guidelines"></p>
+			<p>Perform the following tests:</p>
+			<ul>
+				<li><strong>ls -R</strong> [+2pts]</li>
+				<li>Multiple option management: parsing and form ("-l -t" for en. as well as "-lt") [+2pts]</li>
+				<li>Multiple option management: accurate display [+1pts]</li>
+			</ul>
+			<p><strong>Rate it from 0 (failed) through 5 (excellent)</strong></p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][3][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="4"
+							name="[scale_team][answers_attributes][3][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<select name="[scale_team][answers_attributes][3][value]" class="form-control">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+		</section>
+
+		<section class="scale-section-item dancer from-down" id="section-error-management">
+			<div class="section-header">
+				<h3 class="font-weight-bold mb-1">Tests</h3>
+				<p class="font-italic">Error Management</p>
+			</div>
+			<h4 class="scale-question-name">Error Management</h4>
+			<p class="scale-section-guidelines"></p>
+			<p>Perform the following tests:</p>
+			<ul>
+				<li>Nonexistent file/folder [+1pts]</li>
+				<li>Inaccessible file/folder [+1pts]</li>
+				<li>Unmanaged or nonexistent option [+3pts]</li>
+			</ul>
+			<p><strong>Rate it from 0 (failed) through 5 (excellent)</strong></p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][4][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="5"
+							name="[scale_team][answers_attributes][4][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<select name="[scale_team][answers_attributes][4][value]" class="form-control">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+		</section>
+
+		<section class="scale-section-item dancer from-down" id="section-bonus">
+			<div class="section-header">
+				<h3 class="font-weight-bold mb-1">Bonus</h3>
+				<p class="font-italic">This part should be graded only if the mandatory part is complete and flawless.</p>
+			</div>
+			<h4 class="scale-question-name">ACL/Attributes</h4>
+			<p class="scale-section-guidelines"></p>
+			<p>Is it implemented?</p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][5][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="6"
+							name="[scale_team][answers_attributes][5][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<input type="radio" name="[scale_team][answers_attributes][5][value]" id="yes_1" value="1" class="btn-input">
+					<label for="yes_1" class="btn btn-yes">Yes</label>
+					<input type="radio" name="[scale_team][answers_attributes][5][value]" id="no_1" value="0" class="btn-input" checked>
+					<label for="no_1" class="btn btn-no">No</label>
+				</div>
+			</div>
+
+			<h4 class="scale-question-name">Row formatting display</h4>
+			<p class="scale-section-guidelines"></p>
+			<p>Is it implemented?</p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][6][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="7"
+							name="[scale_team][answers_attributes][6][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<input type="radio" name="[scale_team][answers_attributes][6][value]" id="yes_2" value="1" class="btn-input">
+					<label for="yes_2" class="btn btn-yes">Yes</label>
+					<input type="radio" name="[scale_team][answers_attributes][6][value]" id="no_2" value="0" class="btn-input" checked>
+					<label for="no_2" class="btn btn-no">No</label>
+				</div>
+			</div>
+
+			<h4 class="scale-question-name">Speed bonus</h4>
+			<p class="scale-section-guidelines"></p>
+			<p>Assess the speed of your ls compared to the system's. Time the result of <strong>ls -lR /</strong> using the command <strong>time</strong>.</p>
+			<ul>
+				<li>0: very slow</li>
+				<li>5: as fast</li>
+			</ul>
+			<p><strong>Rate it from 0 (failed) through 5 (excellent)</strong></p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][7][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="8"
+							name="[scale_team][answers_attributes][7][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<select name="[scale_team][answers_attributes][7][value]" class="form-control">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+
+			<h4 class="scale-question-name">Options Bonus</h4>
+			<p class="scale-section-guidelines"></p>
+			<p>Assess the number of additional options implemented. 1 point for each additional option that are 100% functional.</p>
+			<p><strong>Rate it from 0 (failed) through 5 (excellent)</strong></p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][8][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="9"
+							name="[scale_team][answers_attributes][8][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<select name="[scale_team][answers_attributes][8][value]" class="form-control">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+		</section>
+	</div>
+</form>

@@ -1,0 +1,363 @@
+<h3 class="font-weight-bold mb-1">Introduction</h3>
+<p>
+	Please respect the following rules:<br><br>
+	- Remain polite, courteous, respectful and constructive throughout the correction process. The well-being of the
+	community depends on it.<br><br>
+	- Identify with the person (or the group) graded the eventual dysfunctions of the work. Take the time to discuss and
+	debate the problems you have identified.<br><br>
+	- You must consider that there might be some difference in how your peers might have understood the project's
+	instructions and the scope of its functionalities. Always keep an open mind and grade him/her as honestly as
+	possible. The pedagogy is valid only if peer-evaluation is conducted seriously.
+</p>
+
+<div class="p-0 scale-guidelines dancer from-down">
+	<h3 class="font-weight-bold mb-1">Guidelines</h3>
+	<p>
+		- Only grade the work that is in the student or group's GiT repository.<br><br>
+		- Double-check that the GiT repository belongs to the student or the group. Ensure that the work is for the
+		relevant project and also check that "git clone" is used in an empty folder.<br><br>
+		- Check carefully and make sure you evaluate something other than the content of the official repository. Verify
+		meticulously that no malicious aliases were used to fool you.<br><br>
+		- To avoid any surprises, carefully check that both the correcting and the corrected students have reviewed the
+		possible scripts used to facilitate the grading.<br><br>
+		- If the correcting student has not completed that particular project yet, it is mandatory for this student to
+		read the entire subject prior to starting the defence.<br><br>
+		- Use the flags available on this scale to signal an empty repository, non-functioning program, cheating etc. In
+		these cases, the grading is over and the final grade is 0 (or -42 in case of cheating). However, with the
+		exception of cheating, you are encouraged to continue to discuss your work (even if you have not finished it) in
+		order to identify any issues that may have caused this failure and avoid repeating the same mistake in the
+		future.
+	</p>
+</div>
+
+<hr>
+
+<div class="dancer from-down">
+	<h3 class="font-weight-bold mb-1">Attachments</h3>
+	<div class="project-attachments-list">
+		<div class="project-attachment-item">
+			<h4 class="attachment-name">
+				<span class="icon-file"></span>
+				<a target="_blank" href="https://cdn.intra.42.fr/pdf/pdf/176491/en.subject.pdf">Subject</a>
+			</h4>
+		</div>
+	</div>
+</div>
+
+<hr>
+
+<section class="scale-section-item dancer from-down">
+	<div class="section-header">
+		<h3 class="font-weight-bold mb-1">Preliminaries</h3>
+		<p class="font-italic">If cheating is suspected, the evaluation stops here. Use the "Cheat" flag to report it.
+		</p>
+	</div>
+
+	<h4 class="scale-question-name">Initial Checks</h4>
+	<p class="scale-section-guidelines">First, check that the following is true:</p>
+	<ul>
+		<li>Something has been uploaded to the GiT repository.</li>
+		<li>There are valid Makefiles with the usual rules where appropriate.</li>
+		<li>If any source file is read (read(), fread(), etc...) in any of the source files, this is considered
+			cheating. In this case, select the CHEAT flag.</li>
+		<li>The use of argc/argv is strictly forbidden. If used, select the CHEAT flag.</li>
+	</ul>
+	<p><strong>If any of the above is not true, the defence ends.</strong></p>
+
+	<div class="btn-group block">
+		<input type="radio" name="preliminary_checks" id="preliminary_yes" value="1" class="btn-input">
+		<label for="preliminary_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="preliminary_checks" id="preliminary_no" value="0" class="btn-input" checked>
+		<label for="preliminary_no" class="btn btn-no">No</label>
+	</div>
+</section>
+
+<hr>
+
+<section class="scale-section-item dancer from-down">
+	<div class="section-header">
+		<h3 class="font-weight-bold mb-1">Colleen</h3>
+	</div>
+
+	<h4 class="scale-question-name">Source Code Examination</h4>
+	<p class="scale-section-guidelines">Examine the source code. Make sure it follows the following restrictions:</p>
+	<ul>
+		<li>Two comments as specified in the subject, including a comment within a function.</li>
+		<li>A function in addition to main().</li>
+		<li>A call to that function from main().</li>
+	</ul>
+
+	<div class="btn-group block">
+		<input type="radio" name="colleen_source" id="colleen_source_yes" value="1" class="btn-input">
+		<label for="colleen_source_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="colleen_source" id="colleen_source_no" value="0" class="btn-input" checked>
+		<label for="colleen_source_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">Compilation & Checking</h4>
+	<p class="scale-section-guidelines">Run <code>make</code>. Once compiled (verify the executable is named correctly),
+		run the following command:<br><br>
+		<code>./Colleen > tmp_Colleen; diff tmp_Colleen Colleen.c</code><br><br>
+		If there were any errors (diff output), the correction ends here.
+	</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="colleen_compilation" id="colleen_compilation_yes" value="1" class="btn-input">
+		<label for="colleen_compilation_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="colleen_compilation" id="colleen_compilation_no" value="0" class="btn-input" checked>
+		<label for="colleen_compilation_no" class="btn btn-no">No</label>
+	</div>
+</section>
+
+<hr>
+
+<section class="scale-section-item dancer from-down">
+	<div class="section-header">
+		<h3 class="font-weight-bold mb-1">Grace</h3>
+	</div>
+
+	<h4 class="scale-question-name">Source Code Examination</h4>
+	<p class="scale-section-guidelines">Examine the source code. Make sure it follows the following restrictions:</p>
+	<ul>
+		<li>A comment as specified in the subject.</li>
+		<li>No direct functions (main() included).</li>
+		<li>Three defines.</li>
+	</ul>
+
+	<div class="btn-group block">
+		<input type="radio" name="grace_source" id="grace_source_yes" value="1" class="btn-input">
+		<label for="grace_source_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="grace_source" id="grace_source_no" value="0" class="btn-input" checked>
+		<label for="grace_source_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">Compilation & Checking</h4>
+	<p class="scale-section-guidelines">Run <code>make</code>. Once compiled (verify the executable is named correctly),
+		run the following command:<br><br>
+		<code>rm Grace_kid.c; ./Grace ; diff Grace_kid.c Grace.c</code><br><br>
+		If there were any errors (diff output), the correction ends here.
+	</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="grace_compilation" id="grace_compilation_yes" value="1" class="btn-input">
+		<label for="grace_compilation_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="grace_compilation" id="grace_compilation_no" value="0" class="btn-input" checked>
+		<label for="grace_compilation_no" class="btn btn-no">No</label>
+	</div>
+</section>
+
+<hr>
+
+<section class="scale-section-item dancer from-down">
+	<div class="section-header">
+		<h3 class="font-weight-bold mb-1">Sully</h3>
+	</div>
+
+	<h4 class="scale-question-name">Source Code Examination</h4>
+	<p class="scale-section-guidelines">Examine the source code. Make sure it follows the following restrictions:</p>
+	<ul>
+		<li>An integer initialized to 5.</li>
+	</ul>
+
+	<div class="btn-group block">
+		<input type="radio" name="sully_source" id="sully_source_yes" value="1" class="btn-input">
+		<label for="sully_source_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="sully_source" id="sully_source_no" value="0" class="btn-input" checked>
+		<label for="sully_source_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">Compilation & Checking</h4>
+	<p class="scale-section-guidelines">Run <code>make</code>. Once compiled (verify the executable is named correctly),
+		run the following command:<br><br>
+		<code>mkdir -p tmp; cp Sully tmp/; cd tmp/; ./Sully ; ls -al | grep Sully | wc -l</code><br><br>
+		The number displayed on the standard output should be 13.<br><br>
+		Run the following command:<br><br>
+		<code>diff ../Sully.c Sully_5.c ; diff ../Sully.c Sully_4.c ; diff Sully_5.c Sully_0.c</code><br><br>
+		The only difference must be the integer set initially, which is decremented at each step.
+	</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="sully_compilation" id="sully_compilation_yes" value="1" class="btn-input">
+		<label for="sully_compilation_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="sully_compilation" id="sully_compilation_no" value="0" class="btn-input" checked>
+		<label for="sully_compilation_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">Verification</h4>
+	<p class="scale-section-guidelines">Verify that the program does not use arguments for main(). If it does, select
+		the CHEAT flag. The correction ends here.<br><br>
+		Verify that with an initial integer of -1, the program should not do anything. If there are any errors, the
+		correction ends here.</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="sully_verification" id="sully_verification_yes" value="1" class="btn-input">
+		<label for="sully_verification_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="sully_verification" id="sully_verification_no" value="0" class="btn-input" checked>
+		<label for="sully_verification_no" class="btn btn-no">No</label>
+	</div>
+</section>
+
+<hr>
+
+<section class="scale-section-item dancer from-down">
+	<div class="section-header">
+		<h3 class="font-weight-bold mb-1">Colleen ASM</h3>
+	</div>
+
+	<h4 class="scale-question-name">Source Code Examination</h4>
+	<p class="scale-section-guidelines">Examine the source code. Make sure it follows the following restrictions:</p>
+	<ul>
+		<li>Two comments as specified in the subject, including a comment within a function/routine.</li>
+		<li>A function/routine in addition to main.</li>
+		<li>A call to that function/routine from main.</li>
+	</ul>
+
+	<div class="btn-group block">
+		<input type="radio" name="colleen_asm_source" id="colleen_asm_source_yes" value="1" class="btn-input">
+		<label for="colleen_asm_source_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="colleen_asm_source" id="colleen_asm_source_no" value="0" class="btn-input" checked>
+		<label for="colleen_asm_source_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">Compilation & Checking</h4>
+	<p class="scale-section-guidelines">Run <code>make</code>. Once compiled (verify the executable is named correctly),
+		run the following command:<br><br>
+		<code>./Colleen > tmp_Colleen; diff tmp_Colleen Colleen.s</code><br><br>
+		If there were any errors (diff output), the correction ends here.
+	</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="colleen_asm_compilation" id="colleen_asm_compilation_yes" value="1" class="btn-input">
+		<label for="colleen_asm_compilation_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="colleen_asm_compilation" id="colleen_asm_compilation_no" value="0" class="btn-input"
+			checked>
+		<label for="colleen_asm_compilation_no" class="btn btn-no">No</label>
+	</div>
+</section>
+
+<hr>
+
+<section class="scale-section-item dancer from-down">
+	<div class="section-header">
+		<h3 class="font-weight-bold mb-1">Grace ASM</h3>
+	</div>
+
+	<h4 class="scale-question-name">Source Code Examination</h4>
+	<p class="scale-section-guidelines">Examine the source code. Make sure it follows the following restrictions:</p>
+	<ul>
+		<li>A comment as specified in the subject.</li>
+		<li>No direct functions/routines (main included).</li>
+		<li>Three macros.</li>
+	</ul>
+
+	<div class="btn-group block">
+		<input type="radio" name="grace_asm_source" id="grace_asm_source_yes" value="1" class="btn-input">
+		<label for="grace_asm_source_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="grace_asm_source" id="grace_asm_source_no" value="0" class="btn-input" checked>
+		<label for="grace_asm_source_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">Compilation & Checking</h4>
+	<p class="scale-section-guidelines">Run <code>make</code>. Once compiled (verify the executable is named correctly),
+		run the following command:<br><br>
+		<code>rm Grace_kid.s; ./Grace ; diff Grace_kid.s Grace.s</code><br><br>
+		If there were any errors (diff output), the correction ends here.
+	</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="grace_asm_compilation" id="grace_asm_compilation_yes" value="1" class="btn-input">
+		<label for="grace_asm_compilation_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="grace_asm_compilation" id="grace_asm_compilation_no" value="0" class="btn-input"
+			checked>
+		<label for="grace_asm_compilation_no" class="btn btn-no">No</label>
+	</div>
+</section>
+
+<hr>
+
+<section class="scale-section-item dancer from-down">
+	<div class="section-header">
+		<h3 class="font-weight-bold mb-1">Sully ASM</h3>
+	</div>
+
+	<h4 class="scale-question-name">Source Code Examination</h4>
+	<p class="scale-section-guidelines">Examine the source code. Make sure it follows the following restrictions:</p>
+	<ul>
+		<li>An integer/register initialized to 5.</li>
+	</ul>
+
+	<div class="btn-group block">
+		<input type="radio" name="sully_asm_source" id="sully_asm_source_yes" value="1" class="btn-input">
+		<label for="sully_asm_source_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="sully_asm_source" id="sully_asm_source_no" value="0" class="btn-input" checked>
+		<label for="sully_asm_source_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">Compilation & Checking</h4>
+	<p class="scale-section-guidelines">Run <code>make</code>. Once compiled (verify the executable is named correctly),
+		run the following command:<br><br>
+		<code>mkdir -p tmp; cp Sully tmp/; cd tmp/; ./Sully ; ls -al | grep Sully | wc -l</code><br><br>
+		The number displayed on the standard output should be 13.<br><br>
+		Run the following command:<br><br>
+		<code>diff ../Sully.s Sully_5.s ; diff ../Sully.s Sully_4.s ; diff Sully_5.s Sully_0.s</code><br><br>
+		The only difference must be the integer/register set initially, which is decremented at each step.
+	</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="sully_asm_compilation" id="sully_asm_compilation_yes" value="1" class="btn-input">
+		<label for="sully_asm_compilation_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="sully_asm_compilation" id="sully_asm_compilation_no" value="0" class="btn-input"
+			checked>
+		<label for="sully_asm_compilation_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">Verification</h4>
+	<p class="scale-section-guidelines">Verify that the program does not use arguments for main. If it does, select the
+		CHEAT flag. The correction ends here.<br><br>
+		Verify that with an initial integer/register with value of -1, the program should not do anything. If there are
+		any errors, the correction ends here.</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="sully_asm_verification" id="sully_asm_verification_yes" value="1" class="btn-input">
+		<label for="sully_asm_verification_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="sully_asm_verification" id="sully_asm_verification_no" value="0" class="btn-input"
+			checked>
+		<label for="sully_asm_verification_no" class="btn btn-no">No</label>
+	</div>
+</section>
+
+<hr>
+
+<section class="scale-section-item dancer from-down">
+	<div class="section-header">
+		<h3 class="font-weight-bold mb-1">Bonus</h3>
+		<p class="font-italic">Only grade the bonus section if ALL previous cases are PERFECT.</p>
+	</div>
+
+	<h4 class="scale-question-name">Bonus</h4>
+	<p class="scale-section-guidelines">You may only count the bonus if all three quines were recoded in another
+		language and all pass the test cases specified above.</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="bonus" id="bonus_yes" value="1" class="btn-input">
+		<label for="bonus_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="bonus" id="bonus_no" value="0" class="btn-input" checked>
+		<label for="bonus_no" class="btn btn-no">No</label>
+	</div>
+</section>

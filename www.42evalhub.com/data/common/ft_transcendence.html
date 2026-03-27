@@ -1,0 +1,872 @@
+<div class="container-item scale-team-container">
+	<div class="row mt-4">
+		<div class="scale-section-infos col-sm-12 scale-div">
+			<h3 class="font-weight-bold mb-1">Introduction</h3>
+			<p>Please comply with the following rules:<br><br>- Remain polite, courteous, respectful and constructive
+				throughout the<br>evaluation process. The well-being of the community depends on it.<br><br>- Identify
+				with the student or group whose work is evaluated the possible<br>dysfunctions in their project. Take
+				the time to discuss and debate the<br>problems that may have been identified.<br><br>- You must consider
+				that there may be differences in how your peers have<br>understood the project's instructions and the
+				scope of its functionalities.<br>Always keep an open mind and grade them as honestly as possible.<br>The
+				pedagogy is only effective if the peer evaluation is done seriously.</p>
+
+			<hr>
+			<h3 class="font-weight-bold mb-1">Guidelines</h3>
+			<p>- Only grade the work that is in the Git repository of the evaluated<br>student or group.<br><br>- Verify
+				each step carefully and test thoroughly.<br><br>- The project must reach at least 14 module points to
+				pass.<br><br>- Check the <a target="_blank" href="https://www.youtube.com/watch?v=xvFZjo5PgG0">README.md</a> for the list of chosen
+				modules and their justifications.<br><br>- All team members must be present and participate in the
+				review.<br><br>- Double-check that the Git repository belongs to the student(s). Ensure that<br>the
+				project is the one expected. Also, check that 'git clone' is used in an<br>empty folder.<br><br>- Check
+				carefully that no malicious aliases was used to fool you and make you<br>evaluate something that is not
+				the content of the official repository.<br><br>- To avoid any surprises and if applicable, review
+				together any scripts used<br>to facilitate the grading (scripts for testing or automation).<br><br>- If
+				you have not completed the assignment you are going to evaluate, you have<br>to read the entire subject
+				prior to starting the evaluation process.<br><br>- Use the available flags to report an empty
+				repository, a non-functioning<br>program, a Norm error, cheating, and so forth.<br>In these cases, the
+				evaluation process ends and the final grade is 0,<br>or -42 in case of cheating. However, except for
+				cheating, students are<br>strongly encouraged to review together the work that was turned in, in
+				order<br>to identify any mistakes that shouldn't be repeated in the future.</p>
+
+			<hr>
+			<h3 class="font-weight-bold mb-1">Attachments</h3>
+			<div class="project-attachments-list">
+				<div class="project-attachment-item">
+					<h4 class="attachment-name">
+						<span class="icon-file"></span>
+						<a target="_blank" href="https://cdn.intra.42.fr/pdf/pdf/199868/en.subject.pdf">subject.pdf</a>
+					</h4>
+				</div>
+			</div>
+		</div>
+		<form class="simple_form form-horizontal" novalidate="novalidate" id="edit_scale_team" action=""
+			accept-charset="UTF-8" method="post">
+			<div class="scale-section-answers col-sm-12 scale-div">
+				<section class="scale-section-item dancer from-down" id="section-preliminaries">
+					<div class="section-header">
+						<h3 class="font-weight-bold mb-1">Preliminaries</h3>
+						<p class="font-italic">Verify team presence, roles, and project understanding before proceeding
+							with technical evaluation.</p>
+					</div>
+					<h4 class="scale-question-name">Team Presence</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Verify that ALL team members (4-5 people) are present for the evaluation.</p>
+					<p>Are all team members present? If not all members are present, the review stop here.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][0][value]" id="yes_0" value="1"
+								class="btn-input">
+							<label for="yes_0" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][0][value]" id="no_0" value="0"
+								class="btn-input" checked>
+							<label for="no_0" class="btn btn-no">No</label>
+						</div>
+					</div>
+
+					<h4 class="scale-question-name">Individual Contributions</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Ask EACH team member individually to explain:</p>
+					<ul>
+						<li>Their role in the project (PO, PM, Tech Lead, Developer)</li>
+						<li>Their specific contributions and what they worked on</li>
+						<li>At least one feature or module they personally implemented</li>
+					</ul>
+					<p>Can each team member clearly explain their role and contributions? If any team member cannot
+						explain their role or contributions, this indicates a problem with team collaboration and
+						individual participation.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][1][value]" id="yes_1" value="1"
+								class="btn-input">
+							<label for="yes_1" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][1][value]" id="no_1" value="0"
+								class="btn-input" checked>
+							<label for="no_1" class="btn btn-no">No</label>
+						</div>
+					</div>
+
+					<h4 class="scale-question-name">README Verification</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Verify the <a target="_blank" href="https://www.youtube.com/watch?v=xvFZjo5PgG0">README.md</a> contains ALL required
+						sections:</p>
+					<ul>
+						<li>Project name and description</li>
+						<li>Team members with assigned roles (PO, PM, Tech Lead, Developers)</li>
+						<li>Project management approach (how work was organized)</li>
+						<li>Technologies used with justifications</li>
+						<li>Database schema</li>
+						<li>List of features and who implemented them</li>
+						<li>Chosen modules with justifications and point calculation</li>
+						<li>Individual contributions of each member</li>
+					</ul>
+					<p>Is the <a target="_blank" href="https://www.youtube.com/watch?v=xvFZjo5PgG0">README.md</a> complete with all required
+						sections? A missing or incomplete README will significantly impact the evaluation.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][2][value]" id="yes_2" value="1"
+								class="btn-input">
+							<label for="yes_2" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][2][value]" id="no_2" value="0"
+								class="btn-input" checked>
+							<label for="no_2" class="btn btn-no">No</label>
+						</div>
+					</div>
+
+					<h4 class="scale-question-name">Project Coherence</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Ask at least two different team members to explain:</p>
+					<ul>
+						<li>The project concept and what it does</li>
+						<li>The main technologies used and why</li>
+						<li>How the team coordinated the work</li>
+					</ul>
+					<p>Can different team members explain the project coherently? This verifies that all team members
+						understand the project as a whole, not just their individual parts.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][3][value]" id="yes_3" value="1"
+								class="btn-input">
+							<label for="yes_3" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][3][value]" id="no_3" value="0"
+								class="btn-input" checked>
+							<label for="no_3" class="btn btn-no">No</label>
+						</div>
+					</div>
+
+					<h4 class="scale-question-name">Git History</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Verify team collaboration in Git:</p>
+					<ul>
+						<li>Repository shows commits from all team members</li>
+						<li>Commit messages are clear and meaningful</li>
+						<li>Work is distributed among team members</li>
+					</ul>
+					<p>Ask a team member to show the commit history. Does the Git history show proper team
+						collaboration? The Git history should reflect genuine teamwork, not just one person committing
+						everyone's work.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][4][value]" id="yes_4" value="1"
+								class="btn-input">
+							<label for="yes_4" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][4][value]" id="no_4" value="0"
+								class="btn-input" checked>
+							<label for="no_4" class="btn btn-no">No</label>
+						</div>
+					</div>
+				</section>
+				<section class="scale-section-item dancer from-down" id="section-general">
+					<div class="section-header">
+						<hr>
+						<h3 class="font-weight-bold mb-1">General Requirements</h3>
+						<p class="font-italic">Verify the mandatory technical requirements are met.</p>
+					</div>
+					<h4 class="scale-question-name">Architecture Components</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Does the project have all three required components:</p>
+					<ul>
+						<li>Frontend</li>
+						<li>Backend</li>
+						<li>Database</li>
+					</ul>
+					<p>Ask different team members to briefly explain each component. All three components must be
+						present and functional for the project to be considered complete.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][5][value]" id="yes_5" value="1"
+								class="btn-input">
+							<label for="yes_5" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][5][value]" id="no_5" value="0"
+								class="btn-input" checked>
+							<label for="no_5" class="btn btn-no">No</label>
+						</div>
+					</div>
+
+					<h4 class="scale-question-name">Deployment</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Can the entire application be deployed with a containerization solution (Docker, Podman, etc.)
+						using a single command?</p>
+					<p>Ask a team member to demonstrate the deployment. The deployment should be straightforward and
+						work without manual intervention. Verify that all services start correctly and the application
+						is accessible.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][6][value]" id="yes_6" value="1"
+								class="btn-input">
+							<label for="yes_6" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][6][value]" id="no_6" value="0"
+								class="btn-input" checked>
+							<label for="no_6" class="btn btn-no">No</label>
+						</div>
+					</div>
+
+					<h4 class="scale-question-name">Browser Compatibility</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Does the application run on the latest stable Google Chrome without errors or warnings in the
+						console?</p>
+					<p>Open Chrome DevTools and verify the console. There should be no errors or warnings visible in the
+						browser console. Minor warnings from third-party libraries may be acceptable if explained.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][7][value]" id="yes_7" value="1"
+								class="btn-input">
+							<label for="yes_7" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][7][value]" id="no_7" value="0"
+								class="btn-input" checked>
+							<label for="no_7" class="btn btn-no">No</label>
+						</div>
+					</div>
+
+					<h4 class="scale-question-name">Privacy Policy and Terms of Service</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Are both Privacy Policy and Terms of Service pages accessible and contain relevant content?</p>
+					<p>These pages must:</p>
+					<ul>
+						<li>Be easily accessible from the application (e.g., footer links)</li>
+						<li>Contain relevant and appropriate content for the project</li>
+						<li>Not be placeholder or empty pages</li>
+					</ul>
+					<p>Missing or inadequate Privacy Policy/Terms of Service pages will result in project rejection.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][8][value]" id="yes_8" value="1"
+								class="btn-input">
+							<label for="yes_8" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][8][value]" id="no_8" value="0"
+								class="btn-input" checked>
+							<label for="no_8" class="btn btn-no">No</label>
+						</div>
+					</div>
+				</section>
+				<section class="scale-section-item dancer from-down" id="section-technical">
+					<div class="section-header">
+						<hr>
+						<h3 class="font-weight-bold mb-1">Technical Requirements</h3>
+						<p class="font-italic">Verify the technical implementation meets the mandatory requirements.</p>
+					</div>
+					<h4 class="scale-question-name">Frontend Responsiveness</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Is the frontend clear, responsive, and accessible across different devices?</p>
+					<p>Test on at least two different screen sizes (desktop and mobile/tablet). The interface should
+						adapt properly to different screen sizes and remain usable on both desktop and mobile devices.
+					</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][9][value]" id="yes_9" value="1"
+								class="btn-input">
+							<label for="yes_9" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][9][value]" id="no_9" value="0"
+								class="btn-input" checked>
+							<label for="no_9" class="btn btn-no">No</label>
+						</div>
+					</div>
+
+					<h4 class="scale-question-name">Styling Solution</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Is a CSS framework or styling solution used? Examples: Tailwind CSS, Bootstrap, Material-UI,
+						Styled Components, etc.</p>
+					<p>Ask a team member to show examples of its usage in the code. The project must use a modern CSS
+						framework or styling solution. Plain CSS alone is not sufficient.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][10][value]" id="yes_10" value="1"
+								class="btn-input">
+							<label for="yes_10" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][10][value]" id="no_10" value="0"
+								class="btn-input" checked>
+							<label for="no_10" class="btn btn-no">No</label>
+						</div>
+					</div>
+
+					<h4 class="scale-question-name">Environment Variables</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Are credentials properly secured:</p>
+					<ul>
+						<li>.env file exists and is in .gitignore</li>
+						<li>.env.example file is provided</li>
+						<li>No sensitive credentials in the repository</li>
+					</ul>
+					<p>Verify these security practices are followed. Any credentials, API keys, or sensitive information
+						found in the repository (outside of .env) will result in immediate project failure.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][11][value]" id="yes_11" value="1"
+								class="btn-input">
+							<label for="yes_11" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][11][value]" id="no_11" value="0"
+								class="btn-input" checked>
+							<label for="no_11" class="btn btn-no">No</label>
+						</div>
+					</div>
+
+					<h4 class="scale-question-name">Database Design</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Does the database have a clear schema with well-defined relations?</p>
+					<p>Ask a team member to show and explain the database schema (from README or directly). The database
+						should be properly structured with clear relationships between tables/collections.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][12][value]" id="yes_12" value="1"
+								class="btn-input">
+							<label for="yes_12" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][12][value]" id="no_12" value="0"
+								class="btn-input" checked>
+							<label for="no_12" class="btn btn-no">No</label>
+						</div>
+					</div>
+
+					<h4 class="scale-question-name">Authentication Security</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Does the user management system provide secure authentication with:</p>
+					<ul>
+						<li>Email and password signup/login</li>
+						<li>Properly hashed and salted passwords</li>
+					</ul>
+					<p>Ask the team to explain their password security implementation. Passwords must never be stored in
+						plain text. The team should be able to explain their hashing/salting approach.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][13][value]" id="yes_13" value="1"
+								class="btn-input">
+							<label for="yes_13" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][13][value]" id="no_13" value="0"
+								class="btn-input" checked>
+							<label for="no_13" class="btn btn-no">No</label>
+						</div>
+					</div>
+
+					<h4 class="scale-question-name">Form Validation</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Are all forms and user inputs validated in both frontend AND backend?</p>
+					<p>Test with invalid inputs (empty fields, wrong formats, SQL injection attempts, XSS attempts,
+						etc.) to verify validation. Both client-side and server-side validation must be present.
+						Server-side validation is critical for security.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][14][value]" id="yes_14" value="1"
+								class="btn-input">
+							<label for="yes_14" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][14][value]" id="no_14" value="0"
+								class="btn-input" checked>
+							<label for="no_14" class="btn btn-no">No</label>
+						</div>
+					</div>
+
+					<h4 class="scale-question-name">Secure Connections</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Is HTTPS used for all backend connections?</p>
+					<p>Verify the connection is secure (check browser address bar). All communication between frontend
+						and backend must be encrypted using HTTPS.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][15][value]" id="yes_15" value="1"
+								class="btn-input">
+							<label for="yes_15" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][15][value]" id="no_15" value="0"
+								class="btn-input" checked>
+							<label for="no_15" class="btn btn-no">No</label>
+						</div>
+					</div>
+				</section>
+				<section class="scale-section-item dancer from-down" id="section-modules">
+					<div class="section-header">
+						<hr>
+						<h3 class="font-weight-bold mb-1">Modules Verification</h3>
+						<p class="font-italic">Verify the chosen modules are properly implemented and reach the required
+							14 points minimum.</p>
+					</div>
+					<h4 class="scale-question-name">Module Points</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Review the <a target="_blank" href="https://www.youtube.com/watch?v=xvFZjo5PgG0">README.md</a> modules section:</p>
+					<ul>
+						<li>List all claimed modules (Major = 2pts, Minor = 1pt)</li>
+						<li>Calculate the total points</li>
+					</ul>
+					<p>Does the project claim at least 14 points from modules? The team must have selected modules
+						totaling at least 14 points. This is verified in the README before testing the actual
+						implementation.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][16][value]" id="yes_16" value="1"
+								class="btn-input">
+							<label for="yes_16" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][16][value]" id="no_16" value="0"
+								class="btn-input" checked>
+							<label for="no_16" class="btn btn-no">No</label>
+						</div>
+					</div>
+					<h4 class="scale-question-name">Major Modules</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>For EACH Major module (2 points) claimed:</p>
+					<ul>
+						<li>Ask the team to demonstrate it</li>
+						<li>Verify it's fully implemented and functional</li>
+						<li>Check it meets Major module complexity requirements</li>
+						<li>Confirm it adds real value to the project</li>
+						<li>Verify module dependencies are met (e.g., gaming modules require a game)</li>
+					</ul>
+					<p>Are all claimed Major modules properly implemented and functional? IMPORTANT: Only count working
+						modules. Non-functional or incomplete modules = 0 points. You must verify EACH major module
+						individually. A module that doesn't work or doesn't meet the requirements specified in the
+						subject PDF gets 0 points.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][17][value]" id="yes_17" value="1"
+								class="btn-input">
+							<label for="yes_17" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][17][value]" id="no_17" value="0"
+								class="btn-input" checked>
+							<label for="no_17" class="btn btn-no">No</label>
+						</div>
+					</div>
+
+					<h4 class="scale-question-name">Minor Modules</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>For EACH Minor module (1 point) claimed:</p>
+					<ul>
+						<li>Ask the team to demonstrate it</li>
+						<li>Verify it's fully implemented and functional</li>
+						<li>Check it adds meaningful value to the project</li>
+						<li>Verify module dependencies are met</li>
+					</ul>
+					<p>Are all claimed Minor modules properly implemented and functional? IMPORTANT: Only count working
+						modules. Non-functional or incomplete modules = 0 points. You must verify EACH minor module
+						individually. A module that doesn't work or doesn't meet the requirements specified in the
+						subject PDF gets 0 points.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][18][value]" id="yes_18" value="1"
+								class="btn-input">
+							<label for="yes_18" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][18][value]" id="no_18" value="0"
+								class="btn-input" checked>
+							<label for="no_18" class="btn btn-no">No</label>
+						</div>
+					</div>
+
+					<h4 class="scale-question-name">Modules of Choice</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>If custom "Modules of choice" are claimed:</p>
+					<ul>
+						<li>Verify proper justification in README explaining:
+							<ul>
+								<li>Why they chose this module</li>
+								<li>What technical challenges it addresses</li>
+								<li>How it adds value to the project</li>
+								<li>Why it deserves Major/Minor status</li>
+							</ul>
+						</li>
+						<li>Confirm it's not a shortcut (must demonstrate technical complexity)</li>
+						<li>Check relevance to project context</li>
+						<li>Ensure technical skill is demonstrated</li>
+					</ul>
+					<p>Are custom modules properly justified and implemented? Custom modules must be substantial and
+						demonstrate real technical skill. Trivial features or shortcuts will not be accepted.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][19][value]" id="yes_19" value="1"
+								class="btn-input">
+							<label for="yes_19" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][19][value]" id="no_19" value="0"
+								class="btn-input" checked>
+							<label for="no_19" class="btn btn-no">No</label>
+						</div>
+					</div>
+				</section>
+				<section class="scale-section-item dancer from-down" id="section-quality">
+					<div class="section-header">
+						<hr>
+						<h3 class="font-weight-bold mb-1">Code Quality</h3>
+						<p class="font-italic">Assess the overall code quality, organization, and team understanding.
+						</p>
+					</div>
+					<h4 class="scale-question-name">Code Structure</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Is the code reasonably well-organized and readable?</p>
+					<ul>
+						<li>Clear file/folder structure</li>
+						<li>Code is understandable</li>
+						<li>No major code quality issues</li>
+						<li>Consistent coding style</li>
+					</ul>
+					<p>Review some code files to assess organization. The code doesn't need to be perfect, but it should
+						be organized and maintainable. Major code quality issues may indicate problems.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][20][value]" id="yes_20" value="1"
+								class="btn-input">
+							<label for="yes_20" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][20][value]" id="no_20" value="0"
+								class="btn-input" checked>
+							<label for="no_20" class="btn btn-no">No</label>
+						</div>
+					</div>
+
+					<h4 class="scale-question-name">Technical Decisions</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Can the team explain their technical choices? Ask about:</p>
+					<ul>
+						<li>Why they chose their tech stack</li>
+						<li>How they structured the application</li>
+						<li>Challenges faced and solutions implemented</li>
+						<li>Trade-offs made during development</li>
+					</ul>
+					<p>Does the team demonstrate understanding of their project? The team should be able to justify
+						their technical decisions and demonstrate understanding of the technologies they used.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][21][value]" id="yes_21" value="1"
+								class="btn-input">
+							<label for="yes_21" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][21][value]" id="no_21" value="0"
+								class="btn-input" checked>
+							<label for="no_21" class="btn btn-no">No</label>
+						</div>
+					</div>
+
+					<h4 class="scale-question-name">Teamwork Evidence</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Is there evidence of effective teamwork?</p>
+					<ul>
+						<li>All members contributed (check Git history)</li>
+						<li>Team members can explain each other's work</li>
+						<li>Work appears coordinated and integrated</li>
+						<li>README shows clear work distribution</li>
+						<li>No single person did all the work</li>
+					</ul>
+					<p>Does the project demonstrate effective team collaboration? This is a group project. All members
+						must have contributed meaningfully.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][22][value]" id="yes_22" value="1"
+								class="btn-input">
+							<label for="yes_22" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][22][value]" id="no_22" value="0"
+								class="btn-input" checked>
+							<label for="no_22" class="btn btn-no">No</label>
+						</div>
+					</div>
+				</section>
+				<section class="scale-section-item dancer from-down" id="section-functionality">
+					<div class="section-header">
+						<hr>
+						<h3 class="font-weight-bold mb-1">Functionality</h3>
+						<p class="font-italic">Test the overall functionality and stability of the application.</p>
+					</div>
+					<h4 class="scale-question-name">Stability and Functionality</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Is the application functional and reasonably stable?</p>
+					<ul>
+						<li>No critical bugs or crashes during demonstration</li>
+						<li>Main features work as expected</li>
+						<li>Basic error handling is present</li>
+						<li>User experience is acceptable</li>
+						<li>Multi-user support works (multiple users can use the app simultaneously)</li>
+					</ul>
+					<p>Test the main features of the application. The application should be stable enough for a
+						demonstration. Minor bugs are acceptable, but critical failures are not.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][23][value]" id="yes_23" value="1"
+								class="btn-input">
+							<label for="yes_23" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][23][value]" id="no_23" value="0"
+								class="btn-input" checked>
+							<label for="no_23" class="btn btn-no">No</label>
+						</div>
+					</div>
+
+					<h4 class="scale-question-name">Overall Quality</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Does the project demonstrate effort and learning?</p>
+					<ul>
+						<li>Shows understanding of web development concepts</li>
+						<li>Goes beyond minimal requirements</li>
+						<li>Team learned new technologies or concepts</li>
+						<li>Project shows creativity or interesting implementation</li>
+						<li>The project concept is well-executed</li>
+					</ul>
+					<p>Does the project reflect genuine effort and learning? This project is about learning and
+						demonstrating skills. The project should show that the team invested effort and learned.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][24][value]" id="yes_24" value="1"
+								class="btn-input">
+							<label for="yes_24" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][24][value]" id="no_24" value="0"
+								class="btn-input" checked>
+							<label for="no_24" class="btn btn-no">No</label>
+						</div>
+					</div>
+				</section>
+				<section class="scale-section-item dancer from-down" id="section-final">
+					<div class="section-header">
+						<hr>
+						<h3 class="font-weight-bold mb-1">Final Verification</h3>
+						<p class="font-italic">Final checks to ensure the project meets all requirements.</p>
+					</div>
+					<h4 class="scale-question-name">Final Module Count</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Final module score calculation:</p>
+					<ul>
+						<li>Count ONLY the modules that were successfully demonstrated and work properly</li>
+						<li>Major modules = 2 points each</li>
+						<li>Minor modules = 1 point each</li>
+						<li>Non-functional or incomplete modules = 0 points</li>
+					</ul>
+					<p>Does the total of VALIDATED modules reach at least 14 points? CRITICAL: Be fair but strict. Only
+						count modules that actually work and meet the requirements specified in the subject PDF. If the
+						project does not reach 14 points from validated modules, it fails.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][25][value]" id="yes_25" value="1"
+								class="btn-input">
+							<label for="yes_25" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][25][value]" id="no_25" value="0"
+								class="btn-input" checked>
+							<label for="no_25" class="btn btn-no">No</label>
+						</div>
+					</div>
+
+					<h4 class="scale-question-name">Project Success</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>Overall assessment:</p>
+					<ul>
+						<li>Is the mandatory part complete and functional?</li>
+						<li>Did all team members contribute meaningfully?</li>
+						<li>Can the team explain their work and decisions?</li>
+						<li>Does the project meet the subject requirements?</li>
+						<li>Is the README complete and accurate?</li>
+					</ul>
+					<p>Would you consider this a successful group project? This is your final assessment of whether the
+						project meets the standards expected for this assignment.</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="btn-group block">
+							<input type="radio" name="[scale_team][answers_attributes][26][value]" id="yes_26" value="1"
+								class="btn-input">
+							<label for="yes_26" class="btn btn-yes">Yes</label>
+							<input type="radio" name="[scale_team][answers_attributes][26][value]" id="no_26" value="0"
+								class="btn-input" checked>
+							<label for="no_26" class="btn btn-no">No</label>
+						</div>
+					</div>
+				</section>
+				<section class="scale-section-item dancer from-down" id="section-bonus">
+					<div class="section-header">
+						<hr>
+						<h3 class="font-weight-bold mb-1">Bonus</h3>
+						<p class="font-italic">Evaluate the bonus part if, and only if, the mandatory part has been
+							entirely and perfectly done, and the error management handles unexpected or bad usage. In
+							case all the mandatory points were not passed during the defense, bonus points must be
+							totally ignored. Bonus points are awarded for modules beyond the required 14 points. Each
+							additional validated module adds bonus points: Major module = 2 bonus points, Minor module =
+							1 bonus point</p>
+					</div>
+					<h4 class="scale-question-name">Extra Modules</h4>
+					<p class="scale-section-guidelines"></p>
+					<p>You must now verify any extra modules beyond the required 14 points.</p>
+					<p>For each extra module:</p>
+					<ul>
+						<li>Verify it's fully functional</li>
+						<li>Confirm it meets the module requirements from the subject PDF</li>
+						<li>Check that it adds value to the project</li>
+						<li>Ensure proper justification in README</li>
+					</ul>
+					<p>Count the number of extra validated modules:</p>
+					<ul>
+						<li>Major modules = 2 bonus points each</li>
+						<li>Minor modules = 1 bonus point each</li>
+					</ul>
+					<p>A module is considered valid under the following criteria:</p>
+					<ul>
+						<li>There are no issues with the proper functioning of the module</li>
+						<li>It meets all requirements specified in the subject PDF</li>
+						<li>No errors are visible</li>
+						<li>A comprehensive explanation allows for detailed understanding</li>
+					</ul>
+					<p>Bonus points are awarded based on the number of validated extra modules, with a maximum of 5
+						bonus points (e.g. 5 minor modules, or 2 major modules + 1 minor module).</p>
+					<div class="scale-question-answers">
+						<div class="form-group hidden scale_team_answer_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<div class="form-group hidden scale_team_answer_question_id">
+							<div class="col-sm-10"></div>
+						</div>
+						<select name="[scale_team][answers_attributes][27][value]" class="form-control">
+							<option value="0">0 - No bonus modules</option>
+							<option value="1">1 - 1 minor module or partial major</option>
+							<option value="2">2 - 1 major module or 2 minor modules</option>
+							<option value="3">3 - 1 major + 1 minor or 3 minor</option>
+							<option value="4">4 - 2 major modules or equivalent</option>
+							<option value="5">5 - Excellent bonus modules</option>
+						</select>
+					</div>
+				</section>
+			</div>
+	</div>
+	</form>
+</div>
+</div>

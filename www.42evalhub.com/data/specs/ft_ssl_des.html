@@ -1,0 +1,392 @@
+<h3 class="font-weight-bold mb-1">Introduction</h3>
+<p>
+	<br>In order to maintain high evaluation standards, you are expected to:<br><br>
+	- Remain polite, courteous, respectful and constructive at every moment of the discussion. Trust between you and our community depends on your behavior.<br><br>
+	- Highlight the flaws and issues you uncover in the turned-in work to the evaluated student or team, and take the time to discuss every aspect extensively.<br><br>
+	- Please take into account that discrepancies regarding the expected work or functionalities definitions might occur. Keep an open mind towards the opposite party (is he or she right or wrong?), and grade as honestly as possible. 42's pedagogy only makes sense if peer evaluations are carried out seriously.<br>
+</p>
+</div>
+<div class="p-0 scale-guidelines dancer from-down" id="guidelines-ft-ssl-des">
+	<h3 class="font-weight-bold mb-1">Guidelines</h3>
+	<p>
+		<br>- You must grade only what exists in the GiT repository of the student or team.<br><br>
+		- Remember to check the GiT repository's ownership: is it the student's or team's repository, and for the right project?<br><br>
+		- Check thoroughly that no wicked aliases have been used to trick you into grading something other than the genuine repository.<br><br>
+		- Any script supposed to ease the evaluation provided by one party must be thoroughly checked by the other party to avoid unpleasant situations.<br><br>
+		- If the evaluating student hasn't done the project yet, it is mandatory that he or she reads it before starting the evaluation.<br><br>
+		- Use the available flags on this scale to tag an empty work, a non-functional work, a coding style ("norm") error if applicable, cheating, and so on. If a flag is set, the grade is 0 (or -42 in case of cheating). However, except for the cheating case, you are encouraged to carry on discussing what went wrong, why, and how to address it, even if the grading itself is over.<br>
+	</p>
+</div>
+
+<hr>
+<div class="dancer from-down" id="attachments-ft-ssl-des">
+	<h3 class="font-weight-bold mb-1">Attachments</h3>
+	<div class="project-attachments-list">
+	</div>
+
+	<div class="project-attachments-list">
+		<div class="project-attachment-item">
+			<h4 class="attachment-name">
+				<span class="icon-note-paper-2"></span>
+				<a target="_blank" href="https://cdn.intra.42.fr/pdf/pdf/166362/en.subject.pdf">subject.pdf</a>
+			</h4>
+		</div>
+	</div>
+
+</div>
+
+</div>
+<form class="simple_form form-horizontal" novalidate="novalidate" id="edit_scale_team_ft_ssl_des"
+	action=""
+	accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method"
+		value="patch"><input type="hidden" name="authenticity_token" value="">
+	<div class="scale-section-answers col-sm-12 scale-div">
+		<section class="scale-section-item dancer from-down" id="section-ft-ssl-des-1">
+			<div class="section-header">
+				<h3 class="font-weight-bold mb-1">Mandatory Part</h3>
+				<p class="font-italic">The basics. Without mastering them, you are nothing.</p>
+			</div>
+			<h4 class="scale-question-name">Basic Requirements</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Verify the following points:</p>
+
+			<ul>
+				<li>Did they extend the executable from the previous project?</li>
+				<li>When you run <code>./ft_ssl invalid_param</code>, does it show an appropriate error message and display the list of available commands?</li>
+				<li>Are those commands the same as required in the previous project?</li>
+				<li>If you run one of the commands, does it behave as it should?</li>
+			</ul>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][0][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="1"
+							name="[scale_team][answers_attributes][0][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][0][value]" id="yes_0" value="1" class="btn-input">
+
+					<label for="yes_0" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][0][value]" id="no_0" value="0" class="btn-input" checked>
+
+					<label for="no_0" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+
+			<h4 class="scale-question-name">BASE64 Working</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Test their compiled executable against the <code>base64</code> executable, OpenSSL, and itself. You can never be too sure in this line of work.</p>
+
+			<ul>
+				<li><code>echo "repeat after me 'encoding is not encryption'" | base64</code></li>
+				<li><code>echo "repeat after me 'encoding is not encryption'" | ./ft_ssl base64</code></li>
+				<li><code>diff &lt;(echo -n "bac" | openssl base64) &lt;(echo -n "bac" | ./ft_ssl base64)</code></li>
+				<li><code>echo "All your base are belong to us. You have no chance make your time." | ./ft_ssl base64 | ./ft_ssl base64 -d</code></li>
+			</ul>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][1][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="2"
+							name="[scale_team][answers_attributes][1][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][1][value]" id="yes_1" value="1" class="btn-input">
+
+					<label for="yes_1" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][1][value]" id="no_1" value="0" class="btn-input" checked>
+
+					<label for="no_1" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+
+			<h4 class="scale-question-name">BASE64 Flags</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Do they have flags in their base64? Or like, four of them? Because capture the flag is my favorite game.</p>
+
+			<ul>
+				<li><code>echo "best game in the franchise" | ./ft_ssl base64 -e -o "halo1"</code></li>
+				<li><code>./ft_ssl base64 -d -i "halo1"</code></li>
+			</ul>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][2][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="3"
+							name="[scale_team][answers_attributes][2][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][2][value]" id="yes_2" value="1" class="btn-input">
+
+					<label for="yes_2" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][2][value]" id="no_2" value="0" class="btn-input" checked>
+
+					<label for="no_2" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="scale-section-item dancer from-down" id="section-ft-ssl-des-2">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">DES Mandatory</h3>
+				<p class="font-italic">DES-eptively easy!</p>
+			</div>
+			<h4 class="scale-question-name">ECB Mode (Basic Minimum)</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Does the bare minimum, their ECB mode, work? Is the padding correct?</p>
+
+			<ul>
+				<li><code>export DES_KEY="C0FFEE69DEADBEEF"</code></li>
+				<li><code>echo "foobar" | ./ft_ssl des-ecb -k "$DES_KEY" | openssl des-ecb -d -K "$DES_KEY"</code></li>
+				<li><code>echo "foobar" | openssl des-ecb -K "$DES_KEY" | ./ft_ssl des-ecb -d -k "$DES_KEY"</code></li>
+				<li><code>echo "smol" | ./ft_ssl des-ecb -k "$DES_KEY" | openssl des-ecb -d -K "$DES_KEY"</code></li>
+				<li><code>echo "smol" | openssl des-ecb -K "$DES_KEY" | ./ft_ssl des-ecb -d -k "$DES_KEY"</code></li>
+				<li><code>echo "testing the key now" | openssl des-ecb -K "ABCD" | ./ft_ssl des-ecb -d -k "ABCD"</code></li>
+				<li><code>echo "More key tests" | openssl des-ecb -K "FFFFFFFFFFFFFFFF" | ./ft_ssl des-ecb -d -k "FFFFFFFFFFFFFFFF"</code></li>
+				<li><code>echo "what kind of lock takes no key?" | openssl des-ecb -K "00000000" | ./ft_ssl des-ecb -d -k "00000000"</code></li>
+			</ul>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][3][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="4"
+							name="[scale_team][answers_attributes][3][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][3][value]" id="yes_3" value="1" class="btn-input">
+
+					<label for="yes_3" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][3][value]" id="no_3" value="0" class="btn-input" checked>
+
+					<label for="no_3" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+
+			<h4 class="scale-question-name">DES Simple Flags</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>You had to do most of these for base64 so you have no excuse. Come up with your best test cases to really thwart their -a, -d, -e, -i and -o flags! Don't forget, you still have base64 to work with!</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][4][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="5"
+							name="[scale_team][answers_attributes][4][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<select name="[scale_team][answers_attributes][4][value]" id="score_4" class="form-control score-select">
+						<option value=""></option>
+						<option value="0">0 - Failed</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 - Excellent</option>
+					</select>
+				</div>
+			</div>
+		</section>
+
+		<section class="scale-section-item dancer from-down" id="section-ft-ssl-des-3">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Password Handling</h3>
+				<p class="font-italic">YOU SHALL NOT PASS(word)!</p>
+			</div>
+			<h4 class="scale-question-name">Password Support</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Does their program handle passwords the same (slimey) way as OpenSSL?</p>
+
+			<ul>
+				<li><code>echo "$(curl 'https://www.peeroom.us/assl/assl/html/openssl.html')" > original.html</code></li>
+				<li><code>echo "password" > password_file</code></li>
+				<li><code>openssl des-ecb -p -in original.html -out ciphertext.html -pass "pass::$(cat password_file)"</code></li>
+				<li><code>./ft_ssl des-ecb -d -i ciphertext.html -o decrypted.html -p "$(cat password_file)" -s (Copy the salt used by OpenSSL here!)</code></li>
+				<li>Open the resulting HTML files - you should be presented with three websites. Two of them should be nice readable rants about the terrors of using OpenSSL. The second should be a nightmare resembling the actual OpenSSL source.</li>
+			</ul>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][5][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="6"
+							name="[scale_team][answers_attributes][5][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][5][value]" id="yes_5" value="1" class="btn-input">
+
+					<label for="yes_5" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][5][value]" id="no_5" value="0" class="btn-input" checked>
+
+					<label for="no_5" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="scale-section-item dancer from-down" id="section-ft-ssl-des-4">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">CBC Mode</h3>
+				<p class="font-italic">Are they on the Cipher BlockChain?</p>
+			</div>
+			<h4 class="scale-question-name">DES-CBC Implementation</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Does their DES-CBC work? Can they explain what CBC does?</p>
+
+			<ul>
+				<li><code>echo "Make sure they really tell you what is going on 'under the hood' when you use CBC mode, and how it is more secure than ECB" | openssl des-cbc -K "BABE101010FACADE" -iv "77696E6B66616365" | ./ft_ssl des-cbc -k "BABE101010FACADE" -v "77696E6B66616365" -d</code></li>
+				<li>Test this also with password entry against itself and OpenSSL to make sure the IV generation works just as well as the password.</li>
+			</ul>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][6][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="7"
+							name="[scale_team][answers_attributes][6][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][6][value]" id="yes_6" value="1" class="btn-input">
+
+					<label for="yes_6" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][6][value]" id="no_6" value="0" class="btn-input" checked>
+
+					<label for="no_6" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="scale-section-item dancer from-down" id="section-ft-ssl-des-5">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Bonus Part</h3>
+				<p class="font-italic">The golden rule.</p>
+			</div>
+			<h4 class="scale-question-name">Triple DES (3DES)</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Can they do the DES three times? Does their Triple DES work in E-D-E mode? Can it works? Does it compare against OpenSSL, both by direct key input and by password?</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][7][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="8"
+							name="[scale_team][answers_attributes][7][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][7][value]" id="yes_7" value="1" class="btn-input">
+
+					<label for="yes_7" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][7][value]" id="no_7" value="0" class="btn-input" checked>
+
+					<label for="no_7" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+
+			<h4 class="scale-question-name">Other Block Cipher Modes</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Can they explain what a block cipher mode is? Can they explain the differences between the extra modes they added and ECB and CBC? Did they include it also in their 3DES implementation?</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][8][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="9"
+							name="[scale_team][answers_attributes][8][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<select name="[scale_team][answers_attributes][8][value]" id="score_8" class="form-control score-select">
+						<option value=""></option>
+						<option value="0">0 - Failed</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 - Excellent</option>
+					</select>
+				</div>
+			</div>
+		</section>
+
+	</div>
+</form>

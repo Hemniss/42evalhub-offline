@@ -1,0 +1,447 @@
+<h3 class="font-weight-bold mb-1">Introduction</h3>
+<p>
+	In order to have a productive and tolerable grading session, we ask you:<br><br>
+	- Stay courteous, polite, respectful and constructive during this session. The bond of trust between members of the 42 community depends on it;<br><br>
+	- Take care to show the graded person(s) the problems you notice, and explain them as best you can;<br><br>
+	- Accept that there may be differences in interpretation on the featureset and/or what the subject requires. Stay open-minded, try to honestly determine who is right and who is not, and grade accordingly.
+</p>
+</div>
+<div class="p-0 scale-guidelines dancer from-down" id="guidelines-n-puzzle">
+	<h3 class="font-weight-bold mb-1">Guidelines</h3>
+	<p>
+		<br>Remember that you must ONLY grade what's on the turn-in repository!<br><br>
+		You have to "git clone" the repository, and grade what's on it, AND ONLY WHAT IS ON IT.
+	</p>
+</div>
+
+<hr>
+<div class="dancer from-down" id="attachments-n-puzzle">
+	<h3 class="font-weight-bold mb-1">Attachments</h3>
+	<div class="project-attachments-list">
+		<div class="project-attachment-item">
+			<h4 class="attachment-name">
+				<span class="icon-note-paper-2"></span>
+				<a target="_blank" href="https://cdn.intra.42.fr/pdf/pdf/166346/en.subject.pdf">subject.pdf</a>
+			</h4>
+		</div>
+		<div class="project-attachment-item">
+			<h4 class="attachment-name">
+				<span class="icon-file"></span>
+				<a target="_blank" href="https://cdn.intra.42.fr/document/document/35114/npuzzle-gen.py">npuzzle-gen.py</a>
+			</h4>
+		</div>
+	</div>
+</div>
+
+</div>
+<form class="simple_form form-horizontal" novalidate="novalidate">
+	<div class="scale-section-answers col-sm-12 scale-div">
+		<section class="scale-section-item dancer from-down" id="section-n-puzzle-1">
+			<div class="section-header">
+				<h3 class="font-weight-bold mb-1">First and foremost</h3>
+				<p class="font-italic">Preliminary checks</p>
+			</div>
+			<h4 class="scale-question-name">Preliminary instructions</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Check the following elements:</p>
+			<ul>
+				<li>There is something in the git repository</li>
+				<li>The "auteur" file, if required by the subject, is present and valid</li>
+				<li>The Makefile, if required, is present and has the required rules</li>
+			</ul>
+
+			<p>If one of these elements is not in conformity with what the subject requires, the session stops. You may still debate on the project, but you are not to grade the student(s).</p>
+
+			<p>During the rest of this session, if the program has an inappropriate behaviour (Segfault, bus error, double-free, uncaught exception, etc...), the session stops.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][0][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="0"
+							name="[scale_team][answers_attributes][0][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][0][value]" id="yes_0" value="1" class="btn-input">
+
+					<label for="yes_0" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][0][value]" id="no_0" value="0" class="btn-input" checked>
+
+					<label for="no_0" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="scale-section-item dancer from-down" id="section-n-puzzle-2">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Actually running the program</h3>
+			</div>
+			<h4 class="scale-question-name">Output correctness</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>The students have the output required by the subject, which is:</p>
+			<ul>
+				<li>Complexity in time</li>
+				<li>Complexity in size</li>
+				<li>Number of moves from initial state to solution</li>
+				<li>Ordered sequence of states that make up the solution</li>
+			</ul>
+
+			<p>Or, if the puzzle is unsolvable, it has to exit cleanly.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][1][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="1"
+							name="[scale_team][answers_attributes][1][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][1][value]" id="yes_1" value="1" class="btn-input">
+
+					<label for="yes_1" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][1][value]" id="no_1" value="0" class="btn-input" checked>
+
+					<label for="no_1" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+
+			<h4 class="scale-question-name">Solution</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Test the program on some puzzles, some from the students (the subject requires that they bring some) and some using the generator in the subject.</p>
+
+			<p>The program has to find a solution when it is possible, and if the puzzle is unsolvable, it has to tell the user and exit cleanly. The solution has to be valid: Check that the program does not "cheat".</p>
+
+			<p>If the generator says the puzzle is solvable, then it IS solvable, so no excuses.</p>
+
+			<p><strong>&gt;&gt;&gt; IF YOU DO NOT ANSWER YES TO THIS QUESTION, THE SESSION ENDS, DO NOT GRADE THE REST. &lt;&lt;&lt;</strong></p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][2][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="2"
+							name="[scale_team][answers_attributes][2][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][2][value]" id="yes_2" value="1" class="btn-input">
+
+					<label for="yes_2" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][2][value]" id="no_2" value="0" class="btn-input" checked>
+
+					<label for="no_2" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+
+			<h4 class="scale-question-name">Bare-minimum time efficiency</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>The program is able to find a solution to a solvable 3-puzzle in under a few seconds. More than 10 seconds is unacceptable.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][3][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="3"
+							name="[scale_team][answers_attributes][3][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][3][value]" id="yes_3" value="1" class="btn-input">
+
+					<label for="yes_3" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][3][value]" id="no_3" value="0" class="btn-input" checked>
+
+					<label for="no_3" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="scale-section-item dancer from-down" id="section-n-puzzle-3">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Search</h3>
+			</div>
+
+			<h4 class="scale-question-name">A* algorithm</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>The students implemented the A* algorithm or one of its variants (B*, IDA*, etc...) AND are able to explain it comprehensibly.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][4][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="4"
+							name="[scale_team][answers_attributes][4][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][4][value]" id="yes_4" value="1" class="btn-input">
+
+					<label for="yes_4" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][4][value]" id="no_4" value="0" class="btn-input" checked>
+
+					<label for="no_4" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+
+			<h4 class="scale-question-name">Heuristics</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>The students let the user choose between at least 3 (relevant) heuristic functions AND are able to explain how their heuristics work AND are able to explain why their heuristics are admissible.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][5][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="5"
+							name="[scale_team][answers_attributes][5][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][5][value]" id="yes_5" value="1" class="btn-input">
+
+					<label for="yes_5" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][5][value]" id="no_5" value="0" class="btn-input" checked>
+
+					<label for="no_5" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="scale-section-item dancer from-down" id="section-n-puzzle-4">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Data structures</h3>
+			</div>
+
+			<h4 class="scale-question-name">Open set</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>The students have implemented their "open" set with a relevant data structure.</p>
+			<ul>
+				<li>A priority queue (i.e. a queue that gives you the high-priority elements first, here "high-priority" means "low-cost"), or another container that allows for immediate retrieval of the lowest-cost item, is worth 5</li>
+				<li>A map/dict/hash of (cost) -> (node list) is worth 3</li>
+				<li>Another container with a kind of mechanism to easily find the highest priority element is worth 2</li>
+				<li>Any other container, such as list/vector/etc... is worth 0</li>
+			</ul>
+
+			<p>Also, the students must be able to explain the relevance of their choice. If they cannot, this is worth 0.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][6][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="6"
+							name="[scale_team][answers_attributes][6][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<select name="[scale_team][answers_attributes][6][value]" id="score_6" class="form-control score-select">
+						<option value=""></option>
+						<option value="0">0 - Failed</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 - Excellent</option>
+					</select>
+				</div>
+			</div>
+
+			<h4 class="scale-question-name">Closed set</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>The students have implemented their "closed" set with a relevant data structure.</p>
+			<ul>
+				<li>A container that easily allows to check whether a node currently is in the set or not is worth 5</li>
+				<li>Any other container, such as list/vector/etc... is worth 0</li>
+			</ul>
+
+			<p>Also, the students must be able to explain the relevance of their choice. If they cannot, this is worth 0.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][7][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="7"
+							name="[scale_team][answers_attributes][7][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<select name="[scale_team][answers_attributes][7][value]" id="score_7" class="form-control score-select">
+						<option value=""></option>
+						<option value="0">0 - Failed</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 - Excellent</option>
+					</select>
+				</div>
+			</div>
+		</section>
+
+		<section class="scale-section-item dancer from-down" id="section-n-puzzle-5">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Search variations</h3>
+			</div>
+
+			<h4 class="scale-question-name">Greedy search</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>The students have implemented an option to do a greedy search and are able to explain it.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][8][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="8"
+							name="[scale_team][answers_attributes][8][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][8][value]" id="yes_8" value="1" class="btn-input">
+
+					<label for="yes_8" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][8][value]" id="no_8" value="0" class="btn-input" checked>
+
+					<label for="no_8" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+
+			<h4 class="scale-question-name">Uniform-cost search</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>The students have implemented an option to do a uniform-cost search and are able to explain it.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][9][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="9"
+							name="[scale_team][answers_attributes][9][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][9][value]" id="yes_9" value="1" class="btn-input">
+
+					<label for="yes_9" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][9][value]" id="no_9" value="0" class="btn-input" checked>
+
+					<label for="no_9" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="scale-section-item dancer from-down" id="section-n-puzzle-6">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Bonuses</h3>
+			</div>
+
+			<h4 class="scale-question-name">Other interesting bonuses</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>The students have implemented other interesting bonuses. 1 point per identifiable bonus feature that you deem relevant and/or interesting.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][10][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="10"
+							name="[scale_team][answers_attributes][10][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<select name="[scale_team][answers_attributes][10][value]" id="score_10" class="form-control score-select">
+						<option value=""></option>
+						<option value="0">0 - Failed</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 - Excellent</option>
+					</select>
+				</div>
+			</div>
+		</section>
+
+	</div>
+</form>

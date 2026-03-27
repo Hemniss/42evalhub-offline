@@ -1,0 +1,404 @@
+<h3 class="font-weight-bold mb-1">Introduction</h3>
+<p>
+	Please respect the following rules:<br><br>
+	- Remain polite, courteous, respectful and constructive throughout the correction process. The well-being of the
+	community depends on it.<br><br>
+	- Identify with the person (or the group) graded the eventual dysfunctions of the work. Take the time to discuss and
+	debate the problems you have identified.<br><br>
+	- You must consider that there might be some difference in how your peers might have understood the project's
+	instructions and the scope of its functionalities. Always keep an open mind and grade him/her as honestly as
+	possible. The pedagogy is valid only if the peer-evaluation is conducted seriously.
+</p>
+
+<div class="p-0 scale-guidelines dancer from-down">
+	<h3 class="font-weight-bold mb-1">Guidelines</h3>
+	<p>
+		- Only grade the work that is in the student or group's GiT repository.<br><br>
+		- Double-check that the GiT repository belongs to the student or the group. Ensure that the work is for the
+		relevant project and also check that "git clone" is used in an empty folder.<br><br>
+		- Check carefully and make sure you evaluate something other than the content of the official repository. Verify
+		meticulously that no malicious aliases were used to fool you.<br><br>
+		- To avoid any surprises, carefully check that both the correcting and the corrected students have reviewed the
+		possible scripts used to facilitate the grading.<br><br>
+		- If the correcting student has not completed that particular project yet, it is mandatory for this student to
+		read the entire subject prior to starting the defence.<br><br>
+		- Use the flags available on this scale to signal an empty repository, non-functioning program, norm error,
+		cheating etc. In these cases, the grading is over and the final grade is 0 (or -42 in case of cheating).
+		However, with the exception of cheating, you are encouraged to continue to discuss your work (even if you have
+		not finished it) in order to identify any issues that may have caused this failure and avoid repeating the same
+		mistake in the future.
+	</p>
+</div>
+
+<hr>
+
+<div class="dancer from-down">
+	<h3 class="font-weight-bold mb-1">Attachments</h3>
+	<div class="project-attachments-list">
+		<div class="project-attachment-item">
+			<h4 class="attachment-name">
+				<span class="icon-file"></span>
+				<a target="_blank" href="https://cdn.intra.42.fr/pdf/pdf/30/corewar.fr.pdf">Subject (Français)</a>
+			</h4>
+		</div>
+		<div class="project-attachment-item">
+			<h4 class="attachment-name">
+				<span class="icon-file"></span>
+				<a target="_blank" href="https://cdn.intra.42.fr/pdf/pdf/963/corewar.en.pdf">Subject (English)</a>
+			</h4>
+		</div>
+		<div class="project-attachment-item">
+			<h4 class="attachment-name">
+				<span class="icon-file"></span>
+				<a target="_blank" href="https://cdn.intra.42.fr/pdf/pdf/962/resources_corewar.en.pdf">Resources
+					(English)</a>
+			</h4>
+		</div>
+		<div class="project-attachment-item">
+			<h4 class="attachment-name">
+				<span class="icon-file"></span>
+				<a target="_blank" href="https://cdn.intra.42.fr/pdf/pdf/31/resources_corewar.pdf">Resources
+					(Français)</a>
+			</h4>
+		</div>
+	</div>
+</div>
+
+<hr>
+
+<section class="scale-section-item dancer from-down">
+	<div class="section-header">
+		<h3 class="font-weight-bold mb-1">Mandatory part</h3>
+		<p class="font-italic">Reminder: Remember that for the duration of the defence, no segfault, nor other
+			unexpected, premature, uncontrolled or unexpected termination of the program, else the final grade is 0. Use
+			the appropriate flag. This rule is active throughout the whole defence.</p>
+	</div>
+
+	<h4 class="scale-question-name">Basic stuff</h4>
+	<p class="scale-section-guidelines">Check the following:</p>
+	<ul>
+		<li>Something was submitted</li>
+		<li>The author file is at the root of the repository and formatted as explained in the subject</li>
+		<li>Norm is OK (using the norminette)</li>
+		<li>The whole group is present</li>
+	</ul>
+	<p><strong>If at least one isn't ok, the defence is over and final grade is 0.</strong></p>
+
+	<div class="btn-group block">
+		<input type="radio" name="basic_stuff" id="basic_yes" value="1" class="btn-input">
+		<label for="basic_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="basic_stuff" id="basic_no" value="0" class="btn-input" checked>
+		<label for="basic_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">READ ME - Philosophy</h4>
+	<p class="scale-section-guidelines">Take your time, don't be a dick during the whole defence. Be rigorous but fair
+		and honest in your evaluation of the work submitted by the group. Don't nitpick. Use common sense to decide
+		fairness of a point, and keep the "Don't be a dick" general principle in mind. The aim here ISN'T to hunt for a
+		0. There is a lot of things to check, this defense will be longer than usual. Don't think it as time lost, and
+		remember that peer2peer correction is part of the program to help you learn.</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="philosophy" id="philosophy_yes" value="1" class="btn-input">
+		<label for="philosophy_yes" class="btn btn-yes">Understood</label>
+	</div>
+</section>
+
+<hr>
+
+<section class="scale-section-item dancer from-down">
+	<div class="section-header">
+		<h3 class="font-weight-bold mb-1">The ASM</h3>
+	</div>
+
+	<h4 class="scale-question-name">The .cor file and its header</h4>
+	<p class="scale-section-guidelines">The assembler must generate at least a .cor file with valid header. Check it
+		using hexdump -vC. Note: Some deviations in the way the name or comment is implemented are acceptable. For
+		example handling default champion that don't have a default comment or name for any will make the output
+		different but isn't considered an ERROR.</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="cor_file_header" id="cor_header_yes" value="1" class="btn-input">
+		<label for="cor_header_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="cor_file_header" id="cor_header_no" value="0" class="btn-input" checked>
+		<label for="cor_header_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">The generated bytecode</h4>
+	<p class="scale-section-guidelines">The assembler must generate valid bytecode for the champion code. No deviation
+		acceptable here. If there is one the champion generated isn't good and will not be able to work in the VM. Check
+		the following:</p>
+	<ul>
+		<li>Instruction opcodes are the right ones (MANDATORY)</li>
+		<li>Argument's coding byte, when required, are there and right. They're not when not required.</li>
+		<li>Registries are encoded on 1 byte and their values match up their number</li>
+		<li>Indirects are encoded on 2 bytes and their values are correct (in big endian)</li>
+		<li>Directs are encoded on 4 bytes for instructions that don't require an index and their values are correct (in
+			big endian)</li>
+		<li>Directs are encoded on 2 bytes for instruction that require an index, and their values are correct (in big
+			endian)</li>
+		<li>References to labels are converted to corresponding values (a label's address equals the address of the
+			first byte following it and a reference type %:labelX must be converted to (address of the beginning of the
+			current line) - (address of the beginning of the line concerned by the labelX))</li>
+	</ul>
+	<p><em>Regarding the last 6 points (first one is MANDATORY) - 1 wrong point tolerance will be granted to validate
+			this section.</em></p>
+
+	<div class="btn-group block">
+		<input type="radio" name="bytecode" id="bytecode_yes" value="1" class="btn-input">
+		<label for="bytecode_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="bytecode" id="bytecode_no" value="0" class="btn-input" checked>
+		<label for="bytecode_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">Error management in ASM</h4>
+	<p class="scale-section-guidelines">The following errors must be handled in the ASM:</p>
+	<ul>
+		<li>Unknown instruction</li>
+		<li>Wrong argument number for an instruction</li>
+		<li>Wrong type of argument for an instruction</li>
+		<li>Wrong character in a label</li>
+		<li>Reference to an unexisting label from a direct or an indirect</li>
+		<li>In a general manner every lexical error like a wrong character to finish a label, a direct, ...</li>
+	</ul>
+
+	<div class="btn-group block">
+		<input type="radio" name="asm_error_management" id="asm_error_yes" value="1" class="btn-input">
+		<label for="asm_error_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="asm_error_management" id="asm_error_no" value="0" class="btn-input" checked>
+		<label for="asm_error_no" class="btn btn-no">No</label>
+	</div>
+</section>
+
+<hr>
+
+<section class="scale-section-item dancer from-down">
+	<div class="section-header">
+		<h3 class="font-weight-bold mb-1">The VM</h3>
+	</div>
+
+	<h4 class="scale-question-name">The basics</h4>
+	<p class="scale-section-guidelines">The VM must be able to load at least one champion with valid header, and
+		recognize names and comments. Then it'll run, and finish by displaying a message with the name of the winner.
+	</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="vm_basics" id="vm_basics_yes" value="1" class="btn-input">
+		<label for="vm_basics_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="vm_basics" id="vm_basics_no" value="0" class="btn-input" checked>
+		<label for="vm_basics_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">Instructions execution</h4>
+	<p class="scale-section-guidelines">Check that:</p>
+	<ul>
+		<li>The VM must execute instructions properly. To check this you can use dummy champion that has only one
+			instruction (or more to "prepare the ground"), and execute it with the -dump option to check that the memory
+			is good. It's easy to check registries using st or carry using zjmp.</li>
+		<li>The VM must execute processes in the right order, from the last born to the first born. Typically, when
+			running game with two champions, the initial process of the second one must be executed first.</li>
+	</ul>
+
+	<div class="btn-group block">
+		<input type="radio" name="instructions_execution" id="instructions_yes" value="1" class="btn-input">
+		<label for="instructions_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="instructions_execution" id="instructions_no" value="0" class="btn-input" checked>
+		<label for="instructions_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">Specific execution parameters - IDX_MOD</h4>
+	<p class="scale-section-guidelines">IDX_MOD: Action addresses have IDX_MOD modulo applied. It concerns the following
+		actions:</p>
+	<ul>
+		<li>The reading of the whole memory to define the indirect (For indirect "516", we read only at PC + 4 and not
+			at PC + 516)</li>
+		<li>The "ld" first argument</li>
+		<li>The "st" second argument</li>
+		<li>The "zjmp" argument</li>
+		<li>The sum of "ldi" first two arguments</li>
+		<li>The sum of "sti" first two arguments</li>
+		<li>The "fork" argument</li>
+	</ul>
+
+	<div class="btn-group block">
+		<input type="radio" name="idx_mod" id="idx_mod_yes" value="1" class="btn-input">
+		<label for="idx_mod_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="idx_mod" id="idx_mod_no" value="0" class="btn-input" checked>
+		<label for="idx_mod_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">Specific execution parameters - Champion placement</h4>
+	<p class="scale-section-guidelines">The champion placement must be properly distributed. Their starting point must
+		be at equal distance (modulo rounding if there is three players). For example, for two champions on 4096 bytes
+		memory, the starting points must be with 2048 bytes. (For example the champion number 1 starts at 0 and champion
+		number 2 starts at 2048).</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="champion_placement" id="placement_yes" value="1" class="btn-input">
+		<label for="placement_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="champion_placement" id="placement_no" value="0" class="btn-input" checked>
+		<label for="placement_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">Specific execution parameters - CYCLE_TO_DIE</h4>
+	<p class="scale-section-guidelines">The VM must manage properly different CYCLE_TO_DIE. Check that:</p>
+	<ul>
+		<li>A process that doesn't do at least one live during the CYCLE_TO_DIE cycles must die.</li>
+		<li>If during a CYCLE_TO_DIE period of time there is at least NBR_LIVE live executed when the check-up is
+			operated CYCLE_TO_DIE must be decreased by CYCLE_DELTA.</li>
+		<li>If during a check-up there has been no CYCLE_TO_DIE since MAX_CHECKS check-ups, it's decreased.</li>
+		<li>If during check-up all processes are dead, the game ends. Remember that it's not stipulated in the subject
+			if the check-up has to be done at the beginning or at the end of a cycle. Both interpretations are
+			acceptable.</li>
+	</ul>
+
+	<div class="btn-group block">
+		<input type="radio" name="cycle_to_die" id="cycle_yes" value="1" class="btn-input">
+		<label for="cycle_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="cycle_to_die" id="cycle_no" value="0" class="btn-input" checked>
+		<label for="cycle_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">Option management and errors</h4>
+	<p class="scale-section-guidelines">The VM must manage the following options listed in the subject:</p>
+	<ul>
+		<li>-dump</li>
+		<li>-n</li>
+	</ul>
+	<p>The following errors must be managed:</p>
+	<ul>
+		<li>Invalid header</li>
+		<li>No code</li>
+		<li>Too big champion</li>
+	</ul>
+
+	<div class="btn-group block">
+		<input type="radio" name="option_management" id="options_yes" value="1" class="btn-input">
+		<label for="options_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="option_management" id="options_no" value="0" class="btn-input" checked>
+		<label for="options_no" class="btn btn-no">No</label>
+	</div>
+</section>
+
+<hr>
+
+<section class="scale-section-item dancer from-down">
+	<div class="section-header">
+		<h3 class="font-weight-bold mb-1">And everything else</h3>
+	</div>
+
+	<h4 class="scale-question-name">Group organization</h4>
+	<p class="scale-section-guidelines">Evaluate here how the group was organized to work through the corewar project. A
+		lot of scenarios are acceptable, stay open. Don't validate this if you feel like the group is messy and didn't
+		really show any bit of organization, or time management. This question is purely objective and is recognized as
+		such. Know that subjective judgment of a hierarchy is part of your professional future and even if you don't
+		understand it yet, you can act on it.</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="group_organization" id="org_yes" value="1" class="btn-input">
+		<label for="org_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="group_organization" id="org_no" value="0" class="btn-input" checked>
+		<label for="org_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">A Champion</h4>
+	<p class="scale-section-guidelines">The group must have a champion. The champion's goal is just to measure the group
+		understood how to write corewar's ASM not to fight anything. Check that the champion compiles without errors and
+		if you feel motivated you can check that it can actually beat zork.s</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="champion" id="champion_yes" value="1" class="btn-input">
+		<label for="champion_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="champion" id="champion_no" value="0" class="btn-input" checked>
+		<label for="champion_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">A winner</h4>
+	<p class="scale-section-guidelines">The VM is able to find a winner, meaning the champion that did a "live" last
+		when the game ended.</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="winner" id="winner_yes" value="1" class="btn-input">
+		<label for="winner_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="winner" id="winner_no" value="0" class="btn-input" checked>
+		<label for="winner_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">Some more error management</h4>
+	<p class="scale-section-guidelines">The following errors must be managed either by the ASM or by the VM:</p>
+	<ul>
+		<li>Nameless champion</li>
+		<li>Champion with no comment</li>
+		<li>Champion with a too long name</li>
+		<li>Champion with no code</li>
+	</ul>
+	<p>A lot of ways to manage those errors are acceptable like for example:</p>
+	<ul>
+		<li>Refusing the compilation</li>
+		<li>Refusing to run the champion</li>
+		<li>To correct automatically the champion</li>
+		<li>Run the champion even if there is no code and execute nothing</li>
+	</ul>
+	<p>What matters here is that the way it's handled makes sense and is properly explained.</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="error_management_extra" id="error_extra_yes" value="1" class="btn-input">
+		<label for="error_extra_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="error_management_extra" id="error_extra_no" value="0" class="btn-input" checked>
+		<label for="error_extra_no" class="btn btn-no">No</label>
+	</div>
+</section>
+
+<hr>
+
+<section class="scale-section-item dancer from-down">
+	<div class="section-header">
+		<h3 class="font-weight-bold mb-1">Bonus</h3>
+		<p class="font-italic">Optional features that showcase extra effort and creativity.</p>
+	</div>
+
+	<h4 class="scale-question-name">Bonus Features</h4>
+	<p class="scale-section-guidelines">Possible bonuses include:</p>
+	<ul>
+		<li>An awesome lexer/parser</li>
+		<li>A .cor file disassembler</li>
+		<li>Beautiful message when compiling, with line numbers, and to show where is the error (like CLANG)</li>
+		<li>An interface visualizer (integrated in the VM, via pipe or shm, or file)</li>
+		<li>Debug mode on the VM (step-by-step, memory inspection, process state... infinite possibilities)</li>
+	</ul>
+	<p><strong>Rate it from 0 (failed) through 5 (excellent)</strong></p>
+
+	<div class="form-group block">
+		<label for="bonus_dropdown" class="font-weight-bold">Bonus Rating:</label>
+		<select name="bonus" id="bonus_dropdown" class="form-control">
+			<option value="0">0 (failed)</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5 (excellent)</option>
+		</select>
+	</div>
+</section>

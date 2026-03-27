@@ -1,0 +1,522 @@
+<h3 class="font-weight-bold mb-1">Introduction</h3>
+<p>
+	<br>For the smooth running of this evaluation, please respect the following rules:<br><br>- Remain polite, kind,
+	respectful and constructive whatever happens during<br> this conversation. It's a matter of confidence between you
+	and the<br> 42 community.<br><br>- Highlight the potential problems you ‘ve had with the work you're presented<br>
+	to the person or the group you're grading, and take the time to talk about<br> and discuss those issues.<br><br>-
+	Accept the fact that the exam subject or required functions might lead<br> to different interpretations. Listen to
+	your discussion partner's<br> perspective with an open mind (are they right or wrong ?) and grade them as<br> fairly
+	as possible.<br> 42's teaching methods can make sense only if peer-evaluation is<br> taken seriously.<br>
+</p>
+</div>
+<div class="p-0 scale-guidelines dancer from-down" id="guidelines-45364">
+	<h3 class="font-weight-bold mb-1">Guidelines</h3>
+	<p>
+		<br>- You must only evaluate what you will find in the student's or group's<br> GiT repository.<br><br>- Take
+		the time to check that the GiT repository matches the student or<br> group and the project.<br><br>- Double
+		check that no malicious alias was used to mislead you and make you<br> grade something different from the
+		official repository content.<br><br>- If a script supposed to help evaluate the exam is supplied by either side,
+		the<br> other side will have to strictly check it to avoid nasty surprises.<br><br>- If the evaluating student
+		has not yet taken this project, they will have to<br> read the exam subject in its entirety before starting the
+		evaluation.<br><br>- Use the flags available on this grading system to signal an empty or non-<br> funcional
+		project, a norm flaw, cheating, etc. In that case, evaluation stops<br> and final grade is 0 (or -42 if it's a
+		cheating problem). However, if it's<br> not a cheating problem, you are invited to keep talking about the work
+		that<br> has been done (or not done, as a matter of fact) in order to identify the<br> issues that lead to this
+		stalemate and avoid it next time.<br><br>- Evaluation must be made with a virtual machine running Linux with a
+		core &gt;<br> 3.14 with root rights.<br>
+	</p>
+</div>
+
+<hr>
+<div class="dancer from-down" id="attachments-45364">
+	<h3 class="font-weight-bold mb-1">Attachments</h3>
+	<div class="project-attachments-list">
+	</div>
+
+	<div class="project-attachments-list">
+		<div class="project-attachment-item">
+			<h4 class="attachment-name">
+				<span class="icon-file"></span>
+				<a target="_blank" href="https://cdn.intra.42.fr/pdf/pdf/166349/en.subject.pdf">subject.pdf</a>
+			</h4>
+		</div>
+	</div>
+
+</div>
+
+</div>
+<form class="simple_form form-horizontal" novalidate="novalidate" id="edit_scale_team_8869479" action=""
+	accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method"
+		value="patch"><input type="hidden" name="authenticity_token" value="">
+	<div class="scale-section-answers col-sm-12 scale-div">
+		<section class="scale-section-item dancer from-down" id="section-126289">
+			<div class="section-header">
+				<h3 class="font-weight-bold mb-1">Matt_daemon source</h3>
+				<p class="font-italic">
+					Foreword
+				</p>
+			</div>
+			<h4 class="scale-question-name">Preleminary instructions</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Before evaluation starts, make sure that:</p>
+
+			<ul>
+				<li>the project is in C++,</li>
+				<li>the project uses the functions fork, signal and chdir,</li>
+				<li>the LOCK_SH flag is not visible in the project,</li>
+				<li>the LOCK_EX flags as well as LOCK_UN are present in the project,</li>
+				<li>a Tintin_reporter class is present,</li>
+				<li>classes have the form of Coplien,</li>
+				<li>a Makefile containing the usual rules is present.</li>
+			</ul>
+
+			<p>Make sure that the project doesn't use any library that could impair<br>
+				the eductational value of the project. If it does, check "Cheat" on top<br>
+				of the grading scale.</p>
+
+			<p>If one of the conditions has not been met, evaluation stops.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][0][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="426511"
+							name="[scale_team][answers_attributes][0][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][0][value]" id="yes_0" value="1"
+						class="btn-input">
+
+					<label for="yes_0" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][0][value]" id="no_0" value="0"
+						class="btn-input" checked>
+
+					<label for="no_0" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+		</section>
+		<section class="scale-section-item dancer from-down" id="section-126290">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Using Matt_daemon</h3>
+				<p class="font-italic"></p>
+			</div>
+			<h4 class="scale-question-name">Running daemon</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Before running the program, run the following command: `rm</p>
+
+			<p>-f /var/lock/matt_daemon.lock ; rm -rf /var/log/matt_daemon/`.</p>
+
+			<p>Run the program as the root user.</p>
+
+			<p>The "netstat -tulpn" command will allow you to check that the 4242 port<br>
+				is in LISTEN mode.</p>
+
+			<p>The /var/lock/matt_daemon.lock and /var/log/matt_daemon/matt_daemon.log<br>
+				files are available.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][1][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="426512"
+							name="[scale_team][answers_attributes][1][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][1][value]" id="yes_1" value="1"
+						class="btn-input">
+
+					<label for="yes_1" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][1][value]" id="no_1" value="0"
+						class="btn-input" checked>
+
+					<label for="no_1" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+			<h4 class="scale-question-name">Daemon quitting</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Look for the daemon's PID with the <code>ps aux | grep matt_daemon</code> command,<br>
+				and make a kill -15 (daemon's PID).</p>
+
+			<p>The /var/lock/daemon.lock file must not be available.</p>
+
+			<p>If one of the conditions has not been met, evaluation stops.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][2][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="426513"
+							name="[scale_team][answers_attributes][2][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][2][value]" id="yes_2" value="1"
+						class="btn-input">
+
+					<label for="yes_2" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][2][value]" id="no_2" value="0"
+						class="btn-input" checked>
+
+					<label for="no_2" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+		</section>
+		<section class="scale-section-item dancer from-down" id="section-126291">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Using Matt_daemon</h3>
+				<p class="font-italic"></p>
+			</div>
+			<h4 class="scale-question-name">Using Matt_daemon</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Before running the program, run the following command: `rm</p>
+
+			<p>-f /var/lock/matt_daemon.lock ; rm -rf /var/log/matt_daemon/`.</p>
+
+			<p>Run the program with the root rights.</p>
+
+			<p>Use the netcat command to connect to the daemon ("nc localhost 4242").</p>
+
+			<p>Type a word in the command prompt and enter (don't write "quit").</p>
+
+			<p>End the session typing "quit" in the command prompt.</p>
+
+			<p>Program must quit correctly and the /var/lock/matt_daemon.lock file must<br>
+				not be present anymore.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][3][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="426514"
+							name="[scale_team][answers_attributes][3][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][3][value]" id="yes_3" value="1"
+						class="btn-input">
+
+					<label for="yes_3" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][3][value]" id="no_3" value="0"
+						class="btn-input" checked>
+
+					<label for="no_3" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+		</section>
+		<section class="scale-section-item dancer from-down" id="section-126292">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Matt_daemon log</h3>
+				<p class="font-italic"></p>
+			</div>
+			<h4 class="scale-question-name">Matt_daemon simple log</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>The /var/log/matt_daemon/matt_daemon.log file is present. The<br>
+				informations are clearly displayed. Launch and quit of the daemon<br>
+				also appear clearly. Instruction typed in the command prompt appear<br>
+				clearly. Timestamp appears in the form requested by the subject. A<br>
+				message indicates the call when the daemon quits with the quit command.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][4][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="426515"
+							name="[scale_team][answers_attributes][4][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][4][value]" id="yes_4" value="1"
+						class="btn-input">
+
+					<label for="yes_4" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][4][value]" id="no_4" value="0"
+						class="btn-input" checked>
+
+					<label for="no_4" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+			<h4 class="scale-question-name">Matt_daemon advanced logging</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Run the daemon again and kill it with the signal you like.<br>
+				If a signal is not accurately managed, the evaluated student must be<br>
+				able to justify it. The daemon quits well with the deleting of the<br>
+				/var/lock/matt_daemon.lock file. The signal is visible in our<br>
+				log /var/log/matt_daemon/matt_daemon.log file.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][5][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="426516"
+							name="[scale_team][answers_attributes][5][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][5][value]" id="yes_5" value="1"
+						class="btn-input">
+
+					<label for="yes_5" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][5][value]" id="no_5" value="0"
+						class="btn-input" checked>
+
+					<label for="no_5" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+		</section>
+		<section class="scale-section-item dancer from-down" id="section-126293">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Matt_daemon error management</h3>
+				<p class="font-italic"></p>
+			</div>
+			<h4 class="scale-question-name">Matt_daemon error basique</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Before running the program, launch the following command <code>rm -f<br>
+/var/lock/matt_daemon.lock ; rm -rf /var/log/matt_daemon/</code>.<br>
+				Try to run the daemon in root twice. An explicit error message appears<br>
+				and stops the second daemon from running. A proper message is visible in<br>
+				the /var/log/matt_daemon/matt_daemon.log file with an explanation of<br>
+				the problem.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][6][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="426517"
+							name="[scale_team][answers_attributes][6][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][6][value]" id="yes_6" value="1"
+						class="btn-input">
+
+					<label for="yes_6" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][6][value]" id="no_6" value="0"
+						class="btn-input" checked>
+
+					<label for="no_6" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+			<h4 class="scale-question-name">Matt_daemon error avancée</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Before running the program, launch the following command <code>rm -f<br>
+/var/lock/matt_daemon.lock ; rm -rf /var/log/matt_daemon/</code>.<br>
+				Run the daemon in root. Assessor can try to crash the program (sans SIGKILL).<br>
+				If the program quits unexpectedly, the daemon must quit properly and a<br>
+				message must be saved in the log file.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][7][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="426518"
+							name="[scale_team][answers_attributes][7][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][7][value]" id="yes_7" value="1"
+						class="btn-input">
+
+					<label for="yes_7" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][7][value]" id="no_7" value="0"
+						class="btn-input" checked>
+
+					<label for="no_7" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+		</section>
+		<section class="scale-section-item dancer from-down" id="section-126294">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Matt_daemon socket</h3>
+				<p class="font-italic"></p>
+			</div>
+			<h4 class="scale-question-name">Matt_daemon</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Run the daemon in root. Try to connect more than 3 clients simultaneously.<br>
+				An error message must appear to show the problem.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][8][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="426519"
+							name="[scale_team][answers_attributes][8][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][8][value]" id="yes_8" value="1"
+						class="btn-input">
+
+					<label for="yes_8" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][8][value]" id="no_8" value="0"
+						class="btn-input" checked>
+
+					<label for="no_8" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+			<h4 class="scale-question-name">Matt_daemon</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Run the daemon in root. Try to connect more than 3 clients simultaneously.<br>
+				Quit the client and run again. The client must be able to connect simply,<br>
+				without any error. Properly close all clients as well as the daemon.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][9][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="426520"
+							name="[scale_team][answers_attributes][9][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][9][value]" id="yes_9" value="1"
+						class="btn-input">
+
+					<label for="yes_9" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][9][value]" id="no_9" value="0"
+						class="btn-input" checked>
+
+					<label for="no_9" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+		</section>
+		<section class="scale-section-item dancer from-down" id="section-126295">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Matt_daemon bonus</h3>
+				<p class="font-italic">
+					Bonus will be taken into account only if ALL the previous points are valid.
+				</p>
+			</div>
+			<h4 class="scale-question-name">Bonus specific to this project</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>For this project, you can take into account up to 5 different bonuses.<br>
+				They should be at least slightly useful and implemented correctly.<br>
+				Here is a list of acceptable examples:</p>
+
+			<ul>
+				<li>Graphic client.</li>
+				<li>Utilitary functions.</li>
+				<li>Logs archival.</li>
+				<li>Mail sending according to filters.</li>
+				<li>Authentification system.</li>
+				<li>Using advanced encryption system.</li>
+				<li>...</li>
+			</ul>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][10][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="426521"
+							name="[scale_team][answers_attributes][10][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="marked-title text-center">Rate it from 0 (failed) through 5 (excellent)</div>
+				<select name="[scale_team][answers_attributes][1][value]" class="form-control">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				<hr>
+			</div>
+		</section>
+	</div>
+</form>
+
+</div>
+</div>

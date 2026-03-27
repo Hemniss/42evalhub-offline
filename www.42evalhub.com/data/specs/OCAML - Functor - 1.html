@@ -1,0 +1,411 @@
+<div class="p-0 scale-introduction dancer from-down" id="introduction-37567">
+  <h3 class="font-weight-bold mb-1">Introduction</h3>
+  <p>
+    <br>For the good of this evaluation, we ask you to:<br><br> - Stay mannerly, polite, respectful and
+    constructive dunring this<br> evaluation. The trust between you and the 42 community depends<br> on
+    it.<br><br> - Bring out to the graded student (or team) any mistake she or he<br> might did.<br><br> -
+    Accept that there might be differences of interpretation of the<br> subject or the rules between you
+    and the graded student (or<br> team). Stay open minded and grade as honnestly as possible.<br>
+  </p>
+</div>
+<div class="p-0 scale-guidelines dancer from-down" id="guidelines-37567">
+  <h3 class="font-weight-bold mb-1">Guidelines</h3>
+  <p>
+    <br>- You must grade only what is present and the graded student's (or<br> team) repository.<br><br>-
+    You must stop grading at the first failed exercice, but you are<br> encouraged to continue testing and
+    discussing the following<br> exercices.<br>
+  </p>
+</div>
+
+<hr>
+<div class="dancer from-down" id="attachments-37567">
+  <h3 class="font-weight-bold mb-1">Attachments</h3>
+  <div class="project-attachments-list">
+  </div>
+
+  <div class="project-attachments-list">
+    <div class="project-attachment-item">
+      <h4 class="attachment-name">
+        <span class="icon-file"></span>
+        <a target="_blank" href="https://cdn.intra.42.fr/pdf/pdf/144533/en.subject.pdf">subject.pdf</a>
+      </h4>
+    </div>
+  </div>
+
+</div>
+
+</div>
+<form class="simple_form form-horizontal" novalidate="novalidate" id="edit_scale_team_8994086"
+  action=""
+  accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method"
+    value="patch"><input type="hidden" name="authenticity_token"
+    value="">
+  <div class="scale-section-answers col-sm-12 scale-div">
+    <section class="scale-section-item dancer from-down" id="section-102433">
+      <div class="section-header">
+        <h3 class="font-weight-bold mb-1">Preliminaries</h3>
+        <p class="font-italic">
+          This section is dedicated to setup the evaluation and to test the
+          prerequisits. It doesn't rewards points, but if something is wrong
+          at this step or at any point of the evaluation, the grade is 0,
+          and an approriate flag might be checked if needed.
+        </p>
+      </div>
+      <h4 class="scale-question-name">Respect of the rules</h4>
+      <p class="scale-section-guidelines">
+      </p>
+      <ul>
+        <li>
+          <p>The graded student (or team) work is present on her or his<br>
+            repository.</p>
+        </li>
+        <li>
+          <p>The graded student (or team) is able to explain her or his<br>
+            work at any time of the evaluation.</p>
+        </li>
+        <li>
+          <p>The general rules and the possible day-specific rules are<br>
+            respected at any time of the evaluation.</p>
+        </li>
+      </ul>
+
+      <p></p>
+      <div class="scale-question-answers">
+        <div class="form-group hidden scale_team_answer_id">
+          <div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][0][id]"
+              type="hidden" id="scale_team_answer_id"></div>
+        </div>
+        <div class="form-group hidden scale_team_answer_question_id">
+          <div class="col-sm-10"><input class="form-control hidden" value="349078"
+              name="[scale_team][answers_attributes][0][question_id]" type="hidden" id="scale_team_answer_question_id">
+          </div>
+        </div>
+        <div class="btn-group block">
+          <input autocomplete="off" class="btn-input" name="[scale_team][answers_attributes][0][value]"
+            id="radio_[scale_team][answers_attributes][0]_true" type="radio" value="1">
+          <label class="btn btn-yes" for="radio_[scale_team][answers_attributes][0]_true">
+            Yes
+          </label>
+          <input autocomplete="off" class="btn-input" name="[scale_team][answers_attributes][0][value]"
+            id="radio_[scale_team][answers_attributes][0]_false" type="radio" value="0" checked="checked">
+          <label class="btn btn-no" for="radio_[scale_team][answers_attributes][0]_false">
+            No
+          </label>
+        </div>
+      </div>
+    </section>
+    <section class="scale-section-item dancer from-down" id="section-102434">
+      <div class="section-header">
+        <hr>
+        <h3 class="font-weight-bold mb-1">OCaml Functor</h3>
+        <p class="font-italic">
+          - For each exercice, you must compile the exercice using ocamlopt
+          and run the generated executable. If the compilation fails or
+          warns, or an unexpected exception is thrown at runtime, the
+          exercice is failed.
+
+          - Whether the graded student provided tests or not, you must test
+          her or his work extensivelly and asses if the work is done or
+          not.
+
+          - Remember to check function names, types, behaviours and outputs.
+        </p>
+      </div>
+      <h4 class="scale-question-name">Ex00, the Set module and the Set.Make functor</h4>
+      <p class="scale-section-guidelines">
+      </p>
+      <p>This exercice is so straight forward that I won't give any<br>
+        solution here. Check that the graded student actually used the<br>
+        Set.Make functor to create a StringSet module from the String<br>
+        module and that the output is correct.</p>
+
+      <p>$&gt; ocamlopt ex00.ml &amp;&amp; ./a.out <br>
+        bar<br>
+        baz<br>
+        foo<br>
+        qux<br>
+        quxfoobazbar<br>
+        $&gt;</p>
+
+      <p></p>
+      <div class="scale-question-answers">
+        <div class="form-group hidden scale_team_answer_id">
+          <div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][1][id]"
+              type="hidden" id="scale_team_answer_id"></div>
+        </div>
+        <div class="form-group hidden scale_team_answer_question_id">
+          <div class="col-sm-10"><input class="form-control hidden" value="349079"
+              name="[scale_team][answers_attributes][1][question_id]" type="hidden" id="scale_team_answer_question_id">
+          </div>
+        </div>
+        <div class="btn-group block">
+          <input autocomplete="off" class="btn-input" name="[scale_team][answers_attributes][1][value]"
+            id="radio_[scale_team][answers_attributes][1]_true" type="radio" value="1">
+          <label class="btn btn-yes" for="radio_[scale_team][answers_attributes][1]_true">
+            Yes
+          </label>
+          <input autocomplete="off" class="btn-input" name="[scale_team][answers_attributes][1][value]"
+            id="radio_[scale_team][answers_attributes][1]_false" type="radio" value="0" checked="checked">
+          <label class="btn btn-no" for="radio_[scale_team][answers_attributes][1]_false">
+            No
+          </label>
+        </div>
+      </div>
+      <h4 class="scale-question-name">Ex01, the Hashtbl module and the Hashtbl.Make functor</h4>
+      <p class="scale-section-guidelines">
+      </p>
+      <p>This exercice is pretty much the same as the previous one, so no<br>
+        answer here neither. The only trick is to write a hash function.<br>
+        Check the following.</p>
+
+      <ul>
+        <li>
+          <p>The graded student crated an input module compatible with the<br>
+            signature Hashtbl.HashedType. Note that implementing that<br>
+            signature would require constraint sharing and is out of the<br>
+            scope of this exercice, but count the points anyway.</p>
+        </li>
+        <li>
+          <p>The hash function is actually a hash function. Be tolerant,<br>
+            but refuse really dummy hash functions. It was written in red<br>
+            in the subject.</p>
+        </li>
+        <li>
+          <p>The output is respected, modulo the order of the lines.</p>
+        </li>
+      </ul>
+
+      <p>$&gt; ocamlopt ex01.ml &amp;&amp; ./a.out <br>
+        k = "Ocaml", v = 5 <br>
+        k = "Hello", v = 5 <br>
+        k = "42", v = 2 <br>
+        k = "H", v = 1 <br>
+        k = "world", v = 5 <br>
+        $&gt;</p>
+
+      <p></p>
+      <div class="scale-question-answers">
+        <div class="form-group hidden scale_team_answer_id">
+          <div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][2][id]"
+              type="hidden" id="scale_team_answer_id"></div>
+        </div>
+        <div class="form-group hidden scale_team_answer_question_id">
+          <div class="col-sm-10"><input class="form-control hidden" value="349080"
+              name="[scale_team][answers_attributes][2][question_id]" type="hidden" id="scale_team_answer_question_id">
+          </div>
+        </div>
+        <div class="btn-group block">
+          <input autocomplete="off" class="btn-input" name="[scale_team][answers_attributes][2][value]"
+            id="radio_[scale_team][answers_attributes][2]_true" type="radio" value="1">
+          <label class="btn btn-yes" for="radio_[scale_team][answers_attributes][2]_true">
+            Yes
+          </label>
+          <input autocomplete="off" class="btn-input" name="[scale_team][answers_attributes][2][value]"
+            id="radio_[scale_team][answers_attributes][2]_false" type="radio" value="0" checked="checked">
+          <label class="btn btn-no" for="radio_[scale_team][answers_attributes][2]_false">
+            No
+          </label>
+        </div>
+      </div>
+      <h4 class="scale-question-name">Ex02, projections</h4>
+      <p class="scale-section-guidelines">
+      </p>
+      <p>This exercice is the exact opposit of the exemple in the videos.<br>
+        The FIXME must be replaced by the following code.</p>
+
+      <p>module type MAKEPROJECTION = functor (Pair : PAIR) -&gt; VAL</p>
+
+      <p>module MakeFst : MAKEPROJECTION = functor (Pair : PAIR) -&gt;<br>
+        struct let x = fst Pair.pair end</p>
+
+      <p>module MakeSnd : MAKEPROJECTION = functor (Pair : PAIR) -&gt;<br>
+        struct let x = snd Pair.pair end</p>
+
+      <p>Check the output.</p>
+
+      <p>$&gt; ocamlopt ex02.ml &amp;&amp; ./a.out <br>
+        Fst.x = 21, Snd.x = 42 <br>
+        $&gt;</p>
+
+      <p></p>
+      <div class="scale-question-answers">
+        <div class="form-group hidden scale_team_answer_id">
+          <div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][3][id]"
+              type="hidden" id="scale_team_answer_id"></div>
+        </div>
+        <div class="form-group hidden scale_team_answer_question_id">
+          <div class="col-sm-10"><input class="form-control hidden" value="349081"
+              name="[scale_team][answers_attributes][3][question_id]" type="hidden" id="scale_team_answer_question_id">
+          </div>
+        </div>
+        <div class="btn-group block">
+          <input autocomplete="off" class="btn-input" name="[scale_team][answers_attributes][3][value]"
+            id="radio_[scale_team][answers_attributes][3]_true" type="radio" value="1">
+          <label class="btn btn-yes" for="radio_[scale_team][answers_attributes][3]_true">
+            Yes
+          </label>
+          <input autocomplete="off" class="btn-input" name="[scale_team][answers_attributes][3][value]"
+            id="radio_[scale_team][answers_attributes][3]_false" type="radio" value="0" checked="checked">
+          <label class="btn btn-no" for="radio_[scale_team][answers_attributes][3]_false">
+            No
+          </label>
+        </div>
+      </div>
+      <h4 class="scale-question-name">Ex03, fixed point</h4>
+      <p class="scale-section-guidelines">
+      </p>
+      <p>First real world exemple, the fixed number functor is a functor<br>
+        I use in my personnal OCaml codes. Given the FIXED signature<br>
+        from the subject and the test code below, one can deduce the<br>
+        input signature FRACTIONNAL_BITS.</p>
+
+      <p>module type FRACTIONAL_BITS = sig val bits : int end</p>
+
+      <p>And the MAKE functor signature.</p>
+
+      <p>module type MAKE = functor (Fbits : FRACTIONAL_BITS) -&gt; FIXED</p>
+
+      <p>The implementation of the functor Make is pretty straight<br>
+        forward, the only tricky functions beeing of_float and to_float<br>
+        so I won't give answers here. Check that the output from the<br>
+        test code is good.</p>
+
+      <p>$&gt; ocamlopt ex03.ml &amp;&amp; ./a.out <br>
+        42.421875<br>
+        0.<br>
+        0.0625<br>
+        0.125<br>
+        0.1875<br>
+        0.25<br>
+        0.3125<br>
+        0.375<br>
+        0.4375<br>
+        0.5<br>
+        0.5625<br>
+        0.625<br>
+        0.6875<br>
+        0.75<br>
+        0.8125<br>
+        0.875<br>
+        0.9375<br>
+        1.<br>
+        $&gt;</p>
+
+      <p>According to the subject, the graded student must also provide<br>
+        some addionnal test to prove that every functions in the<br>
+        signature FIXED work as intended. check that this work is done.</p>
+
+      <p></p>
+      <div class="scale-question-answers">
+        <div class="form-group hidden scale_team_answer_id">
+          <div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][4][id]"
+              type="hidden" id="scale_team_answer_id"></div>
+        </div>
+        <div class="form-group hidden scale_team_answer_question_id">
+          <div class="col-sm-10"><input class="form-control hidden" value="349082"
+              name="[scale_team][answers_attributes][4][question_id]" type="hidden" id="scale_team_answer_question_id">
+          </div>
+        </div>
+        <div class="btn-group block">
+          <input autocomplete="off" class="btn-input" name="[scale_team][answers_attributes][4][value]"
+            id="radio_[scale_team][answers_attributes][4]_true" type="radio" value="1">
+          <label class="btn btn-yes" for="radio_[scale_team][answers_attributes][4]_true">
+            Yes
+          </label>
+          <input autocomplete="off" class="btn-input" name="[scale_team][answers_attributes][4][value]"
+            id="radio_[scale_team][answers_attributes][4]_false" type="radio" value="0" checked="checked">
+          <label class="btn btn-no" for="radio_[scale_team][answers_attributes][4]_false">
+            No
+          </label>
+        </div>
+      </div>
+      <h4 class="scale-question-name">Ex04, evalexpr is so easy it hurts</h4>
+      <p class="scale-section-guidelines">
+      </p>
+      <p>This exercice is very representative of OCaml. Writing an<br>
+        evalexpr in C or C++ is at best painful. With OCaml, it's easy<br>
+        and elegant.</p>
+
+      <p>Given the signature VAL and the description of the EVALEXPR<br>
+        signature, this signature must be similar to the following.</p>
+
+      <pre><code>module type EVALEXPR = sig
+
+  type t
+
+  type expr = | Add of (expr * expr) | Mul of (expr * expr) |
+Value of t
+
+  val eval : expr -&gt; t
+
+end
+</code></pre>
+
+      <p>The types VAL.t and EVALEXPR.t beeing abstract, the MAKEEVALEXPR<br>
+        functor signature must include a constraint sharing on those<br>
+        types.</p>
+
+      <pre><code>module type MAKEEVALEXPR = functor (Val:VAL) -&gt; EVALEXPR with
+type t = Val.t * OR * module type MAKEEVALEXPR = functor
+(Val:VAL) -&gt; EVALEXPR with type t := Val.t
+</code></pre>
+
+      <p>I won't give out the implementation of the functor MakeEvalExpr<br>
+        as it is a very good programming exercice. Don't forget to check<br>
+        that this functor actually implements the MAKEEVALEXPR<br>
+        signature, obviously.</p>
+
+      <p>The six addtionnal constraint sharing from the last part of the<br>
+        exercice are the following.</p>
+
+      <pre><code>module IntVal : (VAL with type t = int) = &lt;...&gt; module FloatVal
+: (VAL with type t = float) = &lt;...&gt; module StringVal : (VAL with
+type t = string) = &lt;...&gt; module IntEvalExpr    : (EVALEXPR with
+type t = IntVal.t    ) = &lt;...&gt; module FloatEvalExpr  : (EVALEXPR
+with type t = FloatVal.t  ) = &lt;...&gt; module StringEvalExpr :
+(EVALEXPR with type t = StringVal.t ) = &lt;...&gt;
+</code></pre>
+
+      <p>The four destructive substitution are the following.</p>
+
+      <pre><code>module type MAKEEVALEXPR = functor (Val:VAL) -&gt; EVALEXPR with
+type t := Val.t module IntEvalExpr    : (EVALEXPR with type t :=
+IntVal.t    ) = &lt;...&gt; module FloatEvalExpr  : (EVALEXPR with
+type t := FloatVal.t  ) = &lt;...&gt; module StringEvalExpr :
+(EVALEXPR with type t := StringVal.t ) = &lt;...&gt;
+</code></pre>
+
+      <p>Also, check that the output is good.</p>
+
+      <p>$&gt; ocamlopt ex04.ml &amp;&amp; ./a.out <br>
+        Res = 42 <br>
+        Res = 42.420000 <br>
+        Res = very very long <br>
+        $&gt;</p>
+
+      <p></p>
+      <div class="scale-question-answers">
+        <div class="form-group hidden scale_team_answer_id">
+          <div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][5][id]"
+              type="hidden" id="scale_team_answer_id"></div>
+        </div>
+        <div class="form-group hidden scale_team_answer_question_id">
+          <div class="col-sm-10"><input class="form-control hidden" value="349083"
+              name="[scale_team][answers_attributes][5][question_id]" type="hidden" id="scale_team_answer_question_id">
+          </div>
+        </div>
+        <div class="btn-group block">
+          <input autocomplete="off" class="btn-input" name="[scale_team][answers_attributes][5][value]"
+            id="radio_[scale_team][answers_attributes][5]_true" type="radio" value="1">
+          <label class="btn btn-yes" for="radio_[scale_team][answers_attributes][5]_true">
+            Yes
+          </label>
+          <input autocomplete="off" class="btn-input" name="[scale_team][answers_attributes][5][value]"
+            id="radio_[scale_team][answers_attributes][5]_false" type="radio" value="0" checked="checked">
+          <label class="btn btn-no" for="radio_[scale_team][answers_attributes][5]_false">
+            No
+          </label>
+        </div>
+      </div>
+    </section>
+  </div>

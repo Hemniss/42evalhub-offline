@@ -1,0 +1,362 @@
+<h3 class="font-weight-bold mb-1">Introduction</h3>
+<p>
+	To ensure this evaluation goes smoothly, please respect the following set of rules:<br><br>
+	- Please remain courteous, polite, respectful and constructive at all times during this exchange. The trust bond
+	between the school's community and yourself depends on it.<br><br>
+	- Should you notice any malfunctions within the submitted project, make sure you take the time to discuss those with
+	the student (or group of students) being graded.<br><br>
+	- Keep in mind that some subjects can be interpreted differently. If you come across a situation where the student
+	you're grading has interpreted the subject differently than you, try and judge fairly whether their interpretation
+	is acceptable or not, and grade them accordingly. Our peer-evaluation system can only work if you both take it
+	seriously.
+</p>
+
+<div class="p-0 scale-guidelines dancer from-down">
+	<h3 class="font-weight-bold mb-1">Guidelines</h3>
+	<p>
+		- You may only evaluate whatever is in the GiT submission directory of the student you are grading.<br><br>
+		- Make sure to check whether the GiT submission directory belongs to the student (or group) you're grading, and
+		that it's the right project.<br><br>
+		- Make sure no mischievous aliases have been used to trick you into correcting something that is not actually in
+		the official submitted directory.<br><br>
+		- Any script created to make this evaluation session easier - whether it was produced by you or the student
+		being graded - must be checked rigorously in order to avoid bad surprises.<br><br>
+		- If the student who is grading this project hasn't done the project him/herself yet, he/she must read the whole
+		topic before starting the evaluation session.
+	</p>
+</div>
+
+<hr>
+
+<div class="dancer from-down">
+	<h3 class="font-weight-bold mb-1">Attachments</h3>
+	<div class="project-attachments-list">
+		<div class="project-attachment-item">
+			<h4 class="attachment-name">
+				<span class="icon-file"></span>
+				<a target="_blank" href="https://cdn.intra.42.fr/pdf/pdf/778/camagru.en.pdf">Subject (English)</a>
+			</h4>
+		</div>
+		<div class="project-attachment-item">
+			<h4 class="attachment-name">
+				<span class="icon-file"></span>
+				<a target="_blank" href="https://cdn.intra.42.fr/pdf/pdf/595/camagru.fr.pdf">Sujet (Français)</a>
+			</h4>
+		</div>
+	</div>
+</div>
+
+<hr>
+
+<section class="scale-section-item dancer from-down">
+	<div class="section-header">
+		<h3 class="font-weight-bold mb-1">Preliminaries</h3>
+		<p class="font-italic">If cheating is suspected, the evaluation stops here. Use the "Cheat" flag to report it.
+		</p>
+	</div>
+
+	<h4 class="scale-question-name">Preflight Check</h4>
+	<p class="scale-section-guidelines">Before you start this evaluation, check the following points:</p>
+	<ul>
+		<li>This application is developed in PHP</li>
+		<li>It uses no framework, micro-framework or external libraries</li>
+		<li>It does not need any package manager like "npm" or "composer"</li>
+		<li>The following files are present and correctly configured:
+			<ul>
+				<li>index.php</li>
+				<li>config/database.php</li>
+				<li>config/setup.php</li>
+			</ul>
+		</li>
+		<li>Those files should already be there, and don't need any generation through some kind of "setup wizard"</li>
+		<li>Queries must be managed through a PDO instance, configured with the PDO::ERRMODE_EXCEPTION error mode</li>
+	</ul>
+	<p><strong>If any of the points above is not valid, this evaluation stops.</strong> Except for the missing
+		configuration for PDO error mode (which gives a "Crash" flag and a 0), every point missing counts as a "Cheat".
+	</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="preflight_check" id="preflight_yes" value="1" class="btn-input">
+		<label for="preflight_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="preflight_check" id="preflight_no" value="0" class="btn-input" checked>
+		<label for="preflight_no" class="btn btn-no">No</label>
+	</div>
+</section>
+
+<hr>
+
+<section class="scale-section-item dancer from-down">
+	<div class="section-header">
+		<h3 class="font-weight-bold mb-1">Features</h3>
+		<p class="font-italic">When you evaluate this project, keep an eye on the web console and the log file of the
+			server. Except for getUserMedia related warnings, every log, warning or error on one of both sides is a
+			"Crash". Stop the evaluation and set the "Crash" flag.</p>
+	</div>
+
+	<h4 class="scale-question-name">3..2..1..Ignition</h4>
+	<p class="scale-section-guidelines">Start the webserver that should serve the app. The server must produce no
+		errors. You can go to the served address without any errors. If it's not the case, this part is count as false
+		and you can stop this evaluation right here. The webapp must work as is, by simply starting the server.</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="ignition" id="ignition_yes" value="1" class="btn-input">
+		<label for="ignition_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="ignition" id="ignition_no" value="0" class="btn-input" checked>
+		<label for="ignition_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">User Creation</h4>
+	<p class="scale-section-guidelines">This application has a registration form if the user wants to create a new
+		account. A user has to fulfill it with:</p>
+	<ul>
+		<li>a username</li>
+		<li>a secure password (a simple word in lowercase must be refused by the app)</li>
+		<li>a mail address</li>
+	</ul>
+	<p>The form must have validators on inputs and server-side to make sure the correct data are well transmitted. At
+		the end of the registration, it should be completed with the sending of an account confirmation mail, that
+		should contain a unique link. The user can't connect itself, unless he confirms it via this unique link.</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="user_creation" id="user_creation_yes" value="1" class="btn-input">
+		<label for="user_creation_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="user_creation" id="user_creation_no" value="0" class="btn-input" checked>
+		<label for="user_creation_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">User Authentication</h4>
+	<p class="scale-section-guidelines">The user can connect with his credentials, once it confirmed its account. It can
+		reset its password somehow, by receiving a password reinitialization mail. There's always a way to logout when
+		the user is connected.</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="user_auth" id="user_auth_yes" value="1" class="btn-input">
+		<label for="user_auth_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="user_auth" id="user_auth_no" value="0" class="btn-input" checked>
+		<label for="user_auth_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">ft_snapchat.php</h4>
+	<p class="scale-section-guidelines">Once logged in, a user can go to the editing view. It should have a decent view,
+		with a header, a main section and a footer. In the editing view, you should have the editing workspace that must
+		contain:</p>
+	<ul>
+		<li>A webcam preview</li>
+		<li>A list of the previous edited pictures as thumbnails</li>
+		<li>A way to save the final edited picture</li>
+		<li>A list of 'stickers'</li>
+		<li>A way to upload a base image instead of the webcam</li>
+	</ul>
+	<p>You can save and upload a photo only if a base media is loaded (webcam or uploaded image). You can upload an
+		image with no stickers, one sticker or some stickers (all the cases must be handled). The image editing pipeline
+		must be started server-side.</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="snapchat" id="snapchat_yes" value="1" class="btn-input">
+		<label for="snapchat_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="snapchat" id="snapchat_no" value="0" class="btn-input" checked>
+		<label for="snapchat_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">ft_instagram.php</h4>
+	<p class="scale-section-guidelines">There's a public gallery view in the app, that can be accessible with and
+		without authentication. The gallery displays all of the images took by app users, ordered by creation date. The
+		list is paginated with at least 5 images per pages. Every picture is likeable and commentable. For each comment,
+		the user must receive a notification mail, only if the user preference for mail notification is true. No mail
+		should be sent if this preference is set to false.</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="instagram" id="instagram_yes" value="1" class="btn-input">
+		<label for="instagram_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="instagram" id="instagram_no" value="0" class="btn-input" checked>
+		<label for="instagram_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">User Preferences</h4>
+	<p class="scale-section-guidelines">Once logged in, a user can modify with no errors:</p>
+	<ul>
+		<li>its username</li>
+		<li>its password</li>
+		<li>its mail address</li>
+		<li>the notification mail preference</li>
+	</ul>
+	<p>Every modification made on those fields should have repercussions on the user's data and authentication. Change
+		values, logout and try to login with new credentials.</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="preferences" id="preferences_yes" value="1" class="btn-input">
+		<label for="preferences_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="preferences" id="preferences_no" value="0" class="btn-input" checked>
+		<label for="preferences_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">CanCanCan</h4>
+	<p class="scale-section-guidelines">Now it's all about user rights:</p>
+	<ul>
+		<li>An user can delete its own editing but not the others</li>
+		<li>The editing view is only accessible if the user is correctly logged in</li>
+		<li>Trying to reach the view anonymously redirects you to the login view</li>
+		<li>Gallery is public, but only a logged user can like and comment photos</li>
+	</ul>
+
+	<div class="btn-group block">
+		<input type="radio" name="cancancan" id="cancancan_yes" value="1" class="btn-input">
+		<label for="cancancan_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="cancancan" id="cancancan_no" value="0" class="btn-input" checked>
+		<label for="cancancan_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">UI / UX</h4>
+	<p class="scale-section-guidelines">Let evaluate the creative mind behind this project.</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="ui_ux" id="ui_ux_yes" value="1" class="btn-input">
+		<label for="ui_ux_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="ui_ux" id="ui_ux_no" value="0" class="btn-input" checked>
+		<label for="ui_ux_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">Compatibility</h4>
+	<p class="scale-section-guidelines">The app must be compatible on Firefox (>= 41) and Chrome (>= 46). All features
+		above must work, without any warning, error or log (except as always for getUserMedia).</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="compatibility" id="compatibility_yes" value="1" class="btn-input">
+		<label for="compatibility_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="compatibility" id="compatibility_no" value="0" class="btn-input" checked>
+		<label for="compatibility_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">Mobile</h4>
+	<p class="scale-section-guidelines">When you set the app on mobile mode (you can do it on Chrome), elements must not
+		overlap each other and have a correct layout.</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="mobile" id="mobile_yes" value="1" class="btn-input">
+		<label for="mobile_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="mobile" id="mobile_no" value="0" class="btn-input" checked>
+		<label for="mobile_no" class="btn btn-no">No</label>
+	</div>
+</section>
+
+<hr>
+
+<section class="scale-section-item dancer from-down">
+	<div class="section-header">
+		<h3 class="font-weight-bold mb-1">Security</h3>
+		<p class="font-italic">We insisted on this: SECURITY FIRST DAMNIT!!!!</p>
+	</div>
+
+	<h4 class="scale-question-name">Babysteps - Cryptic Passwords</h4>
+	<p class="scale-section-guidelines">Deepdive into the database either in command-line, or with something like
+		PHPMyAdmin or Adminer. Check the Users table and verify the password is crypted.</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="crypto_passwords" id="crypto_passwords_yes" value="1" class="btn-input">
+		<label for="crypto_passwords_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="crypto_passwords" id="crypto_passwords_no" value="0" class="btn-input" checked>
+		<label for="crypto_passwords_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">Childish Steps - XSS</h4>
+	<p class="scale-section-guidelines">Go on a form containing inputs that generates displayable HTML (like,
+		comments...), add this and submit:</p>
+	<p><code>&lt;script type='text/javascript'&gt;alert('THE GAME');&lt;/script&gt;</code></p>
+	<p>On reload, no alertbox should appear. Otherwise... you failed.</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="xss" id="xss_yes" value="1" class="btn-input">
+		<label for="xss_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="xss" id="xss_no" value="0" class="btn-input" checked>
+		<label for="xss_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">Human Steps - SQL Injection</h4>
+	<p class="scale-section-guidelines">Log out. Once logged out, try to log in with this as a password (without
+		braces):</p>
+	<p><code>blahblah' OR 1='1</code></p>
+	<p>If you can authenticate, this app is not protected against SQL injections.</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="sql_injection" id="sql_injection_yes" value="1" class="btn-input">
+		<label for="sql_injection_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="sql_injection" id="sql_injection_no" value="0" class="btn-input" checked>
+		<label for="sql_injection_no" class="btn btn-no">No</label>
+	</div>
+</section>
+
+<hr>
+
+<section class="scale-section-item dancer from-down">
+	<div class="section-header">
+		<h3 class="font-weight-bold mb-1">Bonus</h3>
+	</div>
+
+	<h4 class="scale-question-name">AJAX</h4>
+	<p class="scale-section-guidelines">Did exchanges between client and server are AJAX-ified?</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="ajax" id="ajax_yes" value="1" class="btn-input">
+		<label for="ajax_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="ajax" id="ajax_no" value="0" class="btn-input" checked>
+		<label for="ajax_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">Apercu Live</h4>
+	<p class="scale-section-guidelines">Do you have a live preview of the webcam?</p>
+
+	<div class="btn-group block">
+		<input type="radio" name="live_preview" id="live_preview_yes" value="1" class="btn-input">
+		<label for="live_preview_yes" class="btn btn-yes">Yes</label>
+		<input type="radio" name="live_preview" id="live_preview_no" value="0" class="btn-input" checked>
+		<label for="live_preview_no" class="btn btn-no">No</label>
+	</div>
+
+	<hr>
+
+	<h4 class="scale-question-name">Other Bonus</h4>
+	<p class="scale-section-guidelines">You can count up to 5 bonus, where the usefulness and legitimacy are up to your
+		own judgement. For instance, here's some bonus:</p>
+	<ul>
+		<li>Infinite scroll for the gallery part</li>
+		<li>Share across social networks</li>
+		<li>Render it as an animated GIF</li>
+		<li>And more...</li>
+	</ul>
+	<p><strong>Rate it from 0 (failed) through 5 (excellent)</strong></p>
+
+	<div class="form-group">
+		<select name="[scale_team][answers_attributes][1][value]" class="form-control">
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+	</div>
+</section>

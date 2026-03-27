@@ -1,0 +1,405 @@
+<h3 class="font-weight-bold mb-1">Introduction</h3>
+<p>
+	Please respect the following rules:<br><br>- Remain polite, courteous, respectful and constructive throughout the
+	correction process. The well-being of the community depends on it.<br><br>- Identify with the person (or the group)
+	graded the eventual dysfunctions of the work. Take the time to discuss and debate the problems you have
+	identified.<br><br>- You must consider that there might be some difference in how your peers might have understood
+	the project's instructions and the scope of its functionalities. Always keep an open mind and grade him/her as
+	honestly as possible. The pedagogy is valid only if peer-evaluation is conducted seriously.<br>
+</p>
+</div>
+<div class="p-0 scale-guidelines dancer from-down" id="guidelines-woody">
+	<h3 class="font-weight-bold mb-1">Guidelines</h3>
+	<p>
+		<br>- Only grade the work that is in the student or group's GiT repository.<br><br>- Double-check that the GiT
+		repository belongs to the student or the group. Ensure that the work is for the relevant project and also check
+		that "git clone" is used in an empty folder.<br><br>- Check carefully and make sure you evaluate no malicious
+		aliases was used to fool you and make you grade something other than the content of the official
+		repository.<br><br>- To avoid any surprises, carefully check that both the correcting and the corrected students
+		have reviewed the possible scripts used to facilitate the grading.<br><br>- If the correcting student has not
+		completed that particular project yet, it is mandatory for this student to read the entire subject prior to
+		starting the defence.<br><br>- Use the flags available on this scale to signal an empty repository,
+		non-functioning program, norm error, cheating etc. In these cases, the grading is over and the final grade is 0
+		(or -42 in case of cheating). However, with the exception of cheating, you are encouraged to continue to discuss
+		your work (even if you have not finished it) in order to identify any issues that may have caused this failure
+		and avoid repeating the same mistake in the future.<br><br>- The evaluation must take place in a virtual machine
+		under Linux with a kernel > 3.14 and admin (root) rights.<br>
+	</p>
+</div>
+
+<hr>
+<div class="dancer from-down" id="attachments-woody">
+	<h3 class="font-weight-bold mb-1">Attachments</h3>
+	<div class="project-attachments-list">
+	</div>
+
+	<div class="project-attachments-list">
+		<div class="project-attachment-item">
+			<h4 class="attachment-name">
+				<span class="icon-note-paper-2"></span>
+				<a target="_blank" href="https://cdn.intra.42.fr/pdf/pdf/82416/en.subject.pdf">subject.pdf</a>
+			</h4>
+		</div>
+		<div class="project-attachment-item">
+			<h4 class="attachment-name">
+				<span class="icon-note-paper-2"></span>
+				<a target="_blank"
+					href="https://cdn.intra.42.fr/document/document/16030/resources.tgz">resources.tgz</a>
+			</h4>
+		</div>
+	</div>
+
+</div>
+
+</div>
+<form class="simple_form form-horizontal" novalidate="novalidate" id="edit_scale_team_woody" accept-charset="UTF-8"
+	method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="patch">
+	<div class="scale-section-answers col-sm-12 scale-div">
+		<section class="scale-section-item dancer from-down" id="section-preliminaries">
+			<div class="section-header">
+				<h3 class="font-weight-bold mb-1">Preliminaries</h3>
+				<p class="font-italic"></p>
+			</div>
+			<h4 class="scale-question-name">Preliminary instructions</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>First, check that the following is true:</p>
+
+			<ul>
+				<li>Something has been uploaded to the GiT repository.</li>
+				<li>The project is written in C (or possibly in ASM).</li>
+				<li>There is a Makefile and it contains the usual rules.</li>
+			</ul>
+
+			<p>If any of the above is not true, the defence ends. You are still, however, encouraged to continue to
+				discuss the project.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][0][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="1"
+							name="[scale_team][answers_attributes][0][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][0][value]" id="yes_0" value="1"
+						class="btn-input">
+
+					<label for="yes_0" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][0][value]" id="no_0" value="0"
+						class="btn-input" checked>
+
+					<label for="no_0" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+		</section>
+		<section class="scale-section-item dancer from-down" id="section-utilization">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Utilization</h3>
+				<p class="font-italic"></p>
+			</div>
+			<h4 class="scale-question-name">Running with arguments</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Before running the program, run the following command:</p>
+
+			<p><code>echo "int main(void){ printf(\"Hello\\n\"); return 0;}" > hello.c; gcc -m64 -o hello hello.c</code>
+			</p>
+
+			<p>Then run the program with the 'hello' binary passed as the first parameter.</p>
+
+			<p>There should now be a new file named 'woody'.</p>
+
+			<p>If that is not the case, the project is incomplete and the defence ends.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][1][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="2"
+							name="[scale_team][answers_attributes][1][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][1][value]" id="yes_1" value="1"
+						class="btn-input">
+
+					<label for="yes_1" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][1][value]" id="no_1" value="0"
+						class="btn-input" checked>
+
+					<label for="no_1" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+			<h4 class="scale-question-name">Basic usage</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Run 'woody'.</p>
+
+			<p>The program should first output "....WOODY....", followed by a newline and "Hello".</p>
+
+			<p>If that is not the case, the defence ends.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][2][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="3"
+							name="[scale_team][answers_attributes][2][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][2][value]" id="yes_2" value="1"
+						class="btn-input">
+
+					<label for="yes_2" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][2][value]" id="no_2" value="0"
+						class="btn-input" checked>
+
+					<label for="no_2" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+			<h4 class="scale-question-name">Advanced usage</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Run the following command:</p>
+
+			<p><code>objdump -S woody > woody.obj ; objdump -S hello > hello.obj</code></p>
+
+			<p>You may now diff (hello.obj and woody.obj) with your favorite software and see that there are many
+				differences.</p>
+
+			<p>If that is not the case, the defence ends.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][3][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="4"
+							name="[scale_team][answers_attributes][3][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][3][value]" id="yes_3" value="1"
+						class="btn-input">
+
+					<label for="yes_3" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][3][value]" id="no_3" value="0"
+						class="btn-input" checked>
+
+					<label for="no_3" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+		</section>
+		<section class="scale-section-item dancer from-down" id="section-algorithm">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Algorithm</h3>
+				<p class="font-italic"></p>
+			</div>
+			<h4 class="scale-question-name">Explanation</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Note by scale of how clear the algorithm is to the corrector after an explanation from the student.</p>
+
+			<p>Understand how the algorithm can be improved. What pros and cons come with use of the algorithm.</p>
+
+			<p>A maximum score should only be given if the corrector completely understands the algorithm after the
+				explanation (or at the very least if the corrector is 100% certain that the student completely
+				understands what they are talking about).</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][4][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="5"
+							name="[scale_team][answers_attributes][4][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<select name="[scale_team][answers_attributes][4][value]" id="score_4"
+						class="form-control score-select">
+						<option value=""></option>
+						<option value="0">0 - Failed</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 - Excellent</option>
+					</select>
+				</div>
+			</div>
+			<h4 class="scale-question-name">Complexity</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Note by scale of difficulty/effectiveness of the chosen algorithm.</p>
+
+			<p>The student must explain and justify their choice of algorithm.</p>
+
+			<p>A simple ROT is not considered a complex algorithm!</p>
+
+			<p>A maximum score should only be given in the case of a complex algorithm that creates a unique random key
+				generated at runtime of the main executable.</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][5][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="6"
+							name="[scale_team][answers_attributes][5][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<select name="[scale_team][answers_attributes][5][value]" id="score_5"
+						class="form-control score-select">
+						<option value=""></option>
+						<option value="0">0 - Failed</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 - Excellent</option>
+					</select>
+				</div>
+			</div>
+		</section>
+		<section class="scale-section-item dancer from-down" id="section-error-management">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Error Management</h3>
+				<p class="font-italic"></p>
+			</div>
+			<h4 class="scale-question-name">Error management</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>Before running the program, run the following command:</p>
+
+			<p><code>echo "int main(void){ printf(\"Hello\n\"); return 0;}" > hello.c; gcc -m32 -o hello hello.c</code>
+			</p>
+
+			<p>Then run the program with the 'hello' binary passed as the first parameter.</p>
+
+			<p>The program should either display an explicit error message, or in the case of a bonus, work as intended
+				without any issues.</p>
+
+			<p>The corrector may then run the program with as many error cases as they can think of (invalid file,
+				invalid path, not enough permissions, etc...).</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][6][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="7"
+							name="[scale_team][answers_attributes][6][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+
+					<input type="radio" name="[scale_team][answers_attributes][6][value]" id="yes_6" value="1"
+						class="btn-input">
+
+					<label for="yes_6" class="btn btn-yes">Yes</label>
+
+					<input type="radio" name="[scale_team][answers_attributes][6][value]" id="no_6" value="0"
+						class="btn-input" checked>
+
+					<label for="no_6" class="btn btn-no">No</label>
+
+				</div>
+			</div>
+		</section>
+		<section class="scale-section-item dancer from-down" id="section-bonus">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Bonus</h3>
+				<p class="font-italic">Bonus will be taken into account only if ALL the previous points are valid.</p>
+			</div>
+			<h4 class="scale-question-name">Bonus specific to this project</h4>
+			<p class="scale-section-guidelines">
+			</p>
+			<p>All bonuses must be 100% functional and useful/convenient to be counted.</p>
+
+			<p>Examples of valid bonuses:</p>
+
+			<ul>
+				<li>32bit support.</li>
+				<li>Custom keys.</li>
+				<li>Optimization of the algorithm used by the assembler.</li>
+				<li>Support of multiple binary formats (PE, Mach-O, ...).</li>
+				<li>Compression of the binary.</li>
+				<li>...</li>
+			</ul>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][7][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="8"
+							name="[scale_team][answers_attributes][7][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<select name="[scale_team][answers_attributes][7][value]" id="score_7"
+						class="form-control score-select">
+						<option value=""></option>
+						<option value="0">0 - Failed</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 - Excellent</option>
+					</select>
+				</div>
+			</div>
+		</section>
+	</div>
+</form>
+
+</div>
+</div>

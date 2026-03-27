@@ -1,0 +1,603 @@
+<h3 class="font-weight-bold mb-1">Introduction</h3>
+<p>
+	<br>In order to maintain high evaluation standards, you are expected to:
+	<br>- Remain polite, courteous, respectful and constructive at every moment of the discussion. Trust between you and
+	our community depends on your behaviour.
+	<br>- Highlight the flaws and issues you uncover in the turned-in work to the evaluated student or team, and take
+	the time to discuss every aspect extensively.
+	<br>- Please take into account that discrepancies regarding the expected work or functionalities definitions might
+	occur. Keep an open mind towards the opposite party (is he or she right or wrong?), and grade as honestly as
+	possible. 42's pedagogy only makes sense if peer-evaluations are carried out seriously.
+</p>
+</div>
+<div class="p-0 scale-guidelines dancer from-down" id="guidelines-guimp">
+	<h3 class="font-weight-bold mb-1">Guidelines</h3>
+	<p>
+		<br>- You must grade only what exists in the GiT repository of the student or team.
+		<br>- Remember to check the GiT repository's ownership: is it the student's or team's repository, and for the
+		right project?
+		<br>- Check thoroughly that no wicked aliases have been used to trick you into grading something other than the
+		genuine repository.
+		<br>- Any script supposed to ease the evaluation provided by one party must be thoroughly checked by the other
+		party in order to avoid unpleasant situations.
+		<br>- If the student in charge of the grading hasn't done the project yet, it is mandatory that he or she reads
+		it before starting the evaluation.
+		<br>- Use the available flags on this scale to flag an empty work, non-functional work, a coding style ("norm")
+		error if applicable, cheating, and so on. If a flag is set, the grade is 0 (or -42 in case of cheating).
+		However, cheating case excluded, you are encouraged to carry on discussing what went wrong, why, and how to
+		address it, even if the grading itself is over.
+		<br>- The whole group has to be present.
+	</p>
+</div>
+
+<hr>
+<div class="dancer from-down" id="attachments-guimp">
+	<h3 class="font-weight-bold mb-1">Attachments</h3>
+	<div class="project-attachments-list">
+		<div class="project-attachment-item">
+			<h4 class="attachment-name">
+				<span class="icon-note-paper-2"></span>
+				<a target="_blank" href="https://cdn.intra.42.fr/pdf/pdf/6093/GUImp.en.pdf">Subject (GUImp.en.pdf)</a>
+			</h4>
+		</div>
+	</div>
+</div>
+
+</div>
+<form class="simple_form form-horizontal" novalidate="novalidate" id="edit_scale_team_guimp" accept-charset="UTF-8"
+	method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="patch"><input
+		type="hidden" name="authenticity_token" value="">
+	<div class="scale-section-answers col-sm-12 scale-div">
+		<section class="scale-section-item dancer from-down" id="section-preliminaries">
+			<div class="section-header">
+				<h3 class="font-weight-bold mb-1">Preliminaries</h3>
+				<p class="font-italic">Check the following points before proceeding with the evaluation.</p>
+			</div>
+			<h4 class="scale-question-name">Preliminary checks</h4>
+			<p class="scale-section-guidelines"></p>
+			<p>Check the following points:
+				<br>- There is a valid `author` file
+				<br>- There is a `libui` folder with its own Makefile
+				<br>- There is a `libui.a` created after compilation
+				<br>- There is a Makefile at the root of the repository which compiles the 'guimp' executable
+				<br><br>If the preliminaries are OK, we can continue the evaluation.
+				<br>Remember that for the duration of the defence, no segfault, no other unexpected, premature,
+				uncontrolled or unexpected termination of the program, else the final grade is 0.
+			</p>
+
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][0][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="0"
+							name="[scale_team][answers_attributes][0][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<input type="radio" name="[scale_team][answers_attributes][0][value]" id="yes_0" value="1"
+						class="btn-input">
+					<label for="yes_0" class="btn btn-yes">Yes</label>
+					<input type="radio" name="[scale_team][answers_attributes][0][value]" id="no_0" value="0"
+						class="btn-input" checked>
+					<label for="no_0" class="btn btn-no">No</label>
+				</div>
+			</div>
+		</section>
+
+		<!-- LIBUI PART SECTION -->
+		<section class="scale-section-item dancer from-down" id="section-libui">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Libui part</h3>
+				<p class="font-italic">This section evaluates the graphical library implementation named `libui`. We
+					will use the 'guimp' part to prove the good implementation of the features.</p>
+			</div>
+
+			<h4 class="scale-question-name">Makefile compilation</h4>
+			<p class="scale-section-guidelines"></p>
+			<p>Launch the Makefile of the `libui` part, and check that the `libui.a` is successfully created.</p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][1][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="1"
+							name="[scale_team][answers_attributes][1][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<input type="radio" name="[scale_team][answers_attributes][1][value]" id="yes_1" value="1"
+						class="btn-input">
+					<label for="yes_1" class="btn btn-yes">Yes</label>
+					<input type="radio" name="[scale_team][answers_attributes][1][value]" id="no_1" value="0"
+						class="btn-input" checked>
+					<label for="no_1" class="btn btn-no">No</label>
+				</div>
+			</div>
+
+			<h4 class="scale-question-name">Windows</h4>
+			<p class="scale-section-guidelines">Check the correct implementation of windows (1 point per item):</p>
+			<p>- There are several windows of different sizes
+				<br>- At least one window is resizable
+				<br>- At least one window has an image or a background color
+				<br>- Several windows have a given theme or style
+				<br>- Different types of windows are present: generic, modal...
+			</p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][2][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="2"
+							name="[scale_team][answers_attributes][2][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="marked-title text-center">Rate it from 0 (failed) through 5 (excellent)</div>
+				<select name="[scale_team][answers_attributes][2][value]" class="form-control score-select">
+					<option value="0">0 - Failed</option>
+					<option value="1">1 - Poor</option>
+					<option value="2">2 - Fair</option>
+					<option value="3">3 - Good</option>
+					<option value="4">4 - Very Good</option>
+					<option value="5">5 - Excellent</option>
+				</select>
+				<hr>
+			</div>
+
+			<h4 class="scale-question-name">Simple elements</h4>
+			<p class="scale-section-guidelines">Check that the following elements are present (1 point per element):</p>
+			<p>- Buttons
+				<br>- Menus
+				<br>- Text
+				<br>- Images
+				<br>- Editable text fields
+			</p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][3][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="3"
+							name="[scale_team][answers_attributes][3][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="marked-title text-center">Rate it from 0 (failed) through 5 (excellent)</div>
+				<select name="[scale_team][answers_attributes][3][value]" class="form-control score-select">
+					<option value="0">0 - Failed</option>
+					<option value="1">1 - Poor</option>
+					<option value="2">2 - Fair</option>
+					<option value="3">3 - Good</option>
+					<option value="4">4 - Very Good</option>
+					<option value="5">5 - Excellent</option>
+				</select>
+				<hr>
+			</div>
+
+			<h4 class="scale-question-name">Elements ++</h4>
+			<p class="scale-section-guidelines">Check that the following elements are present (1 point per element):</p>
+			<p>- Checkbox
+				<br>- Slider
+				<br>- Radio button
+				<br>- Drop-down list
+				<br>- Progress bar
+			</p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][4][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="4"
+							name="[scale_team][answers_attributes][4][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="marked-title text-center">Rate it from 0 (failed) through 5 (excellent)</div>
+				<select name="[scale_team][answers_attributes][4][value]" class="form-control score-select">
+					<option value="0">0 - Failed</option>
+					<option value="1">1 - Poor</option>
+					<option value="2">2 - Fair</option>
+					<option value="3">3 - Good</option>
+					<option value="4">4 - Very Good</option>
+					<option value="5">5 - Excellent</option>
+				</select>
+				<hr>
+			</div>
+
+			<h4 class="scale-question-name">Style</h4>
+			<p class="scale-section-guidelines">Check that at least 3 of the above elements can take as parameter (1
+				point per element):</p>
+			<p>- One size
+				<br>- A color
+				<br>- A shape
+				<br>- A background image
+				<br>- A defined theme or style
+			</p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][5][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="5"
+							name="[scale_team][answers_attributes][5][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="marked-title text-center">Rate it from 0 (failed) through 5 (excellent)</div>
+				<select name="[scale_team][answers_attributes][5][value]" class="form-control score-select">
+					<option value="0">0 - Failed</option>
+					<option value="1">1 - Poor</option>
+					<option value="2">2 - Fair</option>
+					<option value="3">3 - Good</option>
+					<option value="4">4 - Very Good</option>
+					<option value="5">5 - Excellent</option>
+				</select>
+				<hr>
+			</div>
+
+			<h4 class="scale-question-name">The Niagara Falls</h4>
+			<p class="scale-section-guidelines">Check that several of the above elements can be put in "cascades".</p>
+			<p>Examples:
+				<br>- A button in a menu
+				<br>- A menu in a menu
+				<br>- A menu in a menu, in a menu!
+				<br>- An image and/or a text inside a button
+				<br><br>Validate the point if at least 3 different cascades are present
+			</p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][6][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="6"
+							name="[scale_team][answers_attributes][6][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="btn-group block">
+					<input type="radio" name="[scale_team][answers_attributes][6][value]" id="yes_6" value="1"
+						class="btn-input">
+					<label for="yes_6" class="btn btn-yes">Yes</label>
+					<input type="radio" name="[scale_team][answers_attributes][6][value]" id="no_6" value="0"
+						class="btn-input" checked>
+					<label for="no_6" class="btn btn-no">No</label>
+				</div>
+			</div>
+
+			<h4 class="scale-question-name">Events</h4>
+			<p class="scale-section-guidelines">Judge the quality of implementation of events (1 point per element):</p>
+			<p>- The libui must handle at least all standard mouse and keyboard events (clicks, focus, one key, several
+				simultaneous keys etc.)
+				<br>- It must be possible to specify at least one type of event for an element
+				<br>- Several types of event can be specified for a single element
+				<br>- The action of the event can be standardized by the library (incremental, on/off etc.)
+				<br>- The action of the event can be defined by the user (pointer to function e.g.)
+			</p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][7][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="7"
+							name="[scale_team][answers_attributes][7][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="marked-title text-center">Rate it from 0 (failed) through 5 (excellent)</div>
+				<select name="[scale_team][answers_attributes][7][value]" class="form-control score-select">
+					<option value="0">0 - Failed</option>
+					<option value="1">1 - Poor</option>
+					<option value="2">2 - Fair</option>
+					<option value="3">3 - Good</option>
+					<option value="4">4 - Very Good</option>
+					<option value="5">5 - Excellent</option>
+				</select>
+				<hr>
+			</div>
+
+			<h4 class="scale-question-name">Events ++</h4>
+			<p class="scale-section-guidelines">Judge the quality of implementation of these elements (1 point per
+				element):</p>
+			<p>- Good cohesion between event management and the elements in cascade or not.
+				<br>- It is possible to have an interaction on an element that leads to the appearance and/or
+				modification of another element
+				<br>- A `HotKeys` system specific to each type of elements is available by default.
+				<br>- A window can be scrollable if necessary according to the selected parameters.
+				<br>- An element can be scrollable if applicable and necessary, depending on the chosen parameters.
+			</p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][8][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="8"
+							name="[scale_team][answers_attributes][8][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="marked-title text-center">Rate it from 0 (failed) through 5 (excellent)</div>
+				<select name="[scale_team][answers_attributes][8][value]" class="form-control score-select">
+					<option value="0">0 - Failed</option>
+					<option value="1">1 - Poor</option>
+					<option value="2">2 - Fair</option>
+					<option value="3">3 - Good</option>
+					<option value="4">4 - Very Good</option>
+					<option value="5">5 - Excellent</option>
+				</select>
+				<hr>
+			</div>
+
+			<h4 class="scale-question-name">Preferences</h4>
+			<p class="scale-section-guidelines">Judge the quality of implementation of these features (1 point per
+				feature):</p>
+			<p>- There is a file selection preference
+				<br>- There is a preference of font selection
+				<br>- There are other types of preferences like a status bar with info and images, default menu for
+				open/save/quit etc...
+				<br>- Some elements (2pt) and by default the window (1pt) are able to manage drag-n-drop
+			</p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][9][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="9"
+							name="[scale_team][answers_attributes][9][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="marked-title text-center">Rate it from 0 (failed) through 5 (excellent)</div>
+				<select name="[scale_team][answers_attributes][9][value]" class="form-control score-select">
+					<option value="0">0 - Failed</option>
+					<option value="1">1 - Poor</option>
+					<option value="2">2 - Fair</option>
+					<option value="3">3 - Good</option>
+					<option value="4">4 - Very Good</option>
+					<option value="5">5 - Excellent</option>
+				</select>
+				<hr>
+			</div>
+		</section>
+		<section class="scale-section-item dancer from-down" id="section-guimp">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">GUImp part</h3>
+				<p class="font-italic">This section focuses on the program named `guimp`, a 2D drawing software inspired
+					by GIMP. First, check that in ALL the source code of the part `guimp` there is no any direct
+					function call to the SDL, system graphics framework or any other graphic management system. If this
+					is the case, the defense is finished and put the `Forbidden functions` flag.</p>
+			</div>
+
+			<h4 class="scale-question-name">Basic tools</h4>
+			<p class="scale-section-guidelines">Check the correct implementation of these tools (1 point per tool):</p>
+			<p>- The brush
+				<br>- The eraser
+				<br>- Drawing lines, rectangles, squares and circles (empty and full!)
+				<br>- A magnifying glass that zooms AND unzooms!
+				<br>- A moving hand
+				<br><br>Attention if the tool requires it, it must have an associated menu for manage its variables like
+				line thickness, radius for a circle or its opacity. If the tool is not variable do not count the point!
+				(A fixed size eraser is not very useful...)
+			</p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][10][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="10"
+							name="[scale_team][answers_attributes][10][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="marked-title text-center">Rate it from 0 (failed) through 5 (excellent)</div>
+				<select name="[scale_team][answers_attributes][10][value]" class="form-control score-select">
+					<option value="0">0 - Failed</option>
+					<option value="1">1 - Poor</option>
+					<option value="2">2 - Fair</option>
+					<option value="3">3 - Good</option>
+					<option value="4">4 - Very Good</option>
+					<option value="5">5 - Excellent</option>
+				</select>
+				<hr>
+			</div>
+
+			<h4 class="scale-question-name">Tools ++</h4>
+			<p class="scale-section-guidelines">Check the correct implementation of these tools (1 point per tool):</p>
+			<p>- The famous Painting pot tool (2pt)
+				<br>- A brush menu that allows you to set "stickers"
+				<br>- A functional pipette
+				<br>- A button that erases the entire working area or the selected area
+				<br><br>If the tool does not work smoothly, do not count the point.
+			</p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][11][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="11"
+							name="[scale_team][answers_attributes][11][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="marked-title text-center">Rate it from 0 (failed) through 5 (excellent)</div>
+				<select name="[scale_team][answers_attributes][11][value]" class="form-control score-select">
+					<option value="0">0 - Failed</option>
+					<option value="1">1 - Poor</option>
+					<option value="2">2 - Fair</option>
+					<option value="3">3 - Good</option>
+					<option value="4">4 - Very Good</option>
+					<option value="5">5 - Excellent</option>
+				</select>
+				<hr>
+			</div>
+
+			<h4 class="scale-question-name">Menus</h4>
+			<p class="scale-section-guidelines">Check the correct implementation of these menus (1 point per menu):</p>
+			<p>- A stylish menu for color selection: HSV circle, RGB sliders...
+				<br>- A menu to import several images to the work area
+				<br>- A line thickness management menu
+				<br>- A menu to put text at a given location, with the choice of the color, font and size (2pt)
+			</p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][12][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="12"
+							name="[scale_team][answers_attributes][12][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="marked-title text-center">Rate it from 0 (failed) through 5 (excellent)</div>
+				<select name="[scale_team][answers_attributes][12][value]" class="form-control score-select">
+					<option value="0">0 - Failed</option>
+					<option value="1">1 - Poor</option>
+					<option value="2">2 - Fair</option>
+					<option value="3">3 - Good</option>
+					<option value="4">4 - Very Good</option>
+					<option value="5">5 - Excellent</option>
+				</select>
+				<hr>
+			</div>
+
+			<h4 class="scale-question-name">Details</h4>
+			<p class="scale-section-guidelines">Check the correct implementation of these features (1 point per
+				feature):</p>
+			<p>- The mouse cursor changes according to the selected tool
+				<br>- It is possible to import several types of image format including at least PNG and JPEG
+				<br>- Click on the red cross on the window border to close the corresponding window, and exit the
+				program properly if this is the rendering window.
+				<br>- You can save the created image in at least two different image formats (2pt)
+			</p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][13][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="13"
+							name="[scale_team][answers_attributes][13][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="marked-title text-center">Rate it from 0 (failed) through 5 (excellent)</div>
+				<select name="[scale_team][answers_attributes][13][value]" class="form-control score-select">
+					<option value="0">0 - Failed</option>
+					<option value="1">1 - Poor</option>
+					<option value="2">2 - Fair</option>
+					<option value="3">3 - Good</option>
+					<option value="4">4 - Very Good</option>
+					<option value="5">5 - Excellent</option>
+				</select>
+				<hr>
+			</div>
+		</section>
+
+		<!-- BONUS SECTION -->
+		<section class="scale-section-item dancer from-down" id="section-bonus">
+			<div class="section-header">
+				<hr>
+				<h3 class="font-weight-bold mb-1">Bonus part</h3>
+				<p class="font-italic">Attention if the mandatory part is not 100% validated the evaluation ends here!
+				</p>
+			</div>
+
+			<h4 class="scale-question-name">Simple bonuses</h4>
+			<p class="scale-section-guidelines">Are the following bonuses present and functional? (1 point per bonus):
+			</p>
+			<p>- Menus can have tabs
+				<br>- An interface style configuration file like CSS
+				<br>- The interface is resizable
+				<br>- Other stylish stuff we never even imagined.
+			</p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][14][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="14"
+							name="[scale_team][answers_attributes][14][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="marked-title text-center">Rate it from 0 (failed) through 5 (excellent)</div>
+				<select name="[scale_team][answers_attributes][14][value]" class="form-control score-select">
+					<option value="0">0 - Failed</option>
+					<option value="1">1 - Poor</option>
+					<option value="2">2 - Fair</option>
+					<option value="3">3 - Good</option>
+					<option value="4">4 - Very Good</option>
+					<option value="5">5 - Excellent</option>
+				</select>
+				<hr>
+			</div>
+
+			<h4 class="scale-question-name">Stylish bonuses</h4>
+			<p class="scale-section-guidelines">Are the following bonuses present and functional? (1 point per bonus):
+			</p>
+			<p>- The possibility of Undo/Redo with ctrl+z/y
+				<br>- You can copy and paste a given selection
+				<br>- We can manage different layers and this in a coherent way
+				<br>- Interface is responsive
+				<br>- Some other REALLY stylish stuff we never even imagined!
+			</p>
+			<p></p>
+			<div class="scale-question-answers">
+				<div class="form-group hidden scale_team_answer_id">
+					<div class="col-sm-10"><input class="form-control hidden"
+							name="[scale_team][answers_attributes][15][id]" type="hidden" id="scale_team_answer_id">
+					</div>
+				</div>
+				<div class="form-group hidden scale_team_answer_question_id">
+					<div class="col-sm-10"><input class="form-control hidden" value="15"
+							name="[scale_team][answers_attributes][15][question_id]" type="hidden"
+							id="scale_team_answer_question_id"></div>
+				</div>
+				<div class="marked-title text-center">Rate it from 0 (failed) through 5 (excellent)</div>
+				<select name="[scale_team][answers_attributes][15][value]" class="form-control score-select">
+					<option value="0">0 - Failed</option>
+					<option value="1">1 - Poor</option>
+					<option value="2">2 - Fair</option>
+					<option value="3">3 - Good</option>
+					<option value="4">4 - Very Good</option>
+					<option value="5">5 - Excellent</option>
+				</select>
+				<hr>
+			</div>
+		</section>
+
+	</div>
+</form>
